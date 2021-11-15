@@ -12,27 +12,16 @@ namespace LoggingKata
 
         static void Main(string[] args)
         {
-            // TODO:  Find the two Taco Bells that are the furthest from one another.
             logger.LogInfo("Log initialized, locating two Taco Bells furthest from one another.");
 
             string[] lines = File.ReadAllLines(csvPath);
-            if(lines.Length == 0)
-            {
-                logger.LogError("files has no input");
-            }
-
-            if(lines.Length == 1)
-            {
-                logger.LogWarning("file has only one line");
-            }
-
-            logger.LogInfo($"Lines: {lines[0]}");
+            if(lines.Length == 0) logger.LogError("files has no input");
+            if(lines.Length == 1) logger.LogInfo($"Lines: {lines[0]}");
 
             var parser = new TacoParser();
 
             var locations = lines.Select(line => parser.Parse(line)).ToArray();
 
-            //location algorithm
             ITrackable tacoBell1 = null;
             ITrackable tacoBell2 = null;
             double distance = 0;
@@ -49,15 +38,9 @@ namespace LoggingKata
                         tacoBell1 = locA;
                         tacoBell2 = locB;
                      }
-                   
-
                 }
-
-
             }
-
             logger.LogInfo($"{tacoBell1.Name} and {tacoBell2.Name} are {distance}km apart.");
-
         }
     }
 }

@@ -1,8 +1,5 @@
 ﻿namespace LoggingKata
 {
-    /// <summary>
-    /// Parses a POI file to locate all the Taco Bells
-    /// </summary>
     public class TacoParser
     {
         readonly ILog logger = new TacoLogger();
@@ -21,12 +18,10 @@
 
             var numCells = cells.Length;
             var latitude = double.Parse(cells[0]);
-            var longitutde = double.Parse(cells[1]);
+            var longitude = double.Parse(cells[1]);
             var name = cells[2];
 
-            var geoPoint = new GeoCoordinatePortable.GeoCoordinate();
-            geoPoint.Latitude = latitude;
-            geoPoint.Longitude = longitutde;
+            var geoPoint = new GeoCoordinatePortable.GeoCoordinate(latitude, longitude);
             
             var tacoBell = new TacoBell();
             tacoBell.Name = name;
