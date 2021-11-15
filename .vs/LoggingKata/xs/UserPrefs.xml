@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{7ADECD8F-C2B8-437F-9BCD-80CA280CB46F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoggingKata/Program.cs">
+    <Files>
+      <File FileName="LoggingKata/Program.cs" Line="56" Column="20" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LoggingKata" expanded="True">
+            <Node name="LoggingKata" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.LoggingKata PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

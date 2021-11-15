@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NKbHDg1UINHbL2Im5oq5havTSE5Ezotyj4RyGzalwXhxUeXRJVJwv/IW7FsrXOVEDuHWy8EVqRyAN99dfW5n9w==",
+  "dgSpecHash": "9xG57ckABfvIrr1GY+CKikzfKVv8BO0+IdZdA23/FJw4n6/d5HbIwgag2n/qouvllaeyUPjXC0WTS5u3/qpE+A==",
   "success": true,
-  "projectFilePath": "/Applications/Repos/TacoParser/LoggingKata/LoggingKata.csproj",
+  "projectFilePath": "/Applications/Repos/TacoParserSolution/LoggingKata/LoggingKata.csproj",
   "expectedPackageFiles": [
     "/Users/lynda/.nuget/packages/geocoordinate.netcore/1.0.0.1/geocoordinate.netcore.1.0.0.1.nupkg.sha512"
   ],

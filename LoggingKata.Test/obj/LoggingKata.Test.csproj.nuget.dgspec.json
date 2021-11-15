@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Applications/Repos/TacoParser/LoggingKata.Test/LoggingKata.Test.csproj": {}
+    "/Applications/Repos/TacoParserSolution/LoggingKata.Test/LoggingKata.Test.csproj": {}
   },
   "projects": {
-    "/Applications/Repos/TacoParser/LoggingKata.Test/LoggingKata.Test.csproj": {
+    "/Applications/Repos/TacoParserSolution/LoggingKata.Test/LoggingKata.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Applications/Repos/TacoParser/LoggingKata.Test/LoggingKata.Test.csproj",
+        "projectUniqueName": "/Applications/Repos/TacoParserSolution/LoggingKata.Test/LoggingKata.Test.csproj",
         "projectName": "LoggingKata.Test",
-        "projectPath": "/Applications/Repos/TacoParser/LoggingKata.Test/LoggingKata.Test.csproj",
+        "projectPath": "/Applications/Repos/TacoParserSolution/LoggingKata.Test/LoggingKata.Test.csproj",
         "packagesPath": "/Users/lynda/.nuget/packages/",
-        "outputPath": "/Applications/Repos/TacoParser/LoggingKata.Test/obj/",
+        "outputPath": "/Applications/Repos/TacoParserSolution/LoggingKata.Test/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lynda/.config/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "/Applications/Repos/TacoParser/LoggingKata/LoggingKata.csproj": {
-                "projectPath": "/Applications/Repos/TacoParser/LoggingKata/LoggingKata.csproj"
+              "/Applications/Repos/TacoParserSolution/LoggingKata/LoggingKata.csproj": {
+                "projectPath": "/Applications/Repos/TacoParserSolution/LoggingKata/LoggingKata.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "/Applications/Repos/TacoParser/LoggingKata/LoggingKata.csproj": {
+    "/Applications/Repos/TacoParserSolution/LoggingKata/LoggingKata.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Applications/Repos/TacoParser/LoggingKata/LoggingKata.csproj",
+        "projectUniqueName": "/Applications/Repos/TacoParserSolution/LoggingKata/LoggingKata.csproj",
         "projectName": "LoggingKata",
-        "projectPath": "/Applications/Repos/TacoParser/LoggingKata/LoggingKata.csproj",
+        "projectPath": "/Applications/Repos/TacoParserSolution/LoggingKata/LoggingKata.csproj",
         "packagesPath": "/Users/lynda/.nuget/packages/",
-        "outputPath": "/Applications/Repos/TacoParser/LoggingKata/obj/",
+        "outputPath": "/Applications/Repos/TacoParserSolution/LoggingKata/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lynda/.config/NuGet/NuGet.Config"

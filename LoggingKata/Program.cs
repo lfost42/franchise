@@ -39,35 +39,26 @@ namespace LoggingKata
 
             for (int i = 0; i < locations.Length; i++)
             {
-                //loop through first location
                 var locA = locations[i];
-                var corA = new GeoCoordinate();
-                corA.Latitude = locA.Location.Latitude;
-                corA.Longitude = locA.Location.Longitude;
 
                 for (int j = 0; j < locations.Length; j++)
                 {
-                    //loop through other locations to compare distance from first location
                     var locB = locations[j];
-                    var corB = new GeoCoordinate();
-                    corB.Latitude = locB.Location.Latitude;
-                    corB.Longitude = locB.Location.Longitude;
-
-                    if (corA.GetDistanceTo(corB) > distance)
+                    if (locA.GeoPoint.GetDistanceTo(locB.GeoPoint) > distance)
                      {
-                        distance = corA.GetDistanceTo(corB);
+                        distance = locA.GeoPoint.GetDistanceTo(locB.GeoPoint);
                         tacoBell1 = locA;
                         tacoBell2 = locB;
                      }
-
+                   
 
                 }
 
 
             }
 
-            logger.LogInfo($"{tacoBell1.Name} and {tacoBell2.Name} are the farthest apart.");
-   
+            logger.LogInfo($"{tacoBell1.Name} and {tacoBell2.Name} are {distance}km apart.");
+
         }
     }
 }

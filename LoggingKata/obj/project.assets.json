@@ -39,11 +39,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Applications/Repos/TacoParser/LoggingKata/LoggingKata.csproj",
+      "projectUniqueName": "/Applications/Repos/TacoParserSolution/LoggingKata/LoggingKata.csproj",
       "projectName": "LoggingKata",
-      "projectPath": "/Applications/Repos/TacoParser/LoggingKata/LoggingKata.csproj",
+      "projectPath": "/Applications/Repos/TacoParserSolution/LoggingKata/LoggingKata.csproj",
       "packagesPath": "/Users/lynda/.nuget/packages/",
-      "outputPath": "/Applications/Repos/TacoParser/LoggingKata/obj/",
+      "outputPath": "/Applications/Repos/TacoParserSolution/LoggingKata/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/lynda/.config/NuGet/NuGet.Config"
