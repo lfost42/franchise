@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = LoggingKata.Test
+build_property.ProjectDir = /Applications/Repos/TacoParser/LoggingKata.Test/

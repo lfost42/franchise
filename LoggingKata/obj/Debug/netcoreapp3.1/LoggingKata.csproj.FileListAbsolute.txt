@@ -1,0 +1,16 @@
+/Applications/Repos/TacoParser/LoggingKata/bin/Debug/netcoreapp3.1/TacoBell-US-AL.csv
+/Applications/Repos/TacoParser/LoggingKata/bin/Debug/netcoreapp3.1/LoggingKata.deps.json
+/Applications/Repos/TacoParser/LoggingKata/bin/Debug/netcoreapp3.1/LoggingKata.runtimeconfig.json
+/Applications/Repos/TacoParser/LoggingKata/bin/Debug/netcoreapp3.1/LoggingKata.runtimeconfig.dev.json
+/Applications/Repos/TacoParser/LoggingKata/bin/Debug/netcoreapp3.1/LoggingKata.dll
+/Applications/Repos/TacoParser/LoggingKata/bin/Debug/netcoreapp3.1/LoggingKata.pdb
+/Applications/Repos/TacoParser/LoggingKata/bin/Debug/netcoreapp3.1/GeoCoordinate.NetCore.dll
+/Applications/Repos/TacoParser/LoggingKata/obj/Debug/netcoreapp3.1/LoggingKata.csproj.AssemblyReference.cache
+/Applications/Repos/TacoParser/LoggingKata/obj/Debug/netcoreapp3.1/LoggingKata.GeneratedMSBuildEditorConfig.editorconfig
+/Applications/Repos/TacoParser/LoggingKata/obj/Debug/netcoreapp3.1/LoggingKata.AssemblyInfoInputs.cache
+/Applications/Repos/TacoParser/LoggingKata/obj/Debug/netcoreapp3.1/LoggingKata.AssemblyInfo.cs
+/Applications/Repos/TacoParser/LoggingKata/obj/Debug/netcoreapp3.1/LoggingKata.csproj.CoreCompileInputs.cache
+/Applications/Repos/TacoParser/LoggingKata/obj/Debug/netcoreapp3.1/LoggingKata.csproj.CopyComplete
+/Applications/Repos/TacoParser/LoggingKata/obj/Debug/netcoreapp3.1/LoggingKata.dll
+/Applications/Repos/TacoParser/LoggingKata/obj/Debug/netcoreapp3.1/LoggingKata.pdb
+/Applications/Repos/TacoParser/LoggingKata/obj/Debug/netcoreapp3.1/LoggingKata.genruntimeconfig.cache
