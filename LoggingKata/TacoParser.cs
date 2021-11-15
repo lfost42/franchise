@@ -24,17 +24,12 @@
             var longitutde = double.Parse(cells[1]);
             var name = cells[2];
 
-            var point = new Point();
-            point.Latitude = latitude;
-            point.Longitude = longitutde;
-
             var geoPoint = new GeoCoordinatePortable.GeoCoordinate();
-            geoPoint.Latitude = point.Latitude;
-            geoPoint.Longitude = point.Longitude;
+            geoPoint.Latitude = latitude;
+            geoPoint.Longitude = longitutde;
             
             var tacoBell = new TacoBell();
             tacoBell.Name = name;
-            tacoBell.Location = point;
             tacoBell.GeoPoint = geoPoint;
 
             return tacoBell;
