@@ -40,7 +40,6 @@ namespace LoggingKata
             for (int i = 0; i < locations.Length; i++)
             {
                 var locA = locations[i];
-
                 for (int j = 0; j < locations.Length; j++)
                 {
                     var locB = locations[j];

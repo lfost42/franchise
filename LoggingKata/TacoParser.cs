@@ -29,8 +29,8 @@
             point.Longitude = longitutde;
 
             var geoPoint = new GeoCoordinatePortable.GeoCoordinate();
-            point.Latitude = geoPoint.Latitude;
-            point.Longitude = geoPoint.Longitude;
+            geoPoint.Latitude = point.Latitude;
+            geoPoint.Longitude = point.Longitude;
             
             var tacoBell = new TacoBell();
             tacoBell.Name = name;
