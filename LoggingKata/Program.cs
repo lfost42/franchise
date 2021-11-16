@@ -40,7 +40,10 @@ namespace LoggingKata
                      }
                 }
             }
-            logger.LogInfo($"{tacoBell1.Name} and {tacoBell2.Name} are {distance}km apart.");
+
+            double miles = distance * 0.00062;
+
+            logger.LogInfo($"{tacoBell1.Name} and {tacoBell2.Name} are {Math.Round(miles,2)} miles apart.");
         }
     }
 }

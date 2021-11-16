@@ -1,12 +1,18 @@
 ﻿<Properties StartupConfiguration="{7ADECD8F-C2B8-437F-9BCD-80CA280CB46F}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoggingKata/Program.cs">
+    <Files>
+      <File FileName="LoggingKata/Program.cs" Line="46" Column="1" />
+      <File FileName="LoggingKata/TacoParser.cs" />
+      <File FileName="LoggingKata/TacoBell.cs" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LoggingKata" expanded="True">
             <Node name="LoggingKata" expanded="True">
-              <Node name="ILog.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
+            <Node name="LoggingKata.Test" expanded="True" />
           </Node>
         </State>
       </Pad>
