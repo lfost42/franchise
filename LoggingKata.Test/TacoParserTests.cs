@@ -17,7 +17,7 @@ namespace LoggingKata.Test
         }
 
         [Fact]
-        public void DoesNotHaveThreeCells()
+        public void NotParsableReturnsNull()
         {
             var tacoParser = new TacoParser();
 
@@ -29,22 +29,22 @@ namespace LoggingKata.Test
 
         [Theory]
         [InlineData("34.073638,-84.677017,Taco Bell Acwort...", -84.677017)]
-        public void ShouldParseLongitude(string line, double expected)
+        public void ParsesLongitude(string line, double expected)
         {
             var tacoParserInstance = new TacoParser();
 
-            var actual = tacoParserInstance.Parse(line).Location.Longitude;
+            var actual = tacoParserInstance.Parse(line).GeoPoint.Longitude;
 
             Assert.Equal(expected, actual);
         }
 
         [Theory]
         [InlineData("34.073638,-84.677017,Taco Bell Acwort...", 34.073638)]
-        public void ShouldParseLatitude(string line, double expected)
+        public void ParsesLatitude(string line, double expected)
         {
             var tacoParserInstance = new TacoParser();
 
-            var actual = tacoParserInstance.Parse(line).Location.Latitude;
+            var actual = tacoParserInstance.Parse(line).GeoPoint.Latitude;
 
             Assert.Equal(expected, actual);
         }
