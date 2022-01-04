@@ -1,4 +1,4 @@
-# Taco Parser Kata
+# Road Trip Planner
 
 An exercise in geolocation, csv parsing, and logging
 
