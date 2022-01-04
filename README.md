@@ -1,8 +1,10 @@
 # Road Trip Planner
 
-An exercise in geolocation, csv parsing, and logging
+An exercise in geolocation, csv parsing, and logging.
 
-## Kata Overview
+![My App](./app.png)
+
+## Overview
 
 This project culminates the C# segment of the Software Engineering course at True Coders (https://truecoders.io). 
 The challenge was to use a csv file of approximately 300 Taco Bell locations and determine which two are furthest
