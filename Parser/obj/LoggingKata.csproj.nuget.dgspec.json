@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/lynda/Desktop/repo/RoadTrip/LoggingKata/LoggingKata.csproj": {}
+  },
+  "projects": {
+    "/Users/lynda/Desktop/repo/RoadTrip/LoggingKata/LoggingKata.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lynda/Desktop/repo/RoadTrip/LoggingKata/LoggingKata.csproj",
+        "projectName": "LoggingKata",
+        "projectPath": "/Users/lynda/Desktop/repo/RoadTrip/LoggingKata/LoggingKata.csproj",
+        "packagesPath": "/Users/lynda/.nuget/packages/",
+        "outputPath": "/Users/lynda/Desktop/repo/RoadTrip/LoggingKata/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/lynda/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "GeoCoordinate.NetCore": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -3,11 +3,9 @@
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="LoggingKata" expanded="True">
-            <Node name="LoggingKata" expanded="True" selected="True" />
-            <Node name="LoggingKata.Test" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-            </Node>
+          <Node name="TripPlanner" expanded="True">
+            <Node name="Parser" expanded="True" />
+            <Node name="Parser.Test" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
