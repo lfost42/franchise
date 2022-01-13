@@ -1,6 +1,6 @@
 # Road Trip Planner
 
-An exercise in geolocation, csv parsing, and logging.
+An exercise in geolocation, csv parsing, and logging. The main logic is present from a previous assignment. Future plans are below.
 
 ![My App](./app.png)
 
