@@ -18,8 +18,5 @@ I hesitated to make changes to the orignal program but as I progressed in optimi
 
 ## Plans
 
-I will turn this challenge into a web application and utilize an API to perform other tasks with the gecoordinate data. 
+I would like to utilize a mapping API to perform other tasks with the gecoordinate data. Ideally, I'd like a user to enter the address or select two locations on a map and have all the Taco Bell locations between the two points filtered and mapped. I would also like to make it possible for other csv files to be uploaded to implement the mapping feature. 
 
-## Road Trip Thoughts
-
-I'm planning to build a "Road Trip Planner" where the user selects any two geographic coordinate points and have all the Taco Bell locations between the two points filtered and mapped. This can be applied to other items of interest but I'll work with the Taco Bell data currently at my disposal. 
