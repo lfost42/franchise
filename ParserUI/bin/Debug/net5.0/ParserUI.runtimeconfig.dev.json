@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/Users/lynda/.dotnet/store/|arch|/|tfm|",
-      "/Users/lynda/.nuget/packages"
+      "C:\\Users\\lynda\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\lynda\\.nuget\\packages"
     ]
   }
 }

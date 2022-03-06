@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lynda/Desktop/repo/RoadTrip/Parser.Test/Parser.Test.csproj": {}
+    "C:\\Users\\lynda\\source\\repos\\RoadTrip\\Parser.Test\\Parser.Test.csproj": {}
   },
   "projects": {
-    "/Users/lynda/Desktop/repo/RoadTrip/Parser.Test/Parser.Test.csproj": {
+    "C:\\Users\\lynda\\source\\repos\\RoadTrip\\Parser.Test\\Parser.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lynda/Desktop/repo/RoadTrip/Parser.Test/Parser.Test.csproj",
+        "projectUniqueName": "C:\\Users\\lynda\\source\\repos\\RoadTrip\\Parser.Test\\Parser.Test.csproj",
         "projectName": "Parser.Test",
-        "projectPath": "/Users/lynda/Desktop/repo/RoadTrip/Parser.Test/Parser.Test.csproj",
-        "packagesPath": "/Users/lynda/.nuget/packages/",
-        "outputPath": "/Users/lynda/Desktop/repo/RoadTrip/Parser.Test/obj/",
+        "projectPath": "C:\\Users\\lynda\\source\\repos\\RoadTrip\\Parser.Test\\Parser.Test.csproj",
+        "packagesPath": "C:\\Users\\lynda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lynda\\source\\repos\\RoadTrip\\Parser.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lynda/.config/NuGet/NuGet.Config"
+          "C:\\Users\\lynda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/ParserUI.csproj": {
-                "projectPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/ParserUI.csproj"
+              "C:\\Users\\lynda\\source\\repos\\RoadTrip\\ParserUI\\ParserUI.csproj": {
+                "projectPath": "C:\\Users\\lynda\\source\\repos\\RoadTrip\\ParserUI\\ParserUI.csproj"
               }
             }
           }
@@ -72,26 +74,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj": {
+    "C:\\Users\\lynda\\source\\repos\\RoadTrip\\ParserLibrary\\ParserLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\lynda\\source\\repos\\RoadTrip\\ParserLibrary\\ParserLibrary.csproj",
         "projectName": "ParserLibrary",
-        "projectPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj",
-        "packagesPath": "/Users/lynda/.nuget/packages/",
-        "outputPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/obj/",
+        "projectPath": "C:\\Users\\lynda\\source\\repos\\RoadTrip\\ParserLibrary\\ParserLibrary.csproj",
+        "packagesPath": "C:\\Users\\lynda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lynda\\source\\repos\\RoadTrip\\ParserLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lynda/.config/NuGet/NuGet.Config"
+          "C:\\Users\\lynda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -113,10 +117,6 @@
             "GeoCoordinate.NetCore": {
               "target": "Package",
               "version": "[1.0.0.1, )"
-            },
-            "Microsoft.Extensions.Configuration.FileExtensions": {
-              "target": "Package",
-              "version": "[3.1.22, )"
             }
           },
           "imports": [
@@ -134,34 +134,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/ParserUI.csproj": {
+    "C:\\Users\\lynda\\source\\repos\\RoadTrip\\ParserUI\\ParserUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/ParserUI.csproj",
+        "projectUniqueName": "C:\\Users\\lynda\\source\\repos\\RoadTrip\\ParserUI\\ParserUI.csproj",
         "projectName": "ParserUI",
-        "projectPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/ParserUI.csproj",
-        "packagesPath": "/Users/lynda/.nuget/packages/",
-        "outputPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/obj/",
+        "projectPath": "C:\\Users\\lynda\\source\\repos\\RoadTrip\\ParserUI\\ParserUI.csproj",
+        "packagesPath": "C:\\Users\\lynda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lynda\\source\\repos\\RoadTrip\\ParserUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/lynda/.config/NuGet/NuGet.Config"
+          "C:\\Users\\lynda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj": {
-                "projectPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj"
+              "C:\\Users\\lynda\\source\\repos\\RoadTrip\\ParserLibrary\\ParserLibrary.csproj": {
+                "projectPath": "C:\\Users\\lynda\\source\\repos\\RoadTrip\\ParserLibrary\\ParserLibrary.csproj"
               }
             }
           }
@@ -176,6 +178,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Grpc.Core": {
+              "target": "Package",
+              "version": "[2.44.0, )"
+            },
             "Microsoft.Extensions.Configuration.Binder": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -183,6 +189,10 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "ServiceStack.Text": {
+              "target": "Package",
+              "version": "[6.0.2, )"
             }
           },
           "imports": [
@@ -200,7 +210,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }

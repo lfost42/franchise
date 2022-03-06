@@ -1,6 +1,6 @@
 using System;
 using Xunit;
-using ParserLibrary;
+using ParserLibrary.Data;
 
 namespace Parser.Test
 {
@@ -9,9 +9,9 @@ namespace Parser.Test
         [Fact]
         public void LineIsParsable()
         {
-            var tacoParser = new LocationParser();
+            var parser = new ParserDataAccess();
 
-            var actual = tacoParser.Parse("34.073638,-84.677017,Taco Bell Acwort...");
+            var actual = parser.Parse("34.073638,-84.677017,Taco Bell Acwort...");
 
             Assert.NotNull(actual);
 
@@ -20,9 +20,9 @@ namespace Parser.Test
         [Fact]
         public void NotParsableReturnsNull()
         {
-            var tacoParser = new LocationParser();
+            var parser = new ParserDataAccess();
 
-            var actual = tacoParser.Parse("34.073638,-84.677017");
+            var actual = parser.Parse("34.073638,-84.677017");
 
             Assert.Null(actual);
         }
@@ -32,9 +32,9 @@ namespace Parser.Test
         [InlineData("34.073638,-84.677017,Taco Bell Acwort...", -84.677017)]
         public void ParsesLongitude(string line, double expected)
         {
-            var tacoParserInstance = new LocationParser();
+            var parser = new ParserDataAccess();
 
-            var actual = tacoParserInstance.Parse(line).GeoPoint.Longitude;
+            var actual = parser.Parse(line).GeoPoint.Longitude;
 
             Assert.Equal(expected, actual);
         }
@@ -43,9 +43,9 @@ namespace Parser.Test
         [InlineData("34.073638,-84.677017,Taco Bell Acwort...", 34.073638)]
         public void ParsesLatitude(string line, double expected)
         {
-            var tacoParserInstance = new LocationParser();
+            var parser = new ParserDataAccess();
 
-            var actual = tacoParserInstance.Parse(line).GeoPoint.Latitude;
+            var actual = parser.Parse(line).GeoPoint.Latitude;
 
             Assert.Equal(expected, actual);
         }
@@ -54,7 +54,7 @@ namespace Parser.Test
         [InlineData("34.073638,-84.677017,Taco Bell Acwort...", "Taco Bell Acwort...")]
         public void ShouldParseName(string line, string expected)
         {
-            var tacoParserInstance = new LocationParser();
+            var tacoParserInstance = new ParserDataAccess();
 
             var actual = tacoParserInstance.Parse(line).Name;
 

@@ -22,3 +22,14 @@
 /Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/bin/Debug/net5.0/ParserLibrary.dll
 /Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/bin/Debug/net5.0/ref/ParserLibrary.dll
 /Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/bin/Debug/net5.0/ParserLibrary.pdb
+C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\bin\Debug\net5.0\ParserLibrary.deps.json
+C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\bin\Debug\net5.0\ParserLibrary.dll
+C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\bin\Debug\net5.0\ref\ParserLibrary.dll
+C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\bin\Debug\net5.0\ParserLibrary.pdb
+C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\obj\Debug\net5.0\ParserLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\obj\Debug\net5.0\ParserLibrary.AssemblyInfoInputs.cache
+C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\obj\Debug\net5.0\ParserLibrary.AssemblyInfo.cs
+C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\obj\Debug\net5.0\ParserLibrary.csproj.CoreCompileInputs.cache
+C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\obj\Debug\net5.0\ParserLibrary.dll
+C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\obj\Debug\net5.0\ref\ParserLibrary.dll
+C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\obj\Debug\net5.0\ParserLibrary.pdb

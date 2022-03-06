@@ -13,6 +13,9 @@
     <None Include="ParserUI.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <None Update="TacoBell-US-AL.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Taco_Bell-US-AL-Alabama.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -24,8 +27,10 @@
     <ProjectReference Include="..\ParserLibrary\ParserLibrary.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Grpc.Core" Version="2.44.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+    <PackageReference Include="ServiceStack.Text" Version="6.0.2" />
   </ItemGroup>
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Program.cs">
