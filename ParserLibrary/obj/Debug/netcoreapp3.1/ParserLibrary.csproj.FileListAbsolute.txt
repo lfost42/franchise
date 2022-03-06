@@ -1,0 +1,10 @@
+/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/bin/Debug/netcoreapp3.1/ParserLibrary.deps.json
+/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/bin/Debug/netcoreapp3.1/ParserLibrary.dll
+/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/bin/Debug/netcoreapp3.1/ParserLibrary.pdb
+/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/obj/Debug/netcoreapp3.1/ParserLibrary.csproj.AssemblyReference.cache
+/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/obj/Debug/netcoreapp3.1/ParserLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/obj/Debug/netcoreapp3.1/ParserLibrary.AssemblyInfoInputs.cache
+/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/obj/Debug/netcoreapp3.1/ParserLibrary.AssemblyInfo.cs
+/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/obj/Debug/netcoreapp3.1/ParserLibrary.csproj.CoreCompileInputs.cache
+/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/obj/Debug/netcoreapp3.1/ParserLibrary.dll
+/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/obj/Debug/netcoreapp3.1/ParserLibrary.pdb

@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols></DebugSymbols>
+    <AllowUnsafeBlocks></AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Files\" />
+    <None Remove="Microsoft.Extensions.Configuration.FileExtensions" />
+    <None Remove="Interfaces\" />
+    <None Remove="System.Device.Location.Portable" />
+    <None Remove="GeoCoordinate" />
+    <None Remove="GeoCoordinate.NetCore" />
+    <None Remove="Databases\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Databases\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="3.1.22" />
+    <PackageReference Include="GeoCoordinate.NetCore" Version="1.0.0.1" />
+  </ItemGroup>
+</Project>

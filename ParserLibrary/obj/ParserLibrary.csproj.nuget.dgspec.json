@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/ParserLibrary.csproj": {}
+  },
+  "projects": {
+    "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/ParserLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/ParserLibrary.csproj",
+        "projectName": "ParserLibrary",
+        "projectPath": "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/ParserLibrary.csproj",
+        "packagesPath": "/Users/lynda/.nuget/packages/",
+        "outputPath": "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/lynda/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "GeoCoordinate.NetCore": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "WvDYOh046rMBVpDh4miWTWRtp0H/3yyuD5Dpwlb1xuh+xJEhPk3FmkBZqVA++SUx6KtiYE+SIXZFzzIA3PHnXA==",
+  "success": true,
+  "projectFilePath": "/Users/lynda/Desktop/Code/RoadTrip/ParserUI/ParserUI.csproj",
+  "expectedPackageFiles": [
+    "/Users/lynda/.nuget/packages/geocoordinate.netcore/1.0.0.1/geocoordinate.netcore.1.0.0.1.nupkg.sha512",
+    "/Users/lynda/.nuget/packages/microsoft.extensions.configuration/3.1.22/microsoft.extensions.configuration.3.1.22.nupkg.sha512",
+    "/Users/lynda/.nuget/packages/microsoft.extensions.configuration.abstractions/3.1.22/microsoft.extensions.configuration.abstractions.3.1.22.nupkg.sha512",
+    "/Users/lynda/.nuget/packages/microsoft.extensions.configuration.fileextensions/3.1.22/microsoft.extensions.configuration.fileextensions.3.1.22.nupkg.sha512",
+    "/Users/lynda/.nuget/packages/microsoft.extensions.fileproviders.abstractions/3.1.22/microsoft.extensions.fileproviders.abstractions.3.1.22.nupkg.sha512",
+    "/Users/lynda/.nuget/packages/microsoft.extensions.fileproviders.physical/3.1.22/microsoft.extensions.fileproviders.physical.3.1.22.nupkg.sha512",
+    "/Users/lynda/.nuget/packages/microsoft.extensions.filesystemglobbing/3.1.22/microsoft.extensions.filesystemglobbing.3.1.22.nupkg.sha512",
+    "/Users/lynda/.nuget/packages/microsoft.extensions.primitives/3.1.22/microsoft.extensions.primitives.3.1.22.nupkg.sha512"
+  ],
+  "logs": []
+}

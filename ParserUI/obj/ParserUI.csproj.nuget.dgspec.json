@@ -1,81 +1,9 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lynda/Desktop/Code/RoadTrip/Parser.Test/Parser.Test.csproj": {}
+    "/Users/lynda/Desktop/Code/RoadTrip/ParserUI/ParserUI.csproj": {}
   },
   "projects": {
-    "/Users/lynda/Desktop/Code/RoadTrip/Parser.Test/Parser.Test.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/lynda/Desktop/Code/RoadTrip/Parser.Test/Parser.Test.csproj",
-        "projectName": "Parser.Test",
-        "projectPath": "/Users/lynda/Desktop/Code/RoadTrip/Parser.Test/Parser.Test.csproj",
-        "packagesPath": "/Users/lynda/.nuget/packages/",
-        "outputPath": "/Users/lynda/Desktop/Code/RoadTrip/Parser.Test/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/lynda/.config/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {
-              "/Users/lynda/Desktop/Code/RoadTrip/ParserUI/ParserUI.csproj": {
-                "projectPath": "/Users/lynda/Desktop/Code/RoadTrip/ParserUI/ParserUI.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[16.6.1, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.4.1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.102/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/ParserLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
