@@ -230,11 +230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/ParserLibrary.csproj",
+      "projectUniqueName": "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj",
       "projectName": "ParserLibrary",
-      "projectPath": "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/ParserLibrary.csproj",
+      "projectPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj",
       "packagesPath": "/Users/lynda/.nuget/packages/",
-      "outputPath": "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/obj/",
+      "outputPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/lynda/.config/NuGet/NuGet.Config"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/lynda/Desktop/Code/RoadTrip/ParserUI/ParserUI.csproj": {}
+    "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/ParserUI.csproj": {}
   },
   "projects": {
-    "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/ParserLibrary.csproj": {
+    "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/ParserLibrary.csproj",
+        "projectUniqueName": "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj",
         "projectName": "ParserLibrary",
-        "projectPath": "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/ParserLibrary.csproj",
+        "projectPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj",
         "packagesPath": "/Users/lynda/.nuget/packages/",
-        "outputPath": "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/obj/",
+        "outputPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lynda/.config/NuGet/NuGet.Config"
@@ -66,14 +66,14 @@
         }
       }
     },
-    "/Users/lynda/Desktop/Code/RoadTrip/ParserUI/ParserUI.csproj": {
+    "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/ParserUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lynda/Desktop/Code/RoadTrip/ParserUI/ParserUI.csproj",
+        "projectUniqueName": "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/ParserUI.csproj",
         "projectName": "ParserUI",
-        "projectPath": "/Users/lynda/Desktop/Code/RoadTrip/ParserUI/ParserUI.csproj",
+        "projectPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/ParserUI.csproj",
         "packagesPath": "/Users/lynda/.nuget/packages/",
-        "outputPath": "/Users/lynda/Desktop/Code/RoadTrip/ParserUI/obj/",
+        "outputPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lynda/.config/NuGet/NuGet.Config"
@@ -88,8 +88,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/ParserLibrary.csproj": {
-                "projectPath": "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/ParserLibrary.csproj"
+              "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj": {
+                "projectPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj"
               }
             }
           }
@@ -103,6 +103,16 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

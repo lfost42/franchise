@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tAnpf/6ooJcWbB33e89wo6W0G2hqjfE2KIj3M3ANSkarkceDcaGQE8h0G5iWSP0fhCp44sD71pYrilztpP7p6Q==",
+  "dgSpecHash": "Ol18VUYxyYNbEgnCmAO+SQVvFAeArkBKZTnelBMHsRufc3k0urc0FhkC4chdiAUf0YIH25nNuhOMxQWAWgod0g==",
   "success": true,
-  "projectFilePath": "/Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/ParserLibrary.csproj",
+  "projectFilePath": "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj",
   "expectedPackageFiles": [
     "/Users/lynda/.nuget/packages/geocoordinate.netcore/1.0.0.1/geocoordinate.netcore.1.0.0.1.nupkg.sha512",
     "/Users/lynda/.nuget/packages/microsoft.extensions.configuration/3.1.22/microsoft.extensions.configuration.3.1.22.nupkg.sha512",

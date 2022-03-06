@@ -1,9 +1,16 @@
 ﻿<Properties StartupConfiguration="{7ADECD8F-C2B8-437F-9BCD-80CA280CB46F}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParserUI/Program.cs">
+    <Files>
+      <File FileName="ParserUI/Program.cs" Line="41" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RoadTrip" expanded="True">
+            <Node name="TextFiles" expanded="True" />
+            <Node name="ParserLibrary" expanded="True">
+              <Node name="Databases" expanded="True" />
+            </Node>
             <Node name="ParserUI" expanded="True" />
           </Node>
         </State>

@@ -10,3 +10,15 @@
 /Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/obj/Debug/net5.0/ParserLibrary.dll
 /Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/obj/Debug/net5.0/ref/ParserLibrary.dll
 /Users/lynda/Desktop/Code/RoadTrip/ParserLibrary/obj/Debug/net5.0/ParserLibrary.pdb
+/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/obj/Debug/net5.0/ParserLibrary.csproj.AssemblyReference.cache
+/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/obj/Debug/net5.0/ParserLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/obj/Debug/net5.0/ParserLibrary.AssemblyInfoInputs.cache
+/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/obj/Debug/net5.0/ParserLibrary.AssemblyInfo.cs
+/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/obj/Debug/net5.0/ParserLibrary.csproj.CoreCompileInputs.cache
+/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/obj/Debug/net5.0/ParserLibrary.dll
+/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/obj/Debug/net5.0/ref/ParserLibrary.dll
+/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/obj/Debug/net5.0/ParserLibrary.pdb
+/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/bin/Debug/net5.0/ParserLibrary.deps.json
+/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/bin/Debug/net5.0/ParserLibrary.dll
+/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/bin/Debug/net5.0/ref/ParserLibrary.dll
+/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/bin/Debug/net5.0/ParserLibrary.pdb
