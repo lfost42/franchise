@@ -9,18 +9,20 @@ namespace ParserUI
 {
     class Program
     {
-        private static string csvFile; //= "TacoBell-US-AL.csv";
+        private static string csvFile = "TacoBell-US-AL.csv";
         private static ParserControl control = new ParserControl();
 
         static void Main(string[] args)
         {
+            //csvFile = GetFile();
 
-            csvFile = GetFile();
             var locations = control.ReadAllRecords(csvFile);
             control.GetFurthestLocations(locations);
             Console.ReadLine();
         }
 
+        //This method only works in Windows. There will be a more elegant
+        //solution when it's converted to a web app.
         private static string GetFile()
         {
             string path = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location.Substring(0, Assembly.GetEntryAssembly().Location.IndexOf("bin\\")));
