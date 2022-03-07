@@ -8,6 +8,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parser.Test", "Parser.Test\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParserLibrary", "ParserLibrary\ParserLibrary.csproj", "{4071EB55-2AA1-405A-9395-74321F3FF909}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataFiles", "DataFiles", "{7841F11E-F28F-4957-9837-A7D2727CE0EE}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\TacoBell-US-AL.csv = ..\..\..\Desktop\TacoBell-US-AL.csv
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

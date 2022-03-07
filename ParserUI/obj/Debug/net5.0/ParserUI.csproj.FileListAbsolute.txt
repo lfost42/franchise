@@ -35,7 +35,6 @@ C:\Users\lynda\source\repos\RoadTrip\ParserUI\obj\Debug\net5.0\ParserUI.Assembly
 C:\Users\lynda\source\repos\RoadTrip\ParserUI\obj\Debug\net5.0\ParserUI.AssemblyInfo.cs
 C:\Users\lynda\source\repos\RoadTrip\ParserUI\obj\Debug\net5.0\ParserUI.csproj.CoreCompileInputs.cache
 C:\Users\lynda\source\repos\RoadTrip\ParserUI\bin\Debug\net5.0\Program.cs
-C:\Users\lynda\source\repos\RoadTrip\ParserUI\bin\Debug\net5.0\appsettings.json
 C:\Users\lynda\source\repos\RoadTrip\ParserUI\bin\Debug\net5.0\TacoBell-US-AL.csv
 C:\Users\lynda\source\repos\RoadTrip\ParserUI\bin\Debug\net5.0\ParserUI.exe
 C:\Users\lynda\source\repos\RoadTrip\ParserUI\bin\Debug\net5.0\ParserUI.deps.json
