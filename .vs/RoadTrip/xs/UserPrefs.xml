@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{7ADECD8F-C2B8-437F-9BCD-80CA280CB46F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ParserUI/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParserLibrary/Databases/ParserControl.cs">
     <Files>
-      <File FileName="ParserUI/Program.cs" Line="17" Column="35" />
+      <File FileName="ParserUI/Program.cs" Line="17" Column="13" />
+      <File FileName="ParserLibrary/Databases/ParserControl.cs" Line="51" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RoadTrip" expanded="True">
             <Node name="ParserLibrary" expanded="True">
-              <Node name="Databases" expanded="True" />
+              <Node name="Databases" expanded="True">
+                <Node name="ParserControl.cs" selected="True" />
+              </Node>
             </Node>
-            <Node name="ParserUI" expanded="True">
-              <Node name="TacoBell-US-AL.csv" selected="True" />
-            </Node>
+            <Node name="ParserUI" expanded="True" />
           </Node>
         </State>
       </Pad>

@@ -1,4 +1,4 @@
-﻿using ParserLibrary.Data;
+using ParserLibrary.Data;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -25,8 +25,8 @@ namespace ParserLibrary.Databases
         public void GetFurthestLocations(List<ITrackable> locations)
         {            
             
-            ITrackable tacoBell1 = null;
-            ITrackable tacoBell2 = null;
+            ITrackable location1 = null;
+            ITrackable location2 = null;
             double distance = 0;
 
             logger.LogInfo("Log initialized, locating two locations furthest from one another.");
@@ -40,15 +40,16 @@ namespace ParserLibrary.Databases
                     if (locA.GeoPoint.GetDistanceTo(locB.GeoPoint) > distance)
                     {
                         distance = locA.GeoPoint.GetDistanceTo(locB.GeoPoint);
-                        tacoBell1 = locA;
-                        tacoBell2 = locB;
+
+                        location1 = locA;
+                        location2 = locB;
                     }
                 }
             }
 
             double miles = distance * 0.00062;
             Console.WriteLine();
-            logger.LogInfo($"{tacoBell1.Name} and {tacoBell2.Name} are {Math.Round(miles, 2)} miles apart.");
+            logger.LogInfo($"{location1.Name} and {location2.Name} are {Math.Round(miles, 2)} miles apart.");
         }
 
     }
