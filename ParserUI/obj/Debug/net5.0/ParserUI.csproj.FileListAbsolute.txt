@@ -69,3 +69,4 @@ C:\Users\lynda\source\repos\RoadTrip\ParserUI\obj\Debug\net5.0\ParserUI.dll
 C:\Users\lynda\source\repos\RoadTrip\ParserUI\obj\Debug\net5.0\ref\ParserUI.dll
 C:\Users\lynda\source\repos\RoadTrip\ParserUI\obj\Debug\net5.0\ParserUI.pdb
 C:\Users\lynda\source\repos\RoadTrip\ParserUI\obj\Debug\net5.0\ParserUI.genruntimeconfig.cache
+C:\Users\lynda\source\repos\RoadTrip\ParserUI\bin\Debug\net5.0\DataFile\TacoBell-US-AL.csv
