@@ -1,12 +1,6 @@
 using System;
-using System.Linq;
 using System.IO;
-using GeoCoordinatePortable;
-using ParserLibrary;
 using Microsoft.Extensions.Configuration;
-using Grpc.Core;
-using ServiceStack.Text;
-using ParserLibrary.Data;
 using ParserLibrary.Databases;
 
 namespace ParserUI
