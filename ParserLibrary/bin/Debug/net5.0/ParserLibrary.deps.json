@@ -8,9 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "ParserLibrary/1.0.0": {
         "dependencies": {
-          "GeoCoordinate.NetCore": "1.0.0.1",
-          "Microsoft.Extensions.Configuration.Binder": "5.0.0",
-          "Microsoft.Extensions.Configuration.FileExtensions": "3.1.22"
+          "GeoCoordinate.NetCore": "1.0.0.1"
         },
         "runtime": {
           "ParserLibrary.dll": {}
@@ -21,90 +19,6 @@
           "lib/netstandard1.6/GeoCoordinate.NetCore.dll": {
             "assemblyVersion": "1.0.0.1",
             "fileVersion": "1.0.0.1"
-          }
-        }
-      },
-      "Microsoft.Extensions.Configuration/3.1.22": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.dll": {
-            "assemblyVersion": "3.1.22.0",
-            "fileVersion": "3.100.2221.57103"
-          }
-        }
-      },
-      "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "5.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
-          }
-        }
-      },
-      "Microsoft.Extensions.Configuration.Binder/5.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
-          }
-        }
-      },
-      "Microsoft.Extensions.Configuration.FileExtensions/3.1.22": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "3.1.22",
-          "Microsoft.Extensions.FileProviders.Physical": "3.1.22"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.FileExtensions.dll": {
-            "assemblyVersion": "3.1.22.0",
-            "fileVersion": "3.100.2221.57103"
-          }
-        }
-      },
-      "Microsoft.Extensions.FileProviders.Abstractions/3.1.22": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "5.0.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll": {
-            "assemblyVersion": "3.1.22.0",
-            "fileVersion": "3.100.2221.57103"
-          }
-        }
-      },
-      "Microsoft.Extensions.FileProviders.Physical/3.1.22": {
-        "dependencies": {
-          "Microsoft.Extensions.FileProviders.Abstractions": "3.1.22",
-          "Microsoft.Extensions.FileSystemGlobbing": "3.1.22"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll": {
-            "assemblyVersion": "3.1.22.0",
-            "fileVersion": "3.100.2221.57103"
-          }
-        }
-      },
-      "Microsoft.Extensions.FileSystemGlobbing/3.1.22": {
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
-            "assemblyVersion": "3.1.22.0",
-            "fileVersion": "3.100.2221.57103"
-          }
-        }
-      },
-      "Microsoft.Extensions.Primitives/5.0.0": {
-        "runtime": {
-          "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
           }
         }
       }
@@ -122,62 +36,6 @@
       "sha512": "sha512-VrR5MLkh0u2qka79JcQ/GUrgHwGidayCA7nKy2430qYX/JHdrHLgwp1MuBTSsygWs0s2V6GQ0Hp8HUMatHiWFw==",
       "path": "geocoordinate.netcore/1.0.0.1",
       "hashPath": "geocoordinate.netcore.1.0.0.1.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration/3.1.22": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pk9tfTk3NCFdKqdWIWeoGAy/wiqVk38hA9Gso3c3deRLWqu4/5Jipp0X+fzgAXlELTN9AIxkkhRePTDFjBpQfQ==",
-      "path": "microsoft.extensions.configuration/3.1.22",
-      "hashPath": "microsoft.extensions.configuration.3.1.22.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ETjSBHMp3OAZ4HxGQYpwyGsD8Sw5FegQXphi0rpoGMT74S4+I2mm7XJEswwn59XAaKOzC15oDSOWEE8SzDCd6Q==",
-      "path": "microsoft.extensions.configuration.abstractions/5.0.0",
-      "hashPath": "microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration.Binder/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Of1Irt1+NzWO+yEYkuDh5TpT4On7LKl98Q9iLqCdOZps6XXEWDj3AKtmyvzJPVXZe4apmkJJIiDL7rR1yC+hjQ==",
-      "path": "microsoft.extensions.configuration.binder/5.0.0",
-      "hashPath": "microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration.FileExtensions/3.1.22": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-CW1sZ8io+k59fS6jD2pJ7zIcJK0NaDX9nXWTO77YxPJeV1dHuheeoG693j7olUt8ASFRcjYsvM7TJh6s6f2AWw==",
-      "path": "microsoft.extensions.configuration.fileextensions/3.1.22",
-      "hashPath": "microsoft.extensions.configuration.fileextensions.3.1.22.nupkg.sha512"
-    },
-    "Microsoft.Extensions.FileProviders.Abstractions/3.1.22": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-bb7fvafHZkCURAbDkDcizqqYfuRb7/wpwraEisxMxqHwMUMNUaGZGO7+PPa5FJCiycgzdlF3zbKbecZUufJU3g==",
-      "path": "microsoft.extensions.fileproviders.abstractions/3.1.22",
-      "hashPath": "microsoft.extensions.fileproviders.abstractions.3.1.22.nupkg.sha512"
-    },
-    "Microsoft.Extensions.FileProviders.Physical/3.1.22": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-BnUOyfJtH0JNfGg9ZcA8WK9qs2rjs4L8N9LAVTNLn+/T2PS7+ZtuOthlFQzvBKl4FIXPjEyLu6olORDklgkf/w==",
-      "path": "microsoft.extensions.fileproviders.physical/3.1.22",
-      "hashPath": "microsoft.extensions.fileproviders.physical.3.1.22.nupkg.sha512"
-    },
-    "Microsoft.Extensions.FileSystemGlobbing/3.1.22": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-E29Ob/T46KcucsX7OD6fesYolLp95hKx7y1EtBlqWN82i8fUpJ8a6sgMD1OSEID+fnptjic2dzAlw9Ry9W2kFA==",
-      "path": "microsoft.extensions.filesystemglobbing/3.1.22",
-      "hashPath": "microsoft.extensions.filesystemglobbing.3.1.22.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Primitives/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cI/VWn9G1fghXrNDagX9nYaaB/nokkZn0HYAawGaELQrl8InSezfe9OnfPZLcJq3esXxygh3hkq2c3qoV3SDyQ==",
-      "path": "microsoft.extensions.primitives/5.0.0",
-      "hashPath": "microsoft.extensions.primitives.5.0.0.nupkg.sha512"
     }
   }
 }

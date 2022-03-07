@@ -213,9 +213,7 @@
       },
       "ParserLibrary/1.0.0": {
         "dependencies": {
-          "GeoCoordinate.NetCore": "1.0.0.1",
-          "Microsoft.Extensions.Configuration.Binder": "5.0.0",
-          "Microsoft.Extensions.Configuration.FileExtensions": "5.0.0"
+          "GeoCoordinate.NetCore": "1.0.0.1"
         },
         "runtime": {
           "ParserLibrary.dll": {}

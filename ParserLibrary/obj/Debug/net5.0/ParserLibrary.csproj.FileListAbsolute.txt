@@ -33,3 +33,4 @@ C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\obj\Debug\net5.0\ParserLibrar
 C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\obj\Debug\net5.0\ParserLibrary.dll
 C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\obj\Debug\net5.0\ref\ParserLibrary.dll
 C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\obj\Debug\net5.0\ParserLibrary.pdb
+C:\Users\lynda\source\repos\RoadTrip\ParserLibrary\obj\Debug\net5.0\ParserLibrary.csproj.AssemblyReference.cache
