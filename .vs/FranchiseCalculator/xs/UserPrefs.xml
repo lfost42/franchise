@@ -1,11 +1,14 @@
 ﻿<Properties StartupConfiguration="{7ADECD8F-C2B8-437F-9BCD-80CA280CB46F}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParserUI/Program.cs">
+    <Files>
+      <File FileName="ParserUI/Program.cs" Line="23" Column="2" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FranchiseCalculator" expanded="True">
             <Node name="ParserUI" expanded="True">
-              <Node name="appsettings.json" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

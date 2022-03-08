@@ -39,11 +39,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lynda/Desktop/repo/FranchisePlanner/ParserLibrary/ParserLibrary.csproj",
+      "projectUniqueName": "/Users/lynda/Desktop/repo/FranchiseCalculator/ParserLibrary/ParserLibrary.csproj",
       "projectName": "ParserLibrary",
-      "projectPath": "/Users/lynda/Desktop/repo/FranchisePlanner/ParserLibrary/ParserLibrary.csproj",
+      "projectPath": "/Users/lynda/Desktop/repo/FranchiseCalculator/ParserLibrary/ParserLibrary.csproj",
       "packagesPath": "/Users/lynda/.nuget/packages/",
-      "outputPath": "/Users/lynda/Desktop/repo/FranchisePlanner/ParserLibrary/obj/",
+      "outputPath": "/Users/lynda/Desktop/repo/FranchiseCalculator/ParserLibrary/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/lynda/.config/NuGet/NuGet.Config"

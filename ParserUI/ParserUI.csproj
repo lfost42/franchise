@@ -13,9 +13,6 @@
     <None Include="ParserUI.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="DataFile\TacoBell-US-AL.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="TacoBell-US-AL.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
