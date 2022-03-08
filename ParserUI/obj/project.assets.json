@@ -779,11 +779,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/ParserUI.csproj",
+      "projectUniqueName": "/Users/lynda/Desktop/repo/FranchisePlanner/ParserUI/ParserUI.csproj",
       "projectName": "ParserUI",
-      "projectPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/ParserUI.csproj",
+      "projectPath": "/Users/lynda/Desktop/repo/FranchisePlanner/ParserUI/ParserUI.csproj",
       "packagesPath": "/Users/lynda/.nuget/packages/",
-      "outputPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserUI/obj/",
+      "outputPath": "/Users/lynda/Desktop/repo/FranchisePlanner/ParserUI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/lynda/.config/NuGet/NuGet.Config"
@@ -798,8 +798,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj": {
-              "projectPath": "/Users/lynda/Desktop/repo/RoadTrip/ParserLibrary/ParserLibrary.csproj"
+            "/Users/lynda/Desktop/repo/FranchisePlanner/ParserLibrary/ParserLibrary.csproj": {
+              "projectPath": "/Users/lynda/Desktop/repo/FranchisePlanner/ParserLibrary/ParserLibrary.csproj"
             }
           }
         }
