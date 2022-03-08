@@ -6,15 +6,20 @@ Calculates which two locations among a list of franchises are furthest apart, us
 
 ## Experiments and Plans
 
-I've since removed redundancies and created a Class Library to decouple the data access layer from the user interface, implementing DAO pattern. 
+When I first built this project, most of the program logic was in Main and I've been slowly moving that logic into classes as I progressed in my learning. 
 
-Tasks:
+Completed Updates:
 
-1. Swap the UI for an ASP.NET Core MVC web application. 
-2. Locate an API for mapping purposes. 
-3. Provide an option to exclude stores from the list of locations. 
-4. Improve time complexity. 
-5. Return the top 5 pairs of locations that are furthest apart from each other. 
+1. Build a Class Library and move methods into classes.
+2. Implement DAO (Data Access Object) to complete the decoupling of the data access layer from the user interface.
+
+Future Updates:
+
+3. Swap the UI for an ASP.NET Core MVC web application. 
+4. Locate an API for mapping purposes. 
+5. Provide an option to exclude stores from the list of locations. 
+6. Improve time complexity. 
+7. Return the top 5 pairs of locations that are furthest apart from each other. 
 
 ## Origins
 
