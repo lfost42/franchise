@@ -1,8 +1,8 @@
-# Franchise Planner
+# Franchise Calculator
 
 Coding Challenge: Calculate which two locations (among a list in the provided csv file) that are furthest apart. An exercise in geolocation, csv parsing, and logging. 
 
-Application: This algorithm can be integrated into a web application that helps franchise owners determine which areas are in need of expansion or more coverage. 
+Application: This algorithm helps franchise owners determine which areas are in need of expansion or more coverage. 
 
 ![My App](./app.png)
 
