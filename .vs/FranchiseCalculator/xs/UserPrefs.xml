@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{7ADECD8F-C2B8-437F-9BCD-80CA280CB46F}|Default">
+﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ParserUI/Program.cs">
     <Files>
       <File FileName="ParserUI/Program.cs" Line="23" Column="2" />
@@ -7,14 +7,13 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FranchiseCalculator" expanded="True">
-            <Node name="ParserUI" expanded="True">
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="FranchiseCalculatorUI" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FranchiseCalculatorUI FirstBuild="True" PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.ParserUI PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
