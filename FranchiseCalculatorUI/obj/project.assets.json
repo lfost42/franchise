@@ -1,37 +1,87 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "GeoCoordinate.NetCore/1.0.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.6/GeoCoordinate.NetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/GeoCoordinate.NetCore.dll": {}
+        }
+      },
+      "ParserLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "GeoCoordinate.NetCore": "1.0.0.1"
+        },
+        "compile": {
+          "bin/placeholder/ParserLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParserLibrary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "GeoCoordinate.NetCore/1.0.0.1": {
+      "sha512": "VrR5MLkh0u2qka79JcQ/GUrgHwGidayCA7nKy2430qYX/JHdrHLgwp1MuBTSsygWs0s2V6GQ0Hp8HUMatHiWFw==",
+      "type": "package",
+      "path": "geocoordinate.netcore/1.0.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "geocoordinate.netcore.1.0.0.1.nupkg.sha512",
+        "geocoordinate.netcore.nuspec",
+        "lib/netstandard1.6/GeoCoordinate.NetCore.deps.json",
+        "lib/netstandard1.6/GeoCoordinate.NetCore.dll"
+      ]
+    },
+    "ParserLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ParserLibrary/ParserLibrary.csproj",
+      "msbuildProject": "../ParserLibrary/ParserLibrary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "ParserLibrary >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "/Users/lynda/.nuget/packages/": {}
+    "C:\\Users\\lynda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lynda/Desktop/repo/FranchiseCalculator/FranchiseCalculatorUI/FranchiseCalculatorUI.csproj",
+      "projectUniqueName": "C:\\Users\\lynda\\source\\repos\\FranchiseCalculator\\FranchiseCalculatorUI\\FranchiseCalculatorUI.csproj",
       "projectName": "FranchiseCalculatorUI",
-      "projectPath": "/Users/lynda/Desktop/repo/FranchiseCalculator/FranchiseCalculatorUI/FranchiseCalculatorUI.csproj",
-      "packagesPath": "/Users/lynda/.nuget/packages/",
-      "outputPath": "/Users/lynda/Desktop/repo/FranchiseCalculator/FranchiseCalculatorUI/obj/",
+      "projectPath": "C:\\Users\\lynda\\source\\repos\\FranchiseCalculator\\FranchiseCalculatorUI\\FranchiseCalculatorUI.csproj",
+      "packagesPath": "C:\\Users\\lynda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lynda\\source\\repos\\FranchiseCalculator\\FranchiseCalculatorUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/lynda/.config/NuGet/NuGet.Config"
+        "C:\\Users\\lynda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lynda\\source\\repos\\FranchiseCalculator\\ParserLibrary\\ParserLibrary.csproj": {
+              "projectPath": "C:\\Users\\lynda\\source\\repos\\FranchiseCalculator\\ParserLibrary\\ParserLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -61,7 +111,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }

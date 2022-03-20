@@ -6130,32 +6130,34 @@
     ]
   },
   "packageFolders": {
-    "/Users/lynda/.nuget/packages/": {}
+    "C:\\Users\\lynda\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lynda/Desktop/repo/FranchiseCalculator/Parser.Test/Parser.Test.csproj",
+      "projectUniqueName": "C:\\Users\\lynda\\source\\repos\\FranchiseCalculator\\Parser.Test\\Parser.Test.csproj",
       "projectName": "Parser.Test",
-      "projectPath": "/Users/lynda/Desktop/repo/FranchiseCalculator/Parser.Test/Parser.Test.csproj",
-      "packagesPath": "/Users/lynda/.nuget/packages/",
-      "outputPath": "/Users/lynda/Desktop/repo/FranchiseCalculator/Parser.Test/obj/",
+      "projectPath": "C:\\Users\\lynda\\source\\repos\\FranchiseCalculator\\Parser.Test\\Parser.Test.csproj",
+      "packagesPath": "C:\\Users\\lynda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lynda\\source\\repos\\FranchiseCalculator\\Parser.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/lynda/.config/NuGet/NuGet.Config"
+        "C:\\Users\\lynda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/lynda/Desktop/repo/FranchiseCalculator/ParserUI/ParserUI.csproj": {
-              "projectPath": "/Users/lynda/Desktop/repo/FranchiseCalculator/ParserUI/ParserUI.csproj"
+            "C:\\Users\\lynda\\source\\repos\\FranchiseCalculator\\ParserUI\\ParserUI.csproj": {
+              "projectPath": "C:\\Users\\lynda\\source\\repos\\FranchiseCalculator\\ParserUI\\ParserUI.csproj"
             }
           }
         }
@@ -6200,7 +6202,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }
