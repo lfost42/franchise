@@ -51,8 +51,8 @@ namespace ParserLibrary.Databases
                         solution.Location1 = locA;
                         solution.Location2 = locB;
                         solution.Distance = Math.Round(locA.GeoPoint.GetDistanceTo(locB.GeoPoint) * 0.00062, 2);
-                        solution.Message2 = $"Location 1: {solution.Location1.Name}";
-                        solution.Message3 = $"Location 2: {solution.Location2.Name}";
+                        solution.Message2 = $"Location 1: {solution.Location1.Name} at {solution.Location1.GeoPoint}";
+                        solution.Message3 = $"Location 2: {solution.Location2.Name} at {solution.Location2.GeoPoint}";
                         solution.Message4 = $"Distance: {solution.Distance} miles";
                    }
                 }
