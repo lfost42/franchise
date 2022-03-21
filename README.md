@@ -24,13 +24,14 @@ Completed:
 
 Future Updates:
 
-4. Consume an API for mapping purposes. 
-5. Display locations on a map. 
-6. Display algorithm results on a map. 
-7. Add an option to exclude stores from the list of locations. 
-8. Improve time complexity. 
-9. Add a dashboard
-10. Option to dashboard results. 
+4. Option to upload a new csv file and run the algorithm on it. 
+5. Consume an API for mapping purposes. 
+6. Display locations on a map. 
+7. Display algorithm results on a map. 
+8. Add an option to exclude stores from the list of locations. 
+9. Improve time complexity. 
+10. Add a dashboard
+11. Option to dashboard results. 
 
 ## OPEN REQUIREMENTS
 MVP
