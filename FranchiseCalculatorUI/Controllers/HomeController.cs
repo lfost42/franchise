@@ -21,10 +21,9 @@ namespace FranchiseCalculatorUI.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index(ParserControl control)
+        public IActionResult Index(ParserControl control, string csvFile)
         {
-            string csvFile = "Files/TacoBell-US-AL.csv";
-            //ParserControl control = new ParserControl();
+            csvFile = "Files/TacoBell-US-AL.csv";
             List<ITrackable> locations = control.ReadAllRecords(csvFile);
             control.GetFurthestLocations(locations);
             return View(control);

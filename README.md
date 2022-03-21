@@ -4,7 +4,7 @@ App that calculates which two locations (within a provided csv file) that are fu
 
 Application: Analysis tool for franchise owners determine which areas are in need of expansion or more coverage.
 
-https://lfost42-franchisecalculator.herokuapp.com 
+https://lfost42-franchise.herokuapp.com 
 
 ![My App](./app.png)
 
