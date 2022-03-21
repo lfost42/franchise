@@ -85,8 +85,8 @@ C:/Users/lynda/source/repos/FranchiseCalculator/FranchiseCalculatorUI/obj/Debug/
 /Users/lynda/Desktop/repo/FranchiseCalculator/FranchiseCalculatorUI/obj/Debug/net5.0/FranchiseCalculatorUI.genruntimeconfig.cache
 /Users/lynda/Desktop/repo/Franchise/FranchiseCalculatorUI/bin/Debug/net5.0/appsettings.Development.json
 /Users/lynda/Desktop/repo/Franchise/FranchiseCalculatorUI/bin/Debug/net5.0/appsettings.json
-/Users/lynda/Desktop/repo/Franchise/FranchiseCalculatorUI/bin/Debug/net5.0/Files/TacoBell-US-AL.csv
 /Users/lynda/Desktop/repo/Franchise/FranchiseCalculatorUI/bin/Debug/net5.0/FranchiseCalculatorUI.StaticWebAssets.xml
+/Users/lynda/Desktop/repo/Franchise/FranchiseCalculatorUI/bin/Debug/net5.0/Files/TacoBell-US-AL.csv
 /Users/lynda/Desktop/repo/Franchise/FranchiseCalculatorUI/bin/Debug/net5.0/FranchiseCalculatorUI.deps.json
 /Users/lynda/Desktop/repo/Franchise/FranchiseCalculatorUI/bin/Debug/net5.0/FranchiseCalculatorUI.runtimeconfig.json
 /Users/lynda/Desktop/repo/Franchise/FranchiseCalculatorUI/bin/Debug/net5.0/FranchiseCalculatorUI.runtimeconfig.dev.json

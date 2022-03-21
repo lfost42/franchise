@@ -9,13 +9,17 @@
               <Node name="Files" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" selected="True" />
-                </Node>
+                <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
               </Node>
+            </Node>
+            <Node name="ParserLibrary" expanded="True">
+              <Node name="Databases" expanded="True">
+                <Node name="ParserControl.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>

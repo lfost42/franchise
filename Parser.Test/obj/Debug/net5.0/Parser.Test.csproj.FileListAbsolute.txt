@@ -384,14 +384,14 @@ C:/Users/lynda/source/repos/FranchiseCalculator/Parser.Test/obj/Debug/net5.0/Par
 /Users/lynda/Desktop/repo/FranchiseCalculator/Parser.Test/obj/Debug/net5.0/ref/Parser.Test.dll
 /Users/lynda/Desktop/repo/FranchiseCalculator/Parser.Test/obj/Debug/net5.0/Parser.Test.pdb
 /Users/lynda/Desktop/repo/FranchiseCalculator/Parser.Test/obj/Debug/net5.0/Parser.Test.genruntimeconfig.cache
-/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
-/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/xunit.runner.reporters.netcoreapp10.dll
-/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/xunit.runner.utility.netcoreapp10.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/ParserUI.deps.json
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/ParserUI.runtimeconfig.json
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/ParserUI.runtimeconfig.dev.json
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Program.cs
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/TacoBell-US-AL.csv
+/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/xunit.runner.reporters.netcoreapp10.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/xunit.runner.utility.netcoreapp10.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Parser.Test.deps.json
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Parser.Test.runtimeconfig.json
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Parser.Test.runtimeconfig.dev.json
