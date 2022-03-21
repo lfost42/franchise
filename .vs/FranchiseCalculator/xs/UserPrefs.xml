@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseCalculatorUI/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="FranchiseCalculatorUI/Views/Home/Index.cshtml" Line="6" Column="7" />
-      <File FileName="FranchiseCalculatorUI/Views/Shared/_Layout.cshtml" Line="9" Column="16" />
+      <File FileName="FranchiseCalculatorUI/Views/Home/Index.cshtml" Line="14" Column="91" />
+      <File FileName="FranchiseCalculatorUI/Views/Shared/_Layout.cshtml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
