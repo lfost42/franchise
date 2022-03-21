@@ -14,33 +14,20 @@ namespace FranchiseCalculatorUI.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        
+        ParserControl control = new ParserControl();
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
-        [HttpGet]
-        public IActionResult Index()
-        {
-            ParserControl control = new ParserControl();
-            return View(control);
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
         public IActionResult Index(ParserControl control)
         {
-            if (ModelState.IsValid)
-            {
-                ParserMessage message = new ParserMessage();
-                string csvFile = message.CsvFile;
-
-                List<ITrackable> locations = control.ReadAllRecords(csvFile);
-                control.GetFurthestLocations(locations);
-            }
-            return View("Index", control);
+            string csvFile = "Files/TacoBell-US-AL.csv";
+            //ParserControl control = new ParserControl();
+            List<ITrackable> locations = control.ReadAllRecords(csvFile);
+            control.GetFurthestLocations(locations);
+            return View(control);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

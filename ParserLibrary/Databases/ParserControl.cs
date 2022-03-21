@@ -10,7 +10,11 @@ namespace ParserLibrary.Databases
 {
     public class ParserControl
     {
-        ParserMessage result = new ParserMessage();
+        public string CsvFile { get; set; }
+        public ITrackable Location1 { get; set; }
+        public ITrackable Location2 { get; set; }
+        public double Distance { get; set; }
+        public string Message { get; set; }
 
         private static LocationLogger logger = new LocationLogger();
         private static ParserDataAccess parser = new ParserDataAccess();
@@ -24,11 +28,12 @@ namespace ParserLibrary.Databases
             return locations;
         }
 
-        public ParserMessage GetFurthestLocations(List<ITrackable> locations)
+        public ParserControl GetFurthestLocations(List<ITrackable> locations)
         {
-            result.Location1 = null;
-            result.Location2 = null;
-            result.Distance = 0;
+            ParserControl result = new ParserControl();
+            Location1 = null;
+            Location2 = null;
+            Distance = 0;
 
             logger.LogInfo("Log initialized, locating two locations furthest from one another.");
 
@@ -38,17 +43,16 @@ namespace ParserLibrary.Databases
                 for (int j = 0; j < locations.Count; j++)
                 {
                     var locB = locations[j];
-                    if (locA.GeoPoint.GetDistanceTo(locB.GeoPoint) > result.Distance)
+                    if (locA.GeoPoint.GetDistanceTo(locB.GeoPoint) > Distance)
                     {   
-                        result.Location1 = locA;
-                        result.Location2 = locB;
-                        result.Distance = Math.Round(locA.GeoPoint.GetDistanceTo(locB.GeoPoint) * 0.00062, 2);
-                        result.Message = $"{result.Location1.Name} and {result.Location2.Name} are {result.Distance} miles apart.";
+                        Location1 = locA;
+                        Location2 = locB;
+                        Distance = Math.Round(locA.GeoPoint.GetDistanceTo(locB.GeoPoint) * 0.00062, 2);
+                        Message = $"{Location1.Name} and {Location2.Name} are {Distance} miles apart.";
                     }
                 }
             }
-            logger.LogInfo($"{result.Location1.Name} and {result.Location2.Name} are {result.Distance} miles apart.");
-            //Console.WriteLine(result.Message);
+            logger.LogInfo($"{Location1.Name} and {Location2.Name} are {Distance} miles apart.");
             return result;
         }
 

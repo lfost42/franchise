@@ -18,10 +18,10 @@ Completed:
 
 1. Build a Class Library and move methods into classes.
 2. Implement DAO (Data Access Object) to decouple the data access layer from the user interface.
+3. Swap the UI and develop an ASP.NET Core MVC web application. 
 
 Future Updates:
 
-3. Swap the UI and develop an ASP.NET Core MVC web application. 
 4. Locate and integrate an API for mapping purposes. 
 5. Option to display locations on a map. 
 6. Option to display the results of the calculator on a map. 

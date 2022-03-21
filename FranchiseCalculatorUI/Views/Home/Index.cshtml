@@ -1,30 +1,32 @@
-﻿@model ParserLibrary.Databases.ParserMessage
+﻿@model ParserLibrary.Databases.ParserControl
+
 @{
     ViewData["App"] = "Franchise Calculator";}
 
 
 <main class="flex-shrink-0">
-    <div class="row row-cols1 row-cols-lg-2">
-        <div class="col-12">
-            <p>Let's determines which two franchise units are furthest apart.</p>
-        </div>
-        <div class="col-12">
-            <form class="row gy-2 gx-3" asp-action="Index" asp-controller="Home" method="post">
-                <div class="col">
-                    <input asp-for="CsvFile" class="form-control" value="@Model.CsvFile" placeholder="~Files/TacoBell-US-AL.csv" />
-                </div>
+    <div class="row row-cols-1">
+        <h1>Franchise Expansion Algorithm</h1>
+        <p>Determining branch locations are furhtest apart helps determine which areas may require more coverage. </p>
+            @*<form class="row gy-2 gx-3" asp-action="Index" asp-controller="Home" method="post">
+            <div class="col">
+                <input asp-for="CsvFile" class="form-control" value="@Model.CsvFile" placeholder="~Files/TacoBell-US-AL.csv" />
+            </div>
 
-                <div class="col-12 d-flex align-items-center justify-content-start justify-content-lg-end">
-                    <button id="btnSubmit" type="submit" class="btn btn-outline-dark btn-sm">
-                        Generate Results
-                    </button>
-                </div>
-            </form>
-
-            <p id="results">
-                @Model.Message
-            </p>
-
+            <div class="col-12 d-flex align-items-center justify-content-start justify-content-lg-end">
+                <button id="btnSubmit" type="submit" class="btn btn-outline-dark btn-sm">
+                    Generate Results
+                </button>
+            </div>
+        </form>*@
+            <div class="col-12" g-3> 
+                <p>
+                    Current dataset: Taco Bell US AL <br />
+                    Location 1: @Model.Location1.Name at @Model.Location1.GeoPoint<br />
+                    Location 2: @Model.Location2.Name at @Model.Location2.GeoPoint<br />
+                    Distance: @Model.Distance
+                </p>
+            </div>
         </div>
     </div>
 </main>
