@@ -2,7 +2,9 @@
 
 App that calculates which two locations (within a provided csv file) that are furthest apart. An exercise in geolocation, csv parsing, and logging. 
 
-Application: Analysis tool for franchise owners determine which areas are in need of expansion or more coverage. 
+Application: Analysis tool for franchise owners determine which areas are in need of expansion or more coverage.
+
+https://lfost42-franchisecalculator.herokuapp.com 
 
 ![My App](./app.png)
 
