@@ -18,20 +18,22 @@ OTHER FEATURES:
 
 Completed: 
 
-1. Build a Class Library and move methods into classes.
-2. Implement DAO (Data Access Object) to decouple the data access layer from the user interface.
-3. Swap the UI and develop an ASP.NET Core MVC web application. 
+- Build a Class Library and move methods into classes.
+- Implement DAO (Data Access Object) to decouple the data access layer from the user interface.
+- Swap the UI and develop an ASP.NET Core MVC web application. 
+- Make algorithm onclick.
 
 Future Updates:
 
-4. Option to upload a new csv file and run the algorithm on it. 
-5. Consume an API for mapping purposes. 
-6. Display locations on a map. 
-7. Display algorithm results on a map. 
-8. Add an option to exclude stores from the list of locations. 
-9. Improve time complexity. 
-10. Add a dashboard
-11. Option to dashboard results. 
+- Develop front-end
+- Option to upload a new csv file and run the algorithm on it. 
+- Consume an API for mapping purposes. 
+- Display locations on a map. 
+- Display algorithm results on a map. 
+- Add an option to exclude stores from the list of locations. 
+- Improve time complexity. 
+- Add a dashboard
+- Option to dashboard results. 
 
 ## OPEN REQUIREMENTS
 MVP

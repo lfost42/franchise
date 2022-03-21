@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TGIo39wxzykUk4uw2axQX3cihEmpvGKZoilRSSJIRRK9ngM1XRDanUjubHKL9wP6yoR6WWK2nybn0YDQj5feXg==",
+  "success": true,
+  "projectFilePath": "/Users/lynda/Desktop/repo/Franchise/FranchiseUI/FranchiseUI.csproj",
+  "expectedPackageFiles": [
+    "/Users/lynda/.nuget/packages/geocoordinate.netcore/1.0.0.1/geocoordinate.netcore.1.0.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

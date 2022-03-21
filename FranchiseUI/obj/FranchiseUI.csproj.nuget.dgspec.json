@@ -1,0 +1,125 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/lynda/Desktop/repo/Franchise/FranchiseUI/FranchiseUI.csproj": {}
+  },
+  "projects": {
+    "/Users/lynda/Desktop/repo/Franchise/FranchiseUI/FranchiseUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/FranchiseUI/FranchiseUI.csproj",
+        "projectName": "FranchiseUI",
+        "projectPath": "/Users/lynda/Desktop/repo/Franchise/FranchiseUI/FranchiseUI.csproj",
+        "packagesPath": "/Users/lynda/.nuget/packages/",
+        "outputPath": "/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/lynda/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/lynda/Desktop/repo/Franchise/ParserLibrary/ParserLibrary.csproj": {
+                "projectPath": "/Users/lynda/Desktop/repo/Franchise/ParserLibrary/ParserLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/lynda/Desktop/repo/Franchise/ParserLibrary/ParserLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/ParserLibrary/ParserLibrary.csproj",
+        "projectName": "ParserLibrary",
+        "projectPath": "/Users/lynda/Desktop/repo/Franchise/ParserLibrary/ParserLibrary.csproj",
+        "packagesPath": "/Users/lynda/.nuget/packages/",
+        "outputPath": "/Users/lynda/Desktop/repo/Franchise/ParserLibrary/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/lynda/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "GeoCoordinate.NetCore": {
+              "target": "Package",
+              "version": "[1.0.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
