@@ -22,12 +22,13 @@ Completed:
 
 Future Updates:
 
-4. Locate and integrate an API for mapping purposes. 
-5. Option to display locations on a map. 
-6. Option to display the results of the calculator on a map. 
-7. Provide an option to exclude stores from the list of locations. 
+4. Consume an API for mapping purposes. 
+5. Display locations on a map. 
+6. Display algorithm results on a map. 
+7. Add an option to exclude stores from the list of locations. 
 8. Improve time complexity. 
 9. Add a dashboard
+10. Option to dashboard results. 
 
 ## OPEN REQUIREMENTS
 MVP
@@ -42,11 +43,12 @@ Other features:
 
 DASHBOARD
 
-- How many locations are on file.
+- Number locations in file.
 - Average distance between each location.
 - Mean distance between each location.
 - Top 5 pairs of locations that are furthest apart from each other. 
- 
+- Option to export dashboard results. 
+
 ## USER INTERFACE
 - Landing page
 - Options to run algorithm or filter list
