@@ -11,7 +11,16 @@ namespace ParserLibrary.Databases
 {
     public class ParserControl
     {
-        public SolutionModel solution = new SolutionModel();
+        public SolutionModel solution = new SolutionModel
+        {
+            Location1 = null,
+            Location2 = null,
+            Distance = 0,
+            Message1 = "",
+            Message2 = "",
+            Message3 = "",
+            Message4 = ""
+        };
 
         private static LocationLogger logger = new LocationLogger();
         private static ParserDataAccess parser = new ParserDataAccess();
@@ -28,9 +37,6 @@ namespace ParserLibrary.Databases
         public ParserControl GetFurthestLocations(List<ITrackable> locations)
         {
             ParserControl result = new ParserControl();
-            solution.Location1 = null;
-            solution.Location2 = null;
-            solution.Distance = 0;
 
             logger.LogInfo("Log initialized, locating two locations furthest from one another.");
 
@@ -45,8 +51,10 @@ namespace ParserLibrary.Databases
                         solution.Location1 = locA;
                         solution.Location2 = locB;
                         solution.Distance = Math.Round(locA.GeoPoint.GetDistanceTo(locB.GeoPoint) * 0.00062, 2);
-                        solution.Message = $"{solution.Location1.Name} and {solution.Location2.Name} are {solution.Distance} miles apart.";
-                    }
+                        solution.Message2 = $"Location 1: {solution.Location1.Name}";
+                        solution.Message3 = $"Location 2: {solution.Location2.Name}";
+                        solution.Message4 = $"Distance: {solution.Distance} miles";
+                   }
                 }
             }
             logger.LogInfo($"{solution.Location1.Name} and {solution.Location2.Name} are {solution.Distance} miles apart.");

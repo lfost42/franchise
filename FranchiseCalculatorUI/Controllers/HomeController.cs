@@ -14,6 +14,7 @@ namespace FranchiseCalculatorUI.Controllers
 {
     public class HomeController : Controller
     {
+        public ParserControl control = new ParserControl();
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -21,13 +22,22 @@ namespace FranchiseCalculatorUI.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
+        public IActionResult Index()
+        {
+            return View(control);
+        }
+
+        [HttpPost]
         public IActionResult Index(ParserControl control, string csvFile)
         {
-            control = new ParserControl();
-            
-            csvFile = "Files/TacoBell-US-AL.csv";
-            List<ITrackable> locations = control.ReadAllRecords(csvFile);
-            control.GetFurthestLocations(locations);
+            if (ModelState.IsValid)
+            {
+                csvFile = "Files/TacoBell-US-AL.csv";
+                List<ITrackable> locations = control.ReadAllRecords(csvFile);
+                control.GetFurthestLocations(locations);
+                control.solution.Message1 = $"Data file: {csvFile}";
+            }
             return View(control);
         }
 

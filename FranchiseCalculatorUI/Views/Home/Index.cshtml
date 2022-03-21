@@ -7,25 +7,24 @@
     <div class="row row-cols-1">
         <h1>Expansion Evaluation</h1>
         <p>We calculate which branch locations are furthest apart in the provided csv file to determine which areas may require more coverage. </p>
-        @*<form class="row gy-2 gx-3" asp-action="Index" asp-controller="Home" method="post">
-                <div class="col">
-                    <input asp-for="CsvFile" class="form-control" value="@Model.CsvFile" placeholder="~Files/TacoBell-US-AL.csv" />
-                </div>
-
-                <div class="col-12 d-flex align-items-center justify-content-start justify-content-lg-end">
+        <form class="row gy-2 gx-3 gy-4" asp-action="Index" asp-controller="Home" method="post">
+            <div class="col-12 d-flex align-items-center justify-content-start justify-content-lg-end">
+                <p>
                     <button id="btnSubmit" type="submit" class="btn btn-outline-dark btn-sm">
                         Generate Results
                     </button>
-                </div>
-            </form>*@
-        <div class="col-12" g-3>
+                </p>
+            </div>
+        </form>
+        <div class="col-12 gy-4">
             <p>
-                Current dataset: Taco Bell US AL <br />
-                Location 1: @Model.solution.Location1.Name at @Model.solution.Location1.GeoPoint<br />
-                Location 2: @Model.solution.Location2.Name at @Model.solution.Location2.GeoPoint<br />
-                Distance: @Model.solution.Distance miles
+                @Model.solution.Message1
             </p>
+            <p>
+                @Model.solution.Message2 <br />
+                @Model.solution.Message3 <br />
+            </p>
+                @Model.solution.Message4 <br />
         </div>
-    </div>
     </div>
 </main>

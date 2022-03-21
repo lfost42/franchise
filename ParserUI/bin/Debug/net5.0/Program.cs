@@ -16,6 +16,7 @@ namespace ParserUI
         {
             var locations = control.ReadAllRecords(csvFile);
             control.GetFurthestLocations(locations);
+            Console.WriteLine(control.solution.Message);
             Console.ReadLine();
         }
 
