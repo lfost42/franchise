@@ -10,6 +10,8 @@ namespace ParserLibrary.Databases
 {
     public class ParserControl
     {
+        ParserMessage result = new ParserMessage();
+
         private static LocationLogger logger = new LocationLogger();
         private static ParserDataAccess parser = new ParserDataAccess();
         public List<ITrackable> ReadAllRecords(string csvFile)
@@ -22,12 +24,11 @@ namespace ParserLibrary.Databases
             return locations;
         }
 
-        public void GetFurthestLocations(List<ITrackable> locations)
-        {            
-            
-            ITrackable location1 = null;
-            ITrackable location2 = null;
-            double distance = 0;
+        public ParserMessage GetFurthestLocations(List<ITrackable> locations)
+        {
+            result.Location1 = null;
+            result.Location2 = null;
+            result.Distance = 0;
 
             logger.LogInfo("Log initialized, locating two locations furthest from one another.");
 
@@ -37,19 +38,18 @@ namespace ParserLibrary.Databases
                 for (int j = 0; j < locations.Count; j++)
                 {
                     var locB = locations[j];
-                    if (locA.GeoPoint.GetDistanceTo(locB.GeoPoint) > distance)
-                    {
-                        distance = locA.GeoPoint.GetDistanceTo(locB.GeoPoint);
-
-                        location1 = locA;
-                        location2 = locB;
+                    if (locA.GeoPoint.GetDistanceTo(locB.GeoPoint) > result.Distance)
+                    {   
+                        result.Location1 = locA;
+                        result.Location2 = locB;
+                        result.Distance = Math.Round(locA.GeoPoint.GetDistanceTo(locB.GeoPoint) * 0.00062, 2);
+                        result.Message = $"{result.Location1.Name} and {result.Location2.Name} are {result.Distance} miles apart.";
                     }
                 }
             }
-
-            double miles = distance * 0.00062;
-            Console.WriteLine();
-            logger.LogInfo($"{location1.Name} and {location2.Name} are {Math.Round(miles, 2)} miles apart.");
+            logger.LogInfo($"{result.Location1.Name} and {result.Location2.Name} are {result.Distance} miles apart.");
+            //Console.WriteLine(result.Message);
+            return result;
         }
 
     }

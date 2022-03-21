@@ -6,21 +6,41 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using FranchiseCalculatorUI.Models;
+using ParserLibrary;
+using ParserLibrary.Databases;
 
 namespace FranchiseCalculatorUI.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            ParserControl control = new ParserControl();
+            return View(control);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Index(ParserControl control)
+        {
+            if (ModelState.IsValid)
+            {
+                ParserMessage message = new ParserMessage();
+                string csvFile = message.CsvFile;
+
+                List<ITrackable> locations = control.ReadAllRecords(csvFile);
+                control.GetFurthestLocations(locations);
+            }
+            return View("Index", control);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

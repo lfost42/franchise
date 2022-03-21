@@ -1,8 +1,30 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model ParserLibrary.Databases.ParserMessage
+@{
+    ViewData["App"] = "Franchise Calculator";}
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+<main class="flex-shrink-0">
+    <div class="row row-cols1 row-cols-lg-2">
+        <div class="col-12">
+            <p>Let's determines which two franchise units are furthest apart.</p>
+        </div>
+        <div class="col-12">
+            <form class="row gy-2 gx-3" asp-action="Index" asp-controller="Home" method="post">
+                <div class="col">
+                    <input asp-for="CsvFile" class="form-control" value="@Model.CsvFile" placeholder="~Files/TacoBell-US-AL.csv" />
+                </div>
+
+                <div class="col-12 d-flex align-items-center justify-content-start justify-content-lg-end">
+                    <button id="btnSubmit" type="submit" class="btn btn-outline-dark btn-sm">
+                        Generate Results
+                    </button>
+                </div>
+            </form>
+
+            <p id="results">
+                @Model.Message
+            </p>
+
+        </div>
+    </div>
+</main>
