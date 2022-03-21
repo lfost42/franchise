@@ -36,7 +36,9 @@ namespace FranchiseCalculatorUI.Controllers
                 csvFile = "Files/TacoBell-US-AL.csv";
                 List<ITrackable> locations = control.ReadAllRecords(csvFile);
                 control.GetFurthestLocations(locations);
-                control.solution.Message1 = $"Data file: {csvFile}";
+
+                string fileName = csvFile.Substring(csvFile.IndexOf("/") + 1);
+                control.solution.Message1 = $"Data file: {fileName}";
             }
             return View(control);
         }
