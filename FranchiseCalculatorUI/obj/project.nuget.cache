@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RdqSZQCVHDAWyH7v/SOoaeFA0Ik1oWTH+XoKRXixNsu/9RJ4FbRQgKThHnTLbAE4bf9Q6hXTbVzAlf8PEYIJmA==",
+  "dgSpecHash": "arw2cG5frDfpz2P4OxrUboXYXjftQ1Wpbxk89kbX/xsKFh8ZkrZ6scKrGSBeCh+xPmkHQzwefjwHik4mNGAEGg==",
   "success": true,
-  "projectFilePath": "/Users/lynda/Desktop/repo/FranchiseCalculator/FranchiseCalculatorUI/FranchiseCalculatorUI.csproj",
+  "projectFilePath": "/Users/lynda/Desktop/repo/Franchise/FranchiseCalculatorUI/FranchiseCalculatorUI.csproj",
   "expectedPackageFiles": [
     "/Users/lynda/.nuget/packages/geocoordinate.netcore/1.0.0.1/geocoordinate.netcore.1.0.0.1.nupkg.sha512"
   ],

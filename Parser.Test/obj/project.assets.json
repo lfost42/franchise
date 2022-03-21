@@ -6135,11 +6135,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lynda/Desktop/repo/FranchiseCalculator/Parser.Test/Parser.Test.csproj",
+      "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/Parser.Test.csproj",
       "projectName": "Parser.Test",
-      "projectPath": "/Users/lynda/Desktop/repo/FranchiseCalculator/Parser.Test/Parser.Test.csproj",
+      "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/Parser.Test.csproj",
       "packagesPath": "/Users/lynda/.nuget/packages/",
-      "outputPath": "/Users/lynda/Desktop/repo/FranchiseCalculator/Parser.Test/obj/",
+      "outputPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/lynda/.config/NuGet/NuGet.Config"
@@ -6154,8 +6154,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/lynda/Desktop/repo/FranchiseCalculator/ParserUI/ParserUI.csproj": {
-              "projectPath": "/Users/lynda/Desktop/repo/FranchiseCalculator/ParserUI/ParserUI.csproj"
+            "/Users/lynda/Desktop/repo/Franchise/ParserUI/ParserUI.csproj": {
+              "projectPath": "/Users/lynda/Desktop/repo/Franchise/ParserUI/ParserUI.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BWNn2XTANBanwAGzdqGuqJoQGevqQwHj3uHGf+MWkJ60c7idJI/QbXe9EGSenplHxid3jxXkaFI8bLOB0RobLg==",
+  "dgSpecHash": "+2/j6h5Il8Sbfjz7seb6AFrtaSG6qMgwIBRWJ7twOE0XejC8MbGCgPUETI13+HFm7mcP3w4ushaMkgjZQW4N2g==",
   "success": true,
-  "projectFilePath": "/Users/lynda/Desktop/repo/FranchiseCalculator/ParserLibrary/ParserLibrary.csproj",
+  "projectFilePath": "/Users/lynda/Desktop/repo/Franchise/ParserLibrary/ParserLibrary.csproj",
   "expectedPackageFiles": [
     "/Users/lynda/.nuget/packages/geocoordinate.netcore/1.0.0.1/geocoordinate.netcore.1.0.0.1.nupkg.sha512"
   ],
