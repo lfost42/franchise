@@ -54,9 +54,9 @@ namespace Parser.Test
         [InlineData("34.073638,-84.677017,Taco Bell Acwort...", "Taco Bell Acwort...")]
         public void ShouldParseName(string line, string expected)
         {
-            var tacoParserInstance = new ParserDataAccess();
+            var parser = new ParserDataAccess();
 
-            var actual = tacoParserInstance.Parse(line).Name;
+            var actual = parser.Parse(line).Name;
 
             Assert.Equal(expected, actual);
         }

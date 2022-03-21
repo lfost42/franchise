@@ -4,22 +4,23 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FranchiseCalculator" expanded="True">
-            <Node name="FranchiseCalculatorUI" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Files" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
+            <Node name="Parser.Test" expanded="True" />
+            <Node name="ParserLibrary" expanded="True">
+              <Node name="Databases" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="LocationLogger.cs" selected="True" />
               </Node>
             </Node>
-            <Node name="ParserLibrary" expanded="True">
-              <Node name="Databases" expanded="True">
-                <Node name="ParserControl.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="FranchiseCalculator" expanded="True">
+            <Node name="Parser.Test" expanded="True">
+              <Node name="Parser.Test" expanded="True" selected="True">
+                <Node name="LocationParserTests" expanded="True" />
               </Node>
-              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>

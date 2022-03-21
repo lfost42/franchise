@@ -69,3 +69,4 @@ C:/Users/lynda/source/repos/FranchiseCalculator/ParserLibrary/obj/Debug/net5.0/P
 /Users/lynda/Desktop/repo/Franchise/ParserLibrary/obj/Debug/net5.0/ParserLibrary.dll
 /Users/lynda/Desktop/repo/Franchise/ParserLibrary/obj/Debug/net5.0/ref/ParserLibrary.dll
 /Users/lynda/Desktop/repo/Franchise/ParserLibrary/obj/Debug/net5.0/ParserLibrary.pdb
+/Users/lynda/Desktop/repo/Franchise/ParserLibrary/obj/Debug/net5.0/ParserLibrary.csproj.AssemblyReference.cache
