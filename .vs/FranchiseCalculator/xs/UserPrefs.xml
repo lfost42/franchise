@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseCalculatorUI/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="FranchiseCalculatorUI/Views/Home/Index.cshtml" Line="26" Column="52" />
+      <File FileName="FranchiseCalculatorUI/Views/Home/Index.cshtml" Line="6" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -9,6 +9,7 @@
           <Node name="FranchiseCalculator" expanded="True">
             <Node name="FranchiseCalculatorUI" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Files" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True">
                   <Node name="Index.cshtml" selected="True" />
