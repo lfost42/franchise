@@ -13,6 +13,7 @@ a {
 }
 
 td {
+    -webkit-appearance: none;
     padding-right: 6px;
 }
 
