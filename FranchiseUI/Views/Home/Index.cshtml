@@ -24,9 +24,11 @@
                 <td>
                     @Html.DisplayFor(model => model.solution.FileName)
                 </td>
+                <td></td>
             </tr>
             <tr><td></td></tr>
             <tr>
+                <td>Location 1: </td>
                 <td>@Html.DisplayFor(model => model.solution.Location1.Name)</td>
                 <td>
                     @Html.DisplayFor(model => model.solution.Location1.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location1.GeoPoint.Longitude)
@@ -34,6 +36,7 @@
             </tr>
 
             <tr>
+                <td>Locatoin 2: </td>
                 <td>@Html.DisplayFor(model => model.solution.Location2.Name)</td>
                 <td>
                     @Html.DisplayFor(model => model.solution.Location2.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location2.GeoPoint.Longitude)
@@ -45,6 +48,7 @@
                 <td>
                     @Html.DisplayFor(model => model.solution.Distance) miles
                 </td>
+                <td></td>
             </tr>
 
         </table>
