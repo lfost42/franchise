@@ -30,9 +30,9 @@ Future Updates:
 - Option to upload a new csv file and run analysis on it. 
 - Consume an API for mapping purposes. 
 - Display locations and analysis results on a map. 
-- Improve time complexity. 
-- Add a dashboard
-- Option to export dashboard results. 
+- Improve time complexity?
+- Option to export analysis.
+- Add a dashboard 
 
 DASHBOARD
 
