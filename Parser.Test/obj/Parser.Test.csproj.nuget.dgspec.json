@@ -113,6 +113,10 @@
             "GeoCoordinate.NetCore": {
               "target": "Package",
               "version": "[1.0.0.1, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
             }
           },
           "imports": [
