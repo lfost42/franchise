@@ -26,14 +26,22 @@ Completed:
 Future Updates:
 
 - Develop front-end
+- Option to add, modify, and delete locations. 
 - Option to upload a new csv file and run the algorithm on it. 
 - Consume an API for mapping purposes. 
 - Display locations on a map. 
 - Display algorithm results on a map. 
-- Add an option to exclude stores from the list of locations. 
 - Improve time complexity. 
 - Add a dashboard
-- Option to dashboard results. 
+- Option to export dashboard results. 
+
+DASHBOARD
+
+- Number locations in file.
+- Average distance between each location.
+- Mean distance between each location.
+- Top 5 pairs of locations that are furthest apart from each other. 
+- Option to export dashboard results. 
 
 ## OPEN REQUIREMENTS
 MVP
