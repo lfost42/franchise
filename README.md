@@ -27,10 +27,9 @@ Future Updates:
 
 - Develop front-end
 - Option to add, modify, and delete locations. 
-- Option to upload a new csv file and run the algorithm on it. 
+- Option to upload a new csv file and run analysis on it. 
 - Consume an API for mapping purposes. 
-- Display locations on a map. 
-- Display algorithm results on a map. 
+- Display locations and analysis results on a map. 
 - Improve time complexity. 
 - Add a dashboard
 - Option to export dashboard results. 
@@ -39,9 +38,10 @@ DASHBOARD
 
 - Number locations in file.
 - Average distance between each location.
-- Mean distance between each location.
+- Mean distance between each location. 
+- Heatmap of distance variations within dataset. 
 - Top 5 pairs of locations that are furthest apart from each other. 
-- Option to export dashboard results. 
+- Option to export dashboard results.
 
 ## OPEN REQUIREMENTS
 MVP
