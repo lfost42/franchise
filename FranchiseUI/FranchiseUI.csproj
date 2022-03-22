@@ -4,6 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'FranchiseCalculatorUI' " />
   <ItemGroup>
     <ProjectReference Include="..\ParserLibrary\ParserLibrary.csproj" />
   </ItemGroup>
