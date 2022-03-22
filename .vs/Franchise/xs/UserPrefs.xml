@@ -1,18 +1,30 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|FranchiseCalculatorUI">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Views/Home/Index.cshtml">
+    <Files>
+      <File FileName="FranchiseUI/Controllers/HomeController.cs" Line="42" Column="15" />
+      <File FileName="FranchiseUI/Views/Home/Index.cshtml" Line="28" Column="21" />
+      <File FileName="FranchiseUI/wwwroot/css/site.css" Line="16" Column="21" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Franchise" expanded="True">
             <Node name="FranchiseUI" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="ParserLibrary" expanded="True">
+              <Node name="Databases" expanded="True" />
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Franchise" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>

@@ -38,8 +38,8 @@ namespace FranchiseCalculatorUI.Controllers
                 control.GetFurthestLocations(locations);
 
                 string fileName = csvFile.Substring(csvFile.IndexOf("/") + 1);
-                control.solution.Message1 = $"Data file: {fileName}";
-            }
+                control.solution.FileName = $"{fileName}";
+            } 
             return View(control);
         }
 

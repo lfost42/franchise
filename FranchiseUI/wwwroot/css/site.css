@@ -12,6 +12,18 @@ a {
   color: #0366d6;
 }
 
+td {
+    padding-right: 6px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;

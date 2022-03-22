@@ -10,21 +10,43 @@
         <form class="row gy-2 gx-3 gy-4" asp-action="Index" asp-controller="Home" method="post">
             <div class="col-12 d-flex justify-content-start">
                 <p>
-                    <button id="btnSubmit" type="submit" class="btn btn-outline-dark btn-sm">
+                    <button id="btnSubmit" type="submit" class="btn btn-outline-dark btn-sm" onclick="myFunction()">
                         Generate Results
                     </button>
                 </p>
             </div>
         </form>
-        <div class="col-12 gy-4">
-            <p>
-                @Model.solution.Message1
-            </p>
-            <p>
-                @Model.solution.Message2 <br />
-                @Model.solution.Message3 <br />
-            </p>
-                @Model.solution.Message4 <br />
-        </div>
+
+        <table id="GuestTable" class="@(Model.solution.isPosted ? Html.Raw("show") : Html.Raw("hide"))">
+                
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.solution.FileName)</td>
+                <td>
+                    @Html.DisplayFor(model => model.solution.FileName)
+                </td>
+            </tr>
+            <tr><td></td></tr>
+            <tr>
+                <td>@Html.DisplayFor(model => model.solution.Location1.Name)</td>
+                <td>
+                    @Html.DisplayFor(model => model.solution.Location1.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location1.GeoPoint.Longitude)
+                </td>
+            </tr>
+
+            <tr>
+                <td>@Html.DisplayFor(model => model.solution.Location2.Name)</td>
+                <td>
+                    @Html.DisplayFor(model => model.solution.Location2.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location2.GeoPoint.Longitude)
+                </td>
+            </tr>
+            <tr><td></td></tr>
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.solution.Distance)</td>
+                <td>
+                    @Html.DisplayFor(model => model.solution.Distance) miles
+                </td>
+            </tr>
+
+        </table>
     </div>
 </main>
