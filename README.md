@@ -1,8 +1,8 @@
-# Franchise Calculator
+# Franchise Analytics
 
-App that calculates which two locations (within a provided csv file) that are furthest apart. An exercise in geolocation, csv parsing, and logging. 
+Calculates which two locations (in a provided csv file) are furthest apart using geolocation, csv parsing, and logging. 
 
-Application: Analysis tool for franchise owners determine which areas are in need of expansion or more coverage.
+Application: Analysis tool for franchise owners to determine which areas are in need of expansion or more coverage.
 
 https://lfost42-franchise.herokuapp.com 
 
