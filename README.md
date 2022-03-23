@@ -1,6 +1,6 @@
 # Franchise Analytics
 
-Calculates which two locations (in a provided csv file) are furthest apart using geolocation, csv parsing, and logging. 
+Calculates which two locations (in a provided csv file) are farthest apart using geolocation, csv parsing, and logging. 
 
 Application: Analysis tool for franchise owners to determine which areas are in need of expansion or more coverage.
 
@@ -12,7 +12,7 @@ https://lfost42-franchise.herokuapp.com
 
 Minimal Viable Product:
 
-A console application that parses through the provided csv file, calculates the locations that are furthest apart, and writes the result to the console. 
+A console application that parses through the provided csv file, calculates the locations that are farthest apart, and writes the result to the console. 
 
 OTHER FEATURES:
 
@@ -40,12 +40,12 @@ DASHBOARD
 - Average distance between each location.
 - Mean distance between each location. 
 - Heatmap of distance variations within dataset. 
-- Top 5 pairs of locations that are furthest apart from each other. 
+- Top 5 pairs of locations that are farthest apart from each other. 
 - Option to export dashboard results.
 
 ## OPEN REQUIREMENTS
 MVP
-	- landing page will load CSV file and return the two locations that are furthest apart
+	- landing page will load CSV file and return the two locations that are farthest apart
 
 Other features:
 
@@ -59,7 +59,7 @@ DASHBOARD
 - Number locations in file.
 - Average distance between each location.
 - Mean distance between each location.
-- Top 5 pairs of locations that are furthest apart from each other. 
+- Top 5 pairs of locations that are farthest apart from each other. 
 - Option to export dashboard results. 
 
 ## USER INTERFACE
@@ -82,4 +82,4 @@ DASHBOARD
 
 ### Origins
 
-The project's minimal viable product culminated the C# segment of the Software Engineering course at True Coders (https://truecoders.io). The coding challenge was to parse a csv file of approximately 300 Taco Bell locations and determine which two are furthest apart from one another with logging and unit tests. 
+The project's minimal viable product culminated the C# segment of the Software Engineering course at True Coders (https://truecoders.io). The coding challenge was to parse a csv file of approximately 300 Taco Bell locations and determine which two are farthest apart from one another with logging and unit tests. 
