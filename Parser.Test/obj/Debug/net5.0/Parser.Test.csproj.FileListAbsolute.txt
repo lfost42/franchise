@@ -401,6 +401,10 @@ C:/Users/lynda/source/repos/FranchiseCalculator/Parser.Test/obj/Debug/net5.0/Par
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/GeoCoordinate.NetCore.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Grpc.Core.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Grpc.Core.Api.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.AspNetCore.Http.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.AspNetCore.Http.Abstractions.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.AspNetCore.Http.Features.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.AspNetCore.WebUtilities.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.Bcl.AsyncInterfaces.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.Extensions.Configuration.dll
@@ -408,10 +412,14 @@ C:/Users/lynda/source/repos/FranchiseCalculator/Parser.Test/obj/Debug/net5.0/Par
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Binder.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.Extensions.Configuration.FileExtensions.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.Extensions.Configuration.Json.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.Extensions.FileProviders.Abstractions.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.Extensions.FileProviders.Physical.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.Extensions.FileSystemGlobbing.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.Extensions.ObjectPool.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.Extensions.Options.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.Net.Http.Headers.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.TestPlatform.CoreUtilities.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.TestPlatform.PlatformAbstractions.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll

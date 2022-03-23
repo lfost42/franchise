@@ -4,19 +4,9 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Franchise" expanded="True">
-            <Node name="FranchiseUI" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True">
-                  <Node name="_Layout.cshtml" selected="True" />
-                </Node>
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-              </Node>
+            <Node name="ParserUI" expanded="True">
+              <Node name="Program.cs" selected="True" />
             </Node>
-            <Node name="ParserLibrary" expanded="True" />
           </Node>
         </State>
       </Pad>

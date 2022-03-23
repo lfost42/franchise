@@ -7,18 +7,21 @@
     <div class="col-12">
         <h1>Expansion Evaluation</h1>
         <p>We calculate which branch locations are furthest apart in the provided csv file to determine which areas may require more coverage. </p>
+
+        <h1>Demo</h1>
+        <p>The </p>
         <form class="row gy-2 gx-3 gy-4" asp-action="Index" asp-controller="Home" method="post">
             <div class="col-12 d-flex justify-content-start">
                 <p>
                     <button id="btnSubmit" type="submit" class="btn btn-outline-dark btn-sm" onclick="myFunction()">
-                        Generate Results
+                        RUN DEMO
                     </button>
                 </p>
             </div>
         </form>
 
         <table id="GuestTable" class="@(Model.solution.isPosted ? Html.Raw("show") : Html.Raw("hide"))">
-                
+
             <tr>
                 <td>@Html.DisplayNameFor(model => model.solution.FileName)</td>
                 <td>
