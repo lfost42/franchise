@@ -1,11 +1,19 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|FranchiseCalculatorUI">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="FranchiseUI/Views/Shared/_Layout.cshtml" Line="46" Column="62" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Franchise" expanded="True">
-            <Node name="ParserUI" expanded="True">
-              <Node name="Program.cs" selected="True" />
+            <Node name="FranchiseUI" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>

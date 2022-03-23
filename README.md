@@ -22,10 +22,10 @@ Completed:
 - Implement DAO (Data Access Object) to decouple the data access layer from the user interface.
 - Swap the UI and develop an ASP.NET Core MVC web application. 
 - Make algorithm onclick.
+- Develop front-end
 
 Future Updates:
 
-- Develop front-end
 - Option to add, modify, and delete locations. 
 - Option to upload a new csv file and run analysis on it. 
 - Consume an API for mapping purposes. 
