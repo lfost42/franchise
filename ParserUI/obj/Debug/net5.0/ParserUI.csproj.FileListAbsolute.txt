@@ -205,3 +205,4 @@ C:/Users/lynda/source/repos/FranchiseCalculator/ParserUI/obj/Debug/net5.0/Parser
 /Users/lynda/Desktop/repo/Franchise/ParserUI/obj/Debug/net5.0/ref/ParserUI.dll
 /Users/lynda/Desktop/repo/Franchise/ParserUI/obj/Debug/net5.0/ParserUI.pdb
 /Users/lynda/Desktop/repo/Franchise/ParserUI/obj/Debug/net5.0/ParserUI.genruntimeconfig.cache
+/Users/lynda/Desktop/repo/Franchise/ParserUI/bin/Debug/net5.0/ParserUI

@@ -526,7 +526,7 @@
       "outputPath": "/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/lynda/.config/NuGet/NuGet.Config"
+        "/Users/lynda/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
