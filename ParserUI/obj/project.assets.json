@@ -1154,7 +1154,7 @@
       "outputPath": "/Users/lynda/Desktop/repo/Franchise/ParserUI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/lynda/.nuget/NuGet/NuGet.Config"
+        "/Users/lynda/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

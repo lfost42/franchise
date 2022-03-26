@@ -1,0 +1,12 @@
+﻿td {
+    -webkit-appearance: none;
+    padding-right: 6px;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

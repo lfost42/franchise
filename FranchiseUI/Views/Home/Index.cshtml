@@ -4,6 +4,8 @@
     ViewData["App"] = "Franchise Calculator";}
 
 <main class="flex-shrink-0">
+
+@*====== THIS IS THE CALCULATOR MODULE ======*@
     <div class="col-12">
         <h1>Expansion Evaluation</h1>
         <p>We calculate which branch locations are farthest apart to determine which areas may require more coverage. </p>
@@ -20,7 +22,7 @@
             </div>
         </form>
 
-        <table id="GuestTable" class="@(Model.solution.isPosted ? Html.Raw("show") : Html.Raw("hide"))">
+        <table id="Distance" class="@(Model.solution.isPosted ? Html.Raw("show") : Html.Raw("hide"))">
 
             <tr>
                 <td>@Html.DisplayNameFor(model => model.solution.FileName)</td>
@@ -31,29 +33,31 @@
             </tr>
             <tr><td></td></tr>
             <tr>
-                <td>Location 1: </td>
+                <td class="head">Location 1: </td>
                 <td>@Html.DisplayFor(model => model.solution.Location1.Name)</td>
                 <td>
-                    @Html.DisplayFor(model => model.solution.Location1.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location1.GeoPoint.Longitude)
+                    (@Html.DisplayFor(model => model.solution.Location1.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location1.GeoPoint.Longitude))
                 </td>
             </tr>
 
             <tr>
-                <td>Location 2: </td>
+                <td class="head">Location 2: </td>
                 <td>@Html.DisplayFor(model => model.solution.Location2.Name)</td>
                 <td>
-                    @Html.DisplayFor(model => model.solution.Location2.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location2.GeoPoint.Longitude)
+                    (@Html.DisplayFor(model => model.solution.Location2.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location2.GeoPoint.Longitude))
                 </td>
             </tr>
             <tr><td></td></tr>
             <tr>
-                <td>@Html.DisplayNameFor(model => model.solution.Distance)</td>
+                <td class="head">@Html.DisplayNameFor(model => model.solution.Distance)</td>
                 <td>
                     @Html.DisplayFor(model => model.solution.Distance) miles
                 </td>
                 <td></td>
             </tr>
-
         </table>
+@*====== END OF THE CALCULATOR MODULE ======*@
+
+
     </div>
 </main>
