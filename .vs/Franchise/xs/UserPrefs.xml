@@ -1,9 +1,7 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|FranchiseCalculatorUI">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/wwwroot/css/main.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="FranchiseUI/Views/Home/Index.cshtml" Line="97" Column="23" />
-      <File FileName="FranchiseUI/wwwroot/css/main.css" Line="1996" Column="19" />
-      <File FileName="FranchiseUI/wwwroot/css/result.css" />
+      <File FileName="FranchiseUI/Views/Home/Index.cshtml" Line="167" Column="152" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,13 +10,13 @@
             <Node name="FranchiseUI" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True">
-                  <Node name="main.css" selected="True" />
-                </Node>
+                <Node name="css" expanded="True" />
               </Node>
             </Node>
             <Node name="ParserLibrary" expanded="True">
