@@ -39,9 +39,7 @@ namespace FranchiseCalculatorUI.Controllers
 
                 string fileName = csvFile.Substring(csvFile.IndexOf("/") + 1);
                 control.solution.FileName = $"{fileName}";
-                TempData["ScrollPosition"] = control.ScrollPosition;
             }
-            control.ScrollPosition = (int)TempData["ScrollPosition"];
             return View(control);
         }
 

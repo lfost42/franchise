@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ParserLibrary.Databases
 {
-    public class ParserControl : BaseViewModel
+    public class ParserControl
     {
         public SolutionModel solution = new SolutionModel();
 

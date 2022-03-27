@@ -1,7 +1,7 @@
 ﻿using System;
 namespace ParserLibrary.Models
 {
-    public class SolutionModel : BaseViewModel
+    public class SolutionModel
     {
         public string CsvFile { get; set; } = "";
         public ITrackable Location1 { get; set; } = null;

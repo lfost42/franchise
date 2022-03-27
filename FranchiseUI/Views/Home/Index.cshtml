@@ -89,7 +89,7 @@
 
         @*====== DISTANCE BUTTON ======*@
         <li>
-            <form class="col" asp-action="Index" asp-controller="Home" method="post">
+            <form class="col" asp-action="Index" asp-controller="Home" asp-fragment="promo" method="post">
                 <div id="dvScroll" title="Determine which locations in the list are farthest apart.">
                     <button type="submit" class="button">
                         Distance
@@ -106,7 +106,6 @@
                 <td>
                     @Html.DisplayFor(model => model.solution.FileName)
                 </td>
-                    @Html.HiddenFor(x => Model.solution.ScrollPosition)
             </tr>
 
             <tr>
@@ -193,15 +192,5 @@
     function exportDashboard() {
         alert("User may export the dashboard as a png.");
     }</script>
-
-<script type="text/javascript">window.addEventListener("DOMContentLoaded", function () {
-        //add event listener for the scroll event and set hidden input value for posts
-        document.addEventListener('scroll', function () {
-            const scrollPosY = window.scrollY;
-            document.querySelector('input[name="ScrollPosition"]').value = scrollPosY;
-        });
-        const scrollpos = document.querySelector('input[name="ScrollPosition"]').value;
-        window.scrollTo(0, scrollpos); //y-axis scroll
-    });</script>
 
 
