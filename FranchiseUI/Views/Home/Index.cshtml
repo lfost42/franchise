@@ -1,7 +1,8 @@
 ﻿@model ParserLibrary.Databases.ParserControl
 
 @{
-    ViewData["App"] = "Franchise Calculator";}
+    ViewData["appName"] = "Franchise Calculator";
+}
 
 <!-- Header -->
 <div id="hero-wrapper">
@@ -87,48 +88,50 @@
         </li>
 
         @*====== DISTANCE BUTTON ======*@
-    <li>
-        <asp:HiddenField ID="hfScrollPosition" runat="server" Value="0" />
-        <form class="col" asp-action="Index" asp-controller="Home" method="post">
-            <div id="dvScroll" title="Determine which locations in the list are farthest apart.">
-                <button type="submit" class="button">
-                    Distance
-                </button>
-            </div>
-        </form>
-    </li>
+        <li>
+            <form class="col" asp-action="Index" asp-controller="Home" method="post">
+                <div id="dvScroll" title="Determine which locations in the list are farthest apart.">
+                    <button type="submit" class="button">
+                        Distance
+                    </button>
+                </div>
+            </form>
+        </li>
     </ul>
-    <table id="div_position" class="@(Model.solution.isPosted ? Html.Raw("show") : Html.Raw("hide"))">
-        <tr>
-            <td>@Html.DisplayNameFor(model => model.solution.FileName):</td>
-            <td>
-                @Html.DisplayFor(model => model.solution.FileName)
-            </td>
-        </tr>
 
-        <tr>
-            <td class="head">Location 1: </td>
-            <td>@Html.DisplayFor(model => model.solution.Location1.Name)</td>
-            <td>
-                (@Html.DisplayFor(model => model.solution.Location1.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location1.GeoPoint.Longitude))
-            </td>
-        </tr>
+    <div id="distance_position">
+        <table class="@(Model.solution.isPosted ? Html.Raw("show") : Html.Raw("hide"))">
+            <tr>
+                <td>@Html.DisplayNameFor(model => model.solution.FileName):</td>
+                <td>
+                    @Html.DisplayFor(model => model.solution.FileName)
+                </td>
+            </tr>
 
-        <tr>
-            <td class="head">Location 2: </td>
-            <td>@Html.DisplayFor(model => model.solution.Location2.Name)</td>
-            <td>
-                (@Html.DisplayFor(model => model.solution.Location2.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location2.GeoPoint.Longitude))
-            </td>
-        </tr>
+            <tr>
+                <td class="head">Location 1: </td>
+                <td>@Html.DisplayFor(model => model.solution.Location1.Name)</td>
+                <td>
+                    (@Html.DisplayFor(model => model.solution.Location1.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location1.GeoPoint.Longitude))
+                </td>
+            </tr>
 
-        <tr>
-            <td class="head">@Html.DisplayNameFor(model => model.solution.Distance):</td>
-            <td>
-                @Html.DisplayFor(model => model.solution.Distance) miles
-            </td>
-        </tr>
-    </table>
+            <tr>
+                <td class="head">Location 2: </td>
+                <td>@Html.DisplayFor(model => model.solution.Location2.Name)</td>
+                <td>
+                    (@Html.DisplayFor(model => model.solution.Location2.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location2.GeoPoint.Longitude))
+                </td>
+            </tr>
+
+            <tr>
+                <td class="head">@Html.DisplayNameFor(model => model.solution.Distance):</td>
+                <td>
+                    @Html.DisplayFor(model => model.solution.Distance) miles
+                </td>
+            </tr>
+        </table>
+    </div>
     @*====== END OF THE CALCULATOR MODULE ======*@
 </div>
 
@@ -191,19 +194,3 @@
     }</script>
 
 
-<script type="text/javascript">window.onload = function () {
-        var h = document.getElementById("<%=hfScrollPosition.ClientID%>");
-        document.getElementById("<%=scrollArea.ClientID%>").scrollTop = h.value;
-    }
-    function SetDivPosition() {
-        var intY = document.getElementById("<%=scrollArea.ClientID%>").scrollTop;
-        var h = document.getElementById("<%=hfScrollPosition.ClientID%>");
-        h.value = intY;
-    }
-
-    function afterpostback() {
-
-        var h = document.getElementById("<%=hfScrollPosition.ClientID%>");
-        document.getElementById("<%=scrollArea.ClientID%>").scrollTop = h.value;
-
-    }</script>
