@@ -13,6 +13,8 @@ namespace ParserLibrary.Databases
     {
         public SolutionModel solution = new SolutionModel();
 
+        [System.ComponentModel.Browsable(false)]
+        public bool IsPostBack { get; }
         private static LocationLogger logger = new LocationLogger();
         private static ParserDataAccess parser = new ParserDataAccess();
         public List<ITrackable> ReadAllRecords(string csvFile)

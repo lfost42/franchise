@@ -60,11 +60,6 @@ blockquote, q {
 		content: none;
 	}
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 body {
 	-webkit-text-size-adjust: none;
 }
@@ -1884,6 +1879,8 @@ input, select, textarea {
 	text-decoration: none;
 	border-bottom: none;
 	position: relative;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .icon:before {
@@ -1896,7 +1893,7 @@ input, select, textarea {
 	line-height: 1;
 	text-transform: none;
 	font-weight: 400;
-	padding-right: 2em;
+	padding: 1.1em;
 }
 
 	ul.icons {
@@ -1908,7 +1905,6 @@ input, select, textarea {
 			padding-left: 0;
 			display: inline;
 			text-align: center;
-			padding-right: 2em;
 		}
 
 /* Menu */
@@ -1995,12 +1991,28 @@ input, select, textarea {
 	}
 
 /* Table */
-	table {
-		width: 100%;
-	}
+
+table {
+	-webkit-appearance: none;
+	background-color: var(--white-color);
+	color: black;
+	border-collapse: collapse;
+	border-spacing: 1em;
+	padding: 1.5em;
+	text-align: left;
+	min-width: 27em;
+	max-width: 27em;
+	border-radius: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+tabhead {
+
+}
 
 		table.default {
-			width: 100%;
+			width: 60%;
 		}
 
 			table.default tbody tr {

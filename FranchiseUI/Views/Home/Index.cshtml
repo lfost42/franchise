@@ -3,61 +3,207 @@
 @{
     ViewData["App"] = "Franchise Calculator";}
 
-<main class="flex-shrink-0">
+<!-- Header -->
+<div id="hero-wrapper">
+    <div id="header" class="container">
 
-@*====== THIS IS THE CALCULATOR MODULE ======*@
-    <div class="col-12">
-        <h1>Expansion Evaluation</h1>
-        <p>We calculate which branch locations are farthest apart to determine which areas may require more coverage. </p>
+        <!-- Logo -->
 
-        <h1>Demo</h1>
-        <p>The demo csv file contains 237 Taco Bell locations in the mid-west. </p>
-        <form class="row gy-2 gx-3 gy-4" asp-action="Index" asp-controller="Home" method="post">
-            <div class="col-12 d-flex justify-content-start">
-                <p>
-                    <button id="btnSubmit" type="submit" class="btn btn-outline-dark btn-sm" onclick="myFunction()">
-                        RUN DEMO
-                    </button>
-                </p>
+        <h1 id="logo"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Franchise Analytics</a></h1>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul navbar-nav me-auto mb-2 mb-md-0>
+                <li class="nav-item"><a href="#map">Map</a></li>
+                <li class="nav-item"><a href="#dashboard">Dashboard</a></li>
+                <li class="break nav-item"><a href="https://github.com/lfost42/Franchise">Code</a></li>
+                <li class="nav-item"><a href="https://lfost42-portfolio.netlify.app/">About Me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <section id="hero" class="container">
+        <header>
+            <h2>
+                Explore the Coverage
+                <br>
+                Health of a Franchise
+            </h2>
+        </header>
+        <p>Mapping &bull; Geolocation &bull; Parsing &bull; Statistics</p>
+        <ul class="actions">
+            <li><a href="#promo" class="button">Get Started!</a></li>
+        </ul>
+    </section>
+</div>
+
+<!-- Map Section -->
+<div class="wrapper">
+    <div class="container" id="map">
+
+        <!-- Content -->
+        <article id="content">
+            <header>
+                <h2>Live Map</h2>
+            </header>
+            <a href="#map" class="image featured"><img src="images/pic06.jpg" alt="" onclick="map()" /></a>
+        </article>
+        <ul class="actions major gx-3 gy-2">
+            <li><a href="#map" class="button" onclick="allLocations()">All Locations</a></li>
+            <li><a href="#map" class="button" onclick="distance()">Distance Results</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- Promo Section -->
+<div id="promo-wrapper">
+    <section id="promo" class="row gx-4">
+        <ul>
+            <h3>
+            <li>Upload a new csv file to analyze  data</li>
+            <li>View or modify current locations</li>
+            <li>Determine which locations are farthest apart</li>
+            </h3>
+        </ul>
+    </section>
+
+    <ul class="actions col-12 mt-4">
+        <li>
+            <div class="col" title="Upload a new csv file">
+                <button type="submit" class="button" href="#promo" onclick="csv()">
+                    Data File
+                </button>
+            </div>
+        </li>
+        <li>
+            <div class="col" title="View or modify the current list of locations">
+                <button type="submit" class="button" href="#promo"
+                        onclick="crudLocations()">
+                    Locations
+                </button>
+            </div>
+        </li>
+
+        @*====== DISTANCE BUTTON ======*@
+    <li>
+        <asp:HiddenField ID="hfScrollPosition" runat="server" Value="0" />
+        <form class="col" asp-action="Index" asp-controller="Home" method="post">
+            <div id="dvScroll" title="Determine which locations in the list are farthest apart.">
+                <button type="submit" class="button">
+                    Distance
+                </button>
             </div>
         </form>
+    </li>
+    </ul>
+    <table id="div_position" class="@(Model.solution.isPosted ? Html.Raw("show") : Html.Raw("hide"))">
+        <tr>
+            <td>@Html.DisplayNameFor(model => model.solution.FileName):</td>
+            <td>
+                @Html.DisplayFor(model => model.solution.FileName)
+            </td>
+        </tr>
 
-        <table id="Distance" class="@(Model.solution.isPosted ? Html.Raw("show") : Html.Raw("hide"))">
+        <tr>
+            <td class="head">Location 1: </td>
+            <td>@Html.DisplayFor(model => model.solution.Location1.Name)</td>
+            <td>
+                (@Html.DisplayFor(model => model.solution.Location1.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location1.GeoPoint.Longitude))
+            </td>
+        </tr>
 
-            <tr>
-                <td>@Html.DisplayNameFor(model => model.solution.FileName)</td>
-                <td>
-                    @Html.DisplayFor(model => model.solution.FileName)
-                </td>
-                <td></td>
-            </tr>
-            <tr><td></td></tr>
-            <tr>
-                <td class="head">Location 1: </td>
-                <td>@Html.DisplayFor(model => model.solution.Location1.Name)</td>
-                <td>
-                    (@Html.DisplayFor(model => model.solution.Location1.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location1.GeoPoint.Longitude))
-                </td>
-            </tr>
+        <tr>
+            <td class="head">Location 2: </td>
+            <td>@Html.DisplayFor(model => model.solution.Location2.Name)</td>
+            <td>
+                (@Html.DisplayFor(model => model.solution.Location2.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location2.GeoPoint.Longitude))
+            </td>
+        </tr>
 
-            <tr>
-                <td class="head">Location 2: </td>
-                <td>@Html.DisplayFor(model => model.solution.Location2.Name)</td>
-                <td>
-                    (@Html.DisplayFor(model => model.solution.Location2.GeoPoint.Latitude), @Html.DisplayFor(model => model.solution.Location2.GeoPoint.Longitude))
-                </td>
-            </tr>
-            <tr><td></td></tr>
-            <tr>
-                <td class="head">@Html.DisplayNameFor(model => model.solution.Distance)</td>
-                <td>
-                    @Html.DisplayFor(model => model.solution.Distance) miles
-                </td>
-                <td></td>
-            </tr>
-        </table>
-@*====== END OF THE CALCULATOR MODULE ======*@
+        <tr>
+            <td class="head">@Html.DisplayNameFor(model => model.solution.Distance):</td>
+            <td>
+                @Html.DisplayFor(model => model.solution.Distance) miles
+            </td>
+        </tr>
+    </table>
+    @*====== END OF THE CALCULATOR MODULE ======*@
+</div>
 
 
-    </div>
-</main>
+<!-- Dashboard Section -->
+<div class="wrapper">
+    <section class="container" id="dashboard">
+        <header class="major">
+            <h2>Statistics</h2>
+        </header>
+
+        <div class="row">
+            <section class="col-4 col-12-narrower feature">
+                <div class="image-wrapper">
+                    <img src="images/pic03.jpg" alt="whisker chart placeholder" onclick="dashboard()" />
+                </div>
+                <p>Whisker Chart</p>
+            </section>
+            <section class="col-4 col-12-narrower feature">
+                <div class="image-wrapper">
+                    <img src="images/pic04.jpg" alt="bubble graph placeholder" onclick="dashboard()" />
+                </div>
+                <p>Bubble Graph</p>
+            </section>
+            <section class="col-4 col-12-narrower feature">
+                <div class="image-wrapper">
+                    <img src="images/pic05.jpg" alt="heatmap placeholder" onclick="dashboard()" />
+                </div>
+                <p>Heatmap</p>
+            </section>
+        </div>
+        <ul class="actions major">
+            <li><a href="#dashboard" class="button" onclick="exportDashboard()">Export Dashboard</a></li>
+        </ul>
+    </section>
+</div>
+
+
+<script>function csv() {
+        alert("Allows the user to uplaod a csv file with geocoordinate data for analysis");
+    }
+    function crudLocations() {
+        dvScroll
+        alert("Allows the user to perform CRUD operations on locations in the current dataset");
+    }
+    function map() {
+        alert("Consumes a mapping API to display geocoordinate locations");
+    }
+    function allLocations() {
+        alert("Shows all locations in the working dataset on the map");
+    }
+    function distance() {
+        alert("Shows the two locations that are farthest apart on the map");
+    }
+    function dashboard() {
+        alert("Chart to display live statistics as the datastet is modified");
+    }
+    function exportDashboard() {
+        alert("User may export the dashboard as a png.");
+    }</script>
+
+
+<script type="text/javascript">window.onload = function () {
+        var h = document.getElementById("<%=hfScrollPosition.ClientID%>");
+        document.getElementById("<%=scrollArea.ClientID%>").scrollTop = h.value;
+    }
+    function SetDivPosition() {
+        var intY = document.getElementById("<%=scrollArea.ClientID%>").scrollTop;
+        var h = document.getElementById("<%=hfScrollPosition.ClientID%>");
+        h.value = intY;
+    }
+
+    function afterpostback() {
+
+        var h = document.getElementById("<%=hfScrollPosition.ClientID%>");
+        document.getElementById("<%=scrollArea.ClientID%>").scrollTop = h.value;
+
+    }</script>

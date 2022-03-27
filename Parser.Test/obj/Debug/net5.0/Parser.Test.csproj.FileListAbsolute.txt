@@ -519,4 +519,3 @@ C:/Users/lynda/source/repos/FranchiseCalculator/Parser.Test/obj/Debug/net5.0/Par
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/obj/Debug/net5.0/ref/Parser.Test.dll
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/obj/Debug/net5.0/Parser.Test.pdb
 /Users/lynda/Desktop/repo/Franchise/Parser.Test/obj/Debug/net5.0/Parser.Test.genruntimeconfig.cache
-/Users/lynda/Desktop/repo/Franchise/Parser.Test/bin/Debug/net5.0/ParserUI
