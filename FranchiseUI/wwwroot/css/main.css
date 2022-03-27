@@ -161,6 +161,7 @@ input, select, textarea {
 		a:hover {
 			color: var(--white-color);
 			border-bottom-color: rgba(255, 255, 255, 0);
+			text-decoration: none;
 		}
 
 	strong, b {
@@ -2050,7 +2051,8 @@ input, select, textarea {
 			border-color: rgba(255, 255, 255, 0.75);
 			background-color: var(--highlight-color);
 			color: var(--white-color);
-			font-size: 1.2em;<p></p>
+			font-size: 1.2em;
+			text-decoration: none;
 		}
 
 /* Icons */
@@ -2349,17 +2351,19 @@ input, select, textarea {
 			line-height: 1.5em;
 		}
 
-		#hero .button {
-			background: #fff;
-			border-color: rgba(255, 255, 255, 0);
-			color: var(--primary-color);
-			font-size: 1.25em;
-		}
+#hero .button {
+	background: #fff;
+	border-color: rgba(255, 255, 255, 0);
+	color: var(--primary-color);
+	font-size: 1.25em;
+	text-decoration: none;
+}
 
 			#hero .button:hover {
 				border-color: rgba(255, 255, 255, 0.75);
 				background-color: rgba(255, 255, 255, 0.15);
 				color: #fff;
+				text-decoration: none;
 			}
 
 		#hero a {
@@ -2370,6 +2374,7 @@ input, select, textarea {
 
 			#hero a:hover {
 				border-color: rgba(255, 255, 255, 0);
+				text-decoration: none;
 			}
 	
 
