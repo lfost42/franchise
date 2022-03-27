@@ -5,6 +5,7 @@
 
 .show {
     display: block;
+    overflow-x: auto;
 }
 
 .hide {
