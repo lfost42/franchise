@@ -3,7 +3,7 @@
     <Files>
       <File FileName="FranchiseUI/Views/Home/Index.cshtml" Line="97" Column="23" />
       <File FileName="FranchiseUI/wwwroot/css/main.css" Line="1996" Column="19" />
-      <File FileName="FranchiseUI/wwwroot/css/result.css" Line="8" Column="1" />
+      <File FileName="FranchiseUI/wwwroot/css/result.css" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
