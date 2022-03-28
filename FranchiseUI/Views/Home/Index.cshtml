@@ -50,17 +50,31 @@
             </header>
             <a href="#map" class="image featured"><img src="images/pic06.jpg" alt="" onclick="map()" /></a>
         </article>
+
+
+
+        @*====== MAP FILTERS ======*@
         <ul class="actions major gx-3 gy-2">
-            <li><div title="View all locations in the current dataset on the map"><a href="#map" class="button" onclick="allLocations()">All Locations</a></div></li>
-            <li><div title="View the two locations that are farthest apart in the current dataset"><a href="#map" class="button" onclick="distance()">Distance Results</a></div></li>
+            <li>
+                <div title="View all locations in the current dataset on the map">
+                    <a href="#map" class="button" onclick="allLocations()">All Locations</a>
+                </div>
+            </li>
+
+            <li>
+                <div title="View the two locations that are farthest apart in the current dataset">
+                    <a href="#map" class="button" onclick="distance()">Distance Results</a>
+                </div>
+            </li>
         </ul>
+        @*====== END MAP FILTERS ======*@
     </div>
 </div>
 
 
 <!-- Promo Section -->
 <div id="promo-wrapper">
-    <section id="promo" class="row gx-4">
+    <section id="promo" class="row">
         <ul>
             <h3>
             <li>Upload a new csv file to analyze  data</li>
@@ -68,9 +82,12 @@
             <li>Determine which locations are farthest apart</li>
             </h3>
         </ul>
+        Our demo includes 237 Taco Bell locations.<br />
+        Click 'Data File' to load a new dataset.<br />
     </section>
 
     <ul class="actions col-12 mt-4">
+        @*====== TODO DATA FILE ======*@
         <li>
             <div class="col" title="Upload a new csv file">
                 <button type="submit" class="button" href="#promo" onclick="csv()">
@@ -78,6 +95,11 @@
                 </button>
             </div>
         </li>
+        @*====== END DAYA FILE ======*@
+
+
+
+        @*====== TODO CRUD LOCATIONS ======*@
         <li>
             <div class="col" title="View or modify the current list of locations">
                 <button type="submit" class="button" href="#promo"
@@ -86,6 +108,9 @@
                 </button>
             </div>
         </li>
+        @*====== END CRUD LOCATIONS ======*@
+
+
 
         @*====== DISTANCE BUTTON ======*@
         <li>
@@ -132,7 +157,7 @@
             </tr>
         </table>
     </div>
-    @*====== END OF THE CALCULATOR MODULE ======*@
+    @*====== END DISTANCE BUTTON ======*@
 </div>
 
 
@@ -170,13 +195,16 @@
 </div>
 
 
-<script>function csv() {
+<script>
+    @*====== CRUD FILE ======*@
+    function csv() {
         alert("Allows the user to uplaod a csv file with geocoordinate data for analysis");
     }
     function crudLocations() {
-        dvScroll
         alert("Allows the user to perform CRUD operations on locations in the current dataset");
     }
+
+    @*====== MAP FILTERS ======*@
     function map() {
         alert("Consumes a mapping API to display geocoordinate locations");
     }
@@ -186,6 +214,7 @@
     function distance() {
         alert("Shows the two locations that are farthest apart on the map");
     }
+    @*====== DASHBOARD ======*@
     function dashboard() {
         alert("Chart to display live statistics as the datastet is modified");
     }

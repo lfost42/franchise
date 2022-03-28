@@ -42,15 +42,7 @@ DASHBOARD
 - Option to export dashboard results.
 
 ## OPEN REQUIREMENTS
-MVP
-	- landing page will load CSV file and return the two locations that are farthest apart
 
-Other features:
-
-- Consume a mapping API to display locations on a map
-- Display algorithm results on a map
-- List each location prior to running algorithm. User may de-select location from list.
-	-- Algorithm runs on new list and full list
 
 DASHBOARD
 
@@ -62,13 +54,14 @@ DASHBOARD
 
 ## USER INTERFACE
 - Landing page
-- Options to run algorithm or filter list
+- Options to run algorithm or modify list
 - Options to run algorithm on full or filtered list (or both, different color indicators for map)
 - Dashboard updates after csv file is uploaded, refreshes when algorithm is run
 
 ## LOGIC DESIGN
 - csv parsing
 - mapping API
+- statistical charts
 
 ## DATA DESIGN
 - location (object with latitude, longitude, name)
@@ -80,4 +73,4 @@ DASHBOARD
 
 ### Origins
 
-The project's minimal viable product culminated the C# segment of the Software Engineering course at True Coders (https://truecoders.io). The coding challenge was to parse a csv file of approximately 300 Taco Bell locations and determine which two are farthest apart from one another with logging and unit tests. 
+The project's minimal viable product culminated the C# segment of the Software Engineering course at True Coders (https://truecoders.io). We were to parse a csv file of approximately 300 Taco Bell locations and determine which two were farthest apart from one another. 
