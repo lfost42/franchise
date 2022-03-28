@@ -14,6 +14,7 @@ namespace FranchiseCalculatorUI.Controllers
 {
     public class HomeController : Controller
     {
+
         public ParserControl control = new ParserControl();
         private readonly ILogger<HomeController> _logger;
 
@@ -25,6 +26,11 @@ namespace FranchiseCalculatorUI.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            ViewBag.image = "/images/app.png";
+            ViewBag.Descption = "Evaluates the coverage health of a franchise " +
+                "by determining which locations (in a provided csv file) are " +
+                "farthest apart. Suggests areas that may need expansion or more " +
+                "coverage.";
             return View(control);
         }
 
