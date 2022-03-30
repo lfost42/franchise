@@ -2668,10 +2668,6 @@ button,
         font-size: 1.2em;
     }
 
-    .button {
-        font-size: calc(100vmin / 39);
-    }
-
     span.extra {
         display: inline;
     }
@@ -2777,7 +2773,7 @@ button,
     display: none;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 786px) {
 
     /* Basic */
 
@@ -3073,6 +3069,20 @@ button,
     }
 }
 
+/* Button */
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button,
+.button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    font-size: calc(100vmin / 39);
+}
+
 /* Mobile (Portrait) */
 
 @media screen and (max-width: 480px) {
@@ -3154,6 +3164,8 @@ button,
         display: block;
         width: 100%;
         text-align: center;
+        margin-left: 0;
+        font-size: calc(100vmin / 39);
     }
 
     /* Header */
