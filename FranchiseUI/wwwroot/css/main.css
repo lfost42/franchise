@@ -3124,12 +3124,14 @@ button,
             display: block;
             width: 100%;
             margin: 0 0 1.5em 0;
+            text-align: center;
         }
 
     .image-centered {
         float: none;
         display: block;
         width: 100%;
+        text-align: center;
         margin: 0 0 1.5em 0;
     }
 
