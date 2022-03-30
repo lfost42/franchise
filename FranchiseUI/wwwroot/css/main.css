@@ -2408,6 +2408,7 @@ tabhead {
 		position: relative;
 		z-index: 1;
 		text-align: left;
+		font-size: calc(100vmin / 36);
 	}
 
 		#promo h2, h3, h4, h5 {
@@ -2679,9 +2680,13 @@ tabhead {
 				font-size: 1.2em;
 			}
 
-			span.extra {
-				display: inline;
-			}
+		.button {
+			font-size: calc(100vmin / 39);
+		}
+
+		span.extra {
+			display: inline;
+		}
 
 			.features {
 				margin-bottom: 0;
@@ -2903,6 +2908,17 @@ tabhead {
 					font-size: 1.1em;
 				}
 
+		
+
+		/* Promo */
+
+			#promo {
+				padding: 1.75em 2.5em 1.75em 2.5em;
+				display: inline-block;
+				text-align: left;
+				margin-top: calc(100vmin / 2);
+			}
+
 		/* Nav */
 
 			#page-wrapper {
@@ -3078,7 +3094,7 @@ tabhead {
 		/* Basic */
 
 			body, input, textarea, select {
-				font-size: 1.2em;
+				font-size: calc(100vmin / 39);
 				letter-spacing: 0;
 			}
 
@@ -3174,6 +3190,7 @@ tabhead {
 
 			#promo {
 				padding: 2em 2em 2em 2em;
+				margin-top: calc(100vmin / 7);
 			}
 
 		/* Content */
