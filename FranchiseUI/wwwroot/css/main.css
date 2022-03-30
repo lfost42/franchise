@@ -3127,15 +3127,15 @@ tabhead {
 					float: none;
 					display: block;
 					width: 100%;
-					margin: 0 0 1.5em 0;
+					margin: 0 1.5em 1.5em 1.5em;
 				}
 
-			.image-centered {
-				float: none;
-				display: block;
-				width: 100%;
-				margin: 0 0 1.5em 0;
-			}
+		.image-centered {
+			float: none;
+			display: block;
+			width: 100%;
+			margin: 0 1.5em 1.5em 1.5em;
+		}
 
 		/* Actions */
 
