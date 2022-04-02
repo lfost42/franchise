@@ -1147,9 +1147,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/ParserUI/ParserUI.csproj",
-      "projectName": "ParserUI",
-      "projectPath": "/Users/lynda/Desktop/repo/Franchise/ParserUI/ParserUI.csproj",
+      "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/ParserUI/ParserConsoleUI.csproj",
+      "projectName": "ParserConsoleUI",
+      "projectPath": "/Users/lynda/Desktop/repo/Franchise/ParserUI/ParserConsoleUI.csproj",
       "packagesPath": "/Users/lynda/.nuget/packages/",
       "outputPath": "/Users/lynda/Desktop/repo/Franchise/ParserUI/obj/",
       "projectStyle": "PackageReference",

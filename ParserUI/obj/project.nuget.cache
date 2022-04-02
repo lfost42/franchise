@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QJUXfhdTEFj1Ks66Bdi4XViWf4AMQ2XFncxRAeoW7+KQ+bsDDrYRmhhrADHQhnfzGOff6D3wuNWjTo8r28MDuw==",
+  "dgSpecHash": "42zVbwgZtyGsMcKkBzvgiCdxQfekb+ZogIhhPcyaM3GomrVbW7Kpq8aDhoNFbHrjnk0OljVyW5CIVNOE/NQDzw==",
   "success": true,
-  "projectFilePath": "/Users/lynda/Desktop/repo/Franchise/ParserUI/ParserUI.csproj",
+  "projectFilePath": "/Users/lynda/Desktop/repo/Franchise/ParserUI/ParserConsoleUI.csproj",
   "expectedPackageFiles": [
     "/Users/lynda/.nuget/packages/geocoordinate.netcore/1.0.0.1/geocoordinate.netcore.1.0.0.1.nupkg.sha512",
     "/Users/lynda/.nuget/packages/grpc.core/2.44.0/grpc.core.2.44.0.nupkg.sha512",

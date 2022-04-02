@@ -10,7 +10,7 @@
     <None Remove="Microsoft.Extensions.Configuration.Json" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ParserUI.csproj" />
+    <None Include="ParserConsoleUI.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="TacoBell-US-AL.csv">

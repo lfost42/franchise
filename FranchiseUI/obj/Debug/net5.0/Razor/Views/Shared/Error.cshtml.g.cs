@@ -14,20 +14,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "/Users/lynda/Desktop/repo/Franchise/FranchiseUI/Views/_ViewImports.cshtml"
-using FranchiseCalculatorUI;
+using FranchiseUI;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "/Users/lynda/Desktop/repo/Franchise/FranchiseUI/Views/_ViewImports.cshtml"
-using FranchiseCalculatorUI.Models;
+using FranchiseUI.Models;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4ecc4d2bcad30a6aee551879bc7e7094ebb4184d", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8c5fc67e250b839103c9eeace91d3428b5710d50", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0f135ac271347a3a753e75fb2642cf52e83c4cd3", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

@@ -1,33 +1,21 @@
-﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|FranchiseCalculatorUI">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Controllers/HomeController.cs">
-    <Files>
-      <File FileName="FranchiseUI/Views/Home/Index.cshtml" Line="23" Column="15" />
-      <File FileName="ParserLibrary/Data/ParserDataAccess.cs" Line="14" Column="1" />
-      <File FileName="ParserLibrary/Databases/ParserControl.cs" Line="22" Column="13" />
-      <File FileName="FranchiseUI/Controllers/HomeController.cs" Line="46" Column="17" />
-    </Files>
+﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Franchise" expanded="True">
-            <Node name="FranchiseUI" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="HomeController.cs" selected="True" />
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-              </Node>
+            <Node name="FranchiseUI" expanded="True" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True" />
             </Node>
+            <Node name="ParserConsoleUI" expanded="True" />
             <Node name="ParserLibrary" expanded="True">
               <Node name="Data" expanded="True" />
               <Node name="Databases" expanded="True" />
               <Node name="Interfaces" expanded="True" />
               <Node name="Models" expanded="True" />
             </Node>
-            <Node name="ParserUI" expanded="True" />
           </Node>
         </State>
       </Pad>
@@ -35,8 +23,8 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.FranchiseUI PreferredExecutionTarget="/Applications/Brave Browser.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ParserUI PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ParserConsoleUI PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

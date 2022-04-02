@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "FranchiseCalculatorUI": {
+    "FranchiseUI": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "https://localhost:11716;http://localhost:6272",

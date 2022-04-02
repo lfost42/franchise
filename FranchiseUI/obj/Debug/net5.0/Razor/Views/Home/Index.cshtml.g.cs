@@ -14,20 +14,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "/Users/lynda/Desktop/repo/Franchise/FranchiseUI/Views/_ViewImports.cshtml"
-using FranchiseCalculatorUI;
+using FranchiseUI;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "/Users/lynda/Desktop/repo/Franchise/FranchiseUI/Views/_ViewImports.cshtml"
-using FranchiseCalculatorUI.Models;
+using FranchiseUI.Models;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"66713cdf92c6d0cee3829b81e9739b06ea9d3ac1", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8c5fc67e250b839103c9eeace91d3428b5710d50", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0f135ac271347a3a753e75fb2642cf52e83c4cd3", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ParserLibrary.Databases.ParserControl>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("nav-link"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -73,7 +73,7 @@ using FranchiseCalculatorUI.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\n<!-- Header -->\n<div id=\"hero-wrapper\">\n    <div id=\"header\" class=\"container\">\n\n        <!-- Logo -->\n\n        <h1 id=\"logo\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66713cdf92c6d0cee3829b81e9739b06ea9d3ac15864", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66713cdf92c6d0cee3829b81e9739b06ea9d3ac15844", async() => {
                 WriteLiteral("Franchise Analytics");
             }
             );
@@ -178,7 +178,7 @@ using FranchiseCalculatorUI.Models;
 ");
             WriteLiteral("\n\n\n");
             WriteLiteral("        <li>\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66713cdf92c6d0cee3829b81e9739b06ea9d3ac110898", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "66713cdf92c6d0cee3829b81e9739b06ea9d3ac110878", async() => {
                 WriteLiteral(@"
                 <div id=""dvScroll"" title=""Determine which locations in the current franchise list are farthest apart."">
                     <button type=""submit"" class=""button"">

@@ -5,13 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using FranchiseCalculatorUI.Models;
+using FranchiseUI.Models;
 using ParserLibrary;
 using ParserLibrary.Databases;
 using ParserLibrary.Models;
 using ParserLibrary.Data;
 
-namespace FranchiseCalculatorUI.Controllers
+namespace FranchiseUI.Controllers
 {
     public class HomeController : Controller
     {

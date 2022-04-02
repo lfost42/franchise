@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace FranchiseCalculatorUI
+namespace FranchiseUI
 {
     public class Startup
     {
