@@ -14,46 +14,38 @@ namespace ParserLibrary.Databases
         private static LocationLogger logger = new LocationLogger();
         public SolutionModel solution = new SolutionModel();
         private static ParserDataAccess db = new ParserDataAccess();
-
         public static string csvFile = "Files/TacoBell-US-AL.csv";
 
-        public static void GetLocations()
+        public static List<ITrackable> GetAllLocations(string csvFile)
         {
-            string csvFile = "Files/TacoBell-US-AL.csv";
-            var locations = db.ReadAllRecords(csvFile);
-
-            foreach (var l in locations)
-            {
-                var latitude = l.GeoPoint.Latitude;
-                var longitude = l.GeoPoint.Longitude;
-                var name = l.Name;
-            }
+            List<ITrackable> locations = db.ReadAllRecords(csvFile);
+            return locations;
         }
 
         public static void CreateLocation(ITrackable location)
         {
-            var locations = db.ReadAllRecords(csvFile);
+            var locations = GetAllLocations(csvFile);
             locations.Add(location);
             db.WriteAllRecords(locations, csvFile);
         }
 
         public static void UpdateLatitude(double latitude)
         {
-            var locations = db.ReadAllRecords(csvFile);
+            var locations = GetAllLocations(csvFile);
             locations[0].GeoPoint.Latitude = latitude;
             db.WriteAllRecords(locations, csvFile);
         }
 
         public static void UpdateLongitude(double longitude)
         {
-            var locations = db.ReadAllRecords(csvFile);
+            var locations = GetAllLocations(csvFile);
             locations[1].GeoPoint.Longitude = longitude;
             db.WriteAllRecords(locations, csvFile);
         }
 
         public static void UpdateName(string name)
         {
-            var locations = db.ReadAllRecords(csvFile);
+            var locations = GetAllLocations(csvFile);
             locations[2].Name = name;
             db.WriteAllRecords(locations, csvFile);
         }
@@ -61,7 +53,7 @@ namespace ParserLibrary.Databases
 
         private static void RemoveLocation(int position)
         {
-            var locations = db.ReadAllRecords(csvFile);
+            var locations = GetAllLocations(csvFile);
             locations.RemoveAt(position);
         }
 

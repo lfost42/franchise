@@ -12,9 +12,10 @@ namespace ParserLibrary.Data
         private static LocationLogger logger = new LocationLogger();
         private static ParserDataAccess db = new ParserDataAccess();
 
-        public ITrackable Parse(string line)
+
+        public ITrackable Parse(string csvFile)
         {
-            var cells = line.Split(',');
+            var cells = csvFile.Split(',');
             if (cells.Length < 3) return null;
 
             var latitude = double.Parse(cells[0]);
@@ -36,7 +37,7 @@ namespace ParserLibrary.Data
             if (lines.Length == 0) logger.LogError("files has no input");
             if (lines.Length == 1) logger.LogInfo($"Lines: {lines[0]}");
 
-            var locations = lines.Select(line => db.Parse(line)).ToList();
+            List<ITrackable> locations = lines.Select(line => db.Parse(line)).ToList();
             return locations;
         }
 

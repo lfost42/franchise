@@ -43,7 +43,8 @@ namespace FranchiseCalculatorUI.Controllers
             if (ModelState.IsValid)
             {
                 csvFile = "Files/TacoBell-US-AL.csv";
-                List<ITrackable> locations = db.ReadAllRecords(csvFile);
+
+                List<ITrackable> locations = ParserControl.GetAllLocations(csvFile);
                 control.GetFurthestLocations(locations);
 
                 string fileName = csvFile.Substring(csvFile.IndexOf("/") + 1);
