@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|FranchiseCalculatorUI">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ParserLibrary/Data/ParserDataAccess.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="ParserLibrary/Databases/ParserControl.cs" Line="13" Column="6" />
-      <File FileName="ParserLibrary/Data/ParserDataAccess.cs" Line="55" Column="6" />
-      <File FileName="FranchiseUI/Views/Home/Index.cshtml" Line="16" Column="23" />
-      <File FileName="FranchiseUI/Controllers/HomeController.cs" Line="43" Column="36" />
+      <File FileName="FranchiseUI/Views/Home/Index.cshtml" Line="23" Column="15" />
+      <File FileName="ParserLibrary/Data/ParserDataAccess.cs" Line="13" Column="9" />
+      <File FileName="ParserLibrary/Databases/ParserControl.cs" Line="91" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,8 +12,9 @@
             <Node name="FranchiseUI" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
@@ -22,10 +22,9 @@
               </Node>
             </Node>
             <Node name="ParserLibrary" expanded="True">
-              <Node name="Data" expanded="True">
-                <Node name="ParserDataAccess.cs" selected="True" />
-              </Node>
+              <Node name="Data" expanded="True" />
               <Node name="Databases" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
               <Node name="Models" expanded="True" />
             </Node>
             <Node name="ParserUI" expanded="True" />

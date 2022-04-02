@@ -11,12 +11,59 @@ namespace ParserLibrary.Databases
 {
     public class ParserControl
     {
-        public SolutionModel solution = new SolutionModel();
         private static LocationLogger logger = new LocationLogger();
-        //Create Location
-        //Update Location
-        //Delete Location
-        //Read Location
+        public SolutionModel solution = new SolutionModel();
+        private static ParserDataAccess db = new ParserDataAccess();
+
+        public static string csvFile = "Files/TacoBell-US-AL.csv";
+
+        public static void GetLocations()
+        {
+            string csvFile = "Files/TacoBell-US-AL.csv";
+            var locations = db.ReadAllRecords(csvFile);
+
+            foreach (var l in locations)
+            {
+                var latitude = l.GeoPoint.Latitude;
+                var longitude = l.GeoPoint.Longitude;
+                var name = l.Name;
+            }
+        }
+
+        public static void CreateLocation(ITrackable location)
+        {
+            var locations = db.ReadAllRecords(csvFile);
+            locations.Add(location);
+            db.WriteAllRecords(locations, csvFile);
+        }
+
+        public static void UpdateLatitude(double latitude)
+        {
+            var locations = db.ReadAllRecords(csvFile);
+            locations[0].GeoPoint.Latitude = latitude;
+            db.WriteAllRecords(locations, csvFile);
+        }
+
+        public static void UpdateLongitude(double longitude)
+        {
+            var locations = db.ReadAllRecords(csvFile);
+            locations[1].GeoPoint.Longitude = longitude;
+            db.WriteAllRecords(locations, csvFile);
+        }
+
+        public static void UpdateName(string name)
+        {
+            var locations = db.ReadAllRecords(csvFile);
+            locations[2].Name = name;
+            db.WriteAllRecords(locations, csvFile);
+        }
+
+
+        private static void RemoveLocation(int position)
+        {
+            var locations = db.ReadAllRecords(csvFile);
+            locations.RemoveAt(position);
+        }
 
         public ParserControl GetFurthestLocations(List<ITrackable> locations)
         {

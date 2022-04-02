@@ -24,7 +24,7 @@ Completed:
 
 Future Updates:
 
-- Option to add, modify, and delete locations. 
+- Option to view, add, delete, and modify locations. 
 - Option to upload a new csv file and run analysis on it. 
 - Consume an API for mapping purposes. 
 - Display locations and analysis results on a map. 
