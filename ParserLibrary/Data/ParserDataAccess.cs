@@ -9,10 +9,6 @@ namespace ParserLibrary.Data
 {
     public class ParserDataAccess
     {
-        [System.ComponentModel.Browsable(false)]
-        public bool IsPostBack { get; }
-
-        public SolutionModel solution = new SolutionModel();
         private static LocationLogger logger = new LocationLogger();
         private static ParserDataAccess db = new ParserDataAccess();
 
@@ -44,29 +40,16 @@ namespace ParserLibrary.Data
             return locations;
         }
 
-        public ParserControl GetFurthestLocations(List<ITrackable> locations)
+        public void WriteAllRecords(List<ITrackable> locations, string csvFile)
         {
-            ParserControl result = new ParserControl();
+            List<string> lines = new List<string>();
 
-            logger.LogInfo("Log initialized, locating two locations furthest from one another.");
-
-            for (int i = 0; i < locations.Count; i++)
+            foreach (var l in locations)
             {
-                var locA = locations[i];
-                for (int j = 0; j < locations.Count; j++)
-                {
-                    var locB = locations[j];
-                    if (locA.GeoPoint.GetDistanceTo(locB.GeoPoint) > solution.Distance)
-                    {
-                        solution.Location1 = locA;
-                        solution.Location2 = locB;
-                        solution.Distance = Math.Round(locA.GeoPoint.GetDistanceTo(locB.GeoPoint) * 0.00062, 2);
-                        solution.isPosted = true;
-                    }
-                }
+                lines.Add($"{l.GeoPoint.Latitude},{l.GeoPoint.Longitude},{l.Name}");
             }
-            logger.LogInfo($"{solution.Location1.Name} and {solution.Location2.Name} are {solution.Distance} miles apart.");
-            return result;
+            string newFile = "$new_{csvFile}";
+            File.WriteAllLines(newFile, lines);
         }
 
     }
