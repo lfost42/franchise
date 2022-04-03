@@ -4,15 +4,23 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ParserLibrary.Data;
+using ParserLibrary.Databases;
 
 namespace FranchiseUI.Controllers
 {
     public class LocationsController : Controller
     {
         // GET: Locations
-        public ActionResult Index()
+        [HttpPost]
+        public IActionResult Index(ParserDataAccess db, string csvFile)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                csvFile = "Files/TacoBell-US-AL.csv";
+                db.ReadAllRecords(csvFile);
+            }
+            return View(db);
         }
 
         // GET: Locations/Details/5

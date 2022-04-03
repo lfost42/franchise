@@ -1,10 +1,57 @@
 @page
-@model FranchiseUI.Views.Locations.IndexModel
-@{
-    ViewData["Title"] = "Index";
-}
+@model ParserLibrary.Data.ParserDataAccess
 
-<h1>Index</h1>
+@{ ViewData["appName"] = "Franchise Analytics"; }
+
+<link href="/css/site.css" rel="stylesheet" />
+
+
+<table class="table" id="Locations">
+    <thead>
+        <tr>
+            <th>
+                File
+            </th>
+
+            <th>
+                Latitude
+            </th>
+
+            <th>
+                Longitude
+            </th>
+
+            <th>
+                Location Name
+            </th>
+
+        </tr>
+
+
+    </thead>
+    <tbody>
+
+<tr>
+    <td>
+    </td>
+
+    <td>
+    </td>
+
+    <td>
+    </td>
+
+    <td>
+    </td>
+
+</tr>
+        }
+
+    </tbody>
+</table>
+
+
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

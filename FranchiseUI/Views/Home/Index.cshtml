@@ -1,7 +1,7 @@
 ﻿@model ParserLibrary.Databases.ParserControl
 
 @{
-    ViewData["appName"] = "Franchise Calculator";
+    ViewData["appName"] = "Franchise Analytics";
 }
 
 <!-- Header -->
@@ -100,14 +100,15 @@
 
 
         @*====== TODO CRUD LOCATIONS ======*@
-        <li>
+    <li>
+        <form class="col" asp-action="Index" asp-controller="Locations" method="post">
             <div class="col" title="View or modify the current list of locations">
-                <button type="submit" class="button" href="#promo"
-                        onclick="crudLocations()">
+                <button type="submit" class="button">
                     Locations
                 </button>
             </div>
-        </li>
+        </form>
+    </li>
         @*====== END CRUD LOCATIONS ======*@
 
 
@@ -199,9 +200,6 @@
     @*====== CRUD FILE ======*@
     function csv() {
         alert("Allows the user to upload a csv file with geocoordinate data for analysis");
-    }
-    function crudLocations() {
-        alert("Allows the user to perform CRUD operations on locations in the current dataset");
     }
 
     @*====== MAP FILTERS ======*@

@@ -7,6 +7,6 @@ namespace ParserLibrary
     {
         public string Name { get; set; }
         public GeoCoordinate GeoPoint { get; set; }
-
+        int Line { get; set; }
     }
 }

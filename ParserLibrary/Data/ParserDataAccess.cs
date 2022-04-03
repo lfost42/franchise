@@ -7,10 +7,10 @@ using ParserLibrary.Models;
 
 namespace ParserLibrary.Data
 {
-    public class ParserDataAccess
+    public class ParserDataAccess : IDatabaseData
     {
         private static LocationLogger logger = new LocationLogger();
-        private static ParserDataAccess db = new ParserDataAccess();
+        public static ParserDataAccess db = new ParserDataAccess();
 
 
         public ITrackable Parse(string csvFile)
@@ -30,13 +30,12 @@ namespace ParserLibrary.Data
             return location;
         }
 
-        
+
         public List<ITrackable> ReadAllRecords(string csvFile)
         {
             string[] lines = File.ReadAllLines(csvFile);
             if (lines.Length == 0) logger.LogError("files has no input");
             if (lines.Length == 1) logger.LogInfo($"Lines: {lines[0]}");
-
             List<ITrackable> locations = lines.Select(line => db.Parse(line)).ToList();
             return locations;
         }
@@ -47,6 +46,7 @@ namespace ParserLibrary.Data
 
             foreach (var l in locations)
             {
+
                 lines.Add($"{l.GeoPoint.Latitude},{l.GeoPoint.Longitude},{l.Name}");
             }
             string newFile = "$new_{csvFile}";
