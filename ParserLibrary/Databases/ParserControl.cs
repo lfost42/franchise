@@ -75,6 +75,8 @@ namespace ParserLibrary.Databases
                         solution.Location2 = locB;
                         solution.Distance = Math.Round(locA.GeoPoint.GetDistanceTo(locB.GeoPoint) * 0.00062, 2);
                         solution.isPosted = true;
+                        string fileName = csvFile.Substring(csvFile.IndexOf("/") + 1);
+                        solution.FileName = $"{fileName}";
                     }
                 }
             }

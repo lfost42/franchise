@@ -15,10 +15,6 @@ namespace FranchiseUI.Controllers
 {
     public class HomeController : Controller
     {
-
-        public ParserControl control = new ParserControl();
-        public ParserDataAccess db = new ParserDataAccess();
-
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -34,6 +30,7 @@ namespace FranchiseUI.Controllers
                 "by determining which locations (in a provided csv file) are " +
                 "farthest apart. Suggests areas that may need expansion or more " +
                 "coverage.";
+            ParserControl control = new ParserControl();
             return View(control);
         }
 
@@ -43,12 +40,8 @@ namespace FranchiseUI.Controllers
             if (ModelState.IsValid)
             {
                 csvFile = "Files/TacoBell-US-AL.csv";
-
                 List<ITrackable> locations = ParserControl.GetAllLocations(csvFile);
                 control.GetFurthestLocations(locations);
-
-                string fileName = csvFile.Substring(csvFile.IndexOf("/") + 1);
-                control.solution.FileName = $"{fileName}";
             }
             return View(control);
         }
