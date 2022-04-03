@@ -1,5 +1,5 @@
 @page
-@model ParserLibrary.Data.ParserDataAccess
+@model FranchiseUI.Views.Locations.IndexModel
 
 @{ ViewData["appName"] = "Franchise Analytics"; }
 
@@ -24,6 +24,9 @@
             <th>
                 Location Name
             </th>
+            <th>
+
+            </th>
 
         </tr>
 
@@ -31,26 +34,45 @@
     </thead>
     <tbody>
 
-<tr>
-    <td>
-    </td>
 
-    <td>
-    </td>
+        <tr>
+            <td>
+                @Model.fileName;
+            </td>
+        @foreach (var record in Model.Records)
+        {
+            <td>
+                @record.GeoPoint.Latitude;
+            </td>
 
-    <td>
-    </td>
+            <td>
+                @record.GeoPoint.Longitude;
+            </td>
 
-    <td>
-    </td>
+            <td>
+                @record.Name;
+            </td>
 
-</tr>
-        }
+            <td>
+                @*<div class="row">
+                <div class="mr-1 mb-1 col-md-12 col-lg-4">
+                    <a type="button" class="btn-success btn" asp-action="Details" asp-route-id="@item.Id" alt="view"><i class="fas fa-eye"></i></a>
+                </div>
+                <div class="mr-1 mb-1 col-md-12 col-lg-4">
+                    <a type="button" class="btn-warning btn" asp-action="Edit" asp-route-id="@item.Id" alt="edit"><i class="fas fa-edit"></i></a>
+                </div>
+                <div class="mr-1 col-md-12 col-lg-4">
+                    <a type="button" class="btn-danger btn" asp-action="Delete" asp-route-id="@item.Id" alt="delete"><i class="fa fa-trash"></i></a>
+                </div>
+            </div>*@
+            </td>
+         }
+        </tr>
+        
+
 
     </tbody>
 </table>
-
-
 
 
 @section Scripts {

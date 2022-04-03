@@ -11,16 +11,10 @@ namespace FranchiseUI.Controllers
 {
     public class LocationsController : Controller
     {
-        // GET: Locations
-        [HttpPost]
-        public IActionResult Index(ParserDataAccess db, string csvFile)
+
+        public ActionResult Index(FranchiseUI.Views.Locations.IndexModel model)
         {
-            if (ModelState.IsValid)
-            {
-                csvFile = "Files/TacoBell-US-AL.csv";
-                db.ReadAllRecords(csvFile);
-            }
-            return View(db);
+            return View(model);
         }
 
         // GET: Locations/Details/5
