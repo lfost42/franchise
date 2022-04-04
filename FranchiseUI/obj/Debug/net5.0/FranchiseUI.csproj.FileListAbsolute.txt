@@ -115,3 +115,4 @@
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/ref/FranchiseUI.dll
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/FranchiseUI.pdb
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/FranchiseUI.genruntimeconfig.cache
+/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Locations/Index.cshtml.g.cs
