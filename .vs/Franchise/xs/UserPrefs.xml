@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ParserLibrary/Data/ParserDataAccess.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/wwwroot/css/main.css">
     <Files>
-      <File FileName="ParserLibrary/Data/ParserDataAccess.cs" Line="42" Column="48" />
-      <File FileName="FranchiseUI/Views/Locations/Index.cshtml" Line="1" Column="1" />
+      <File FileName="FranchiseUI/Views/Locations/Index.cshtml" Line="57" Column="21" />
+      <File FileName="FranchiseUI/wwwroot/css/main.css" Line="2019" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +10,6 @@
           <Node name="Franchise" expanded="True">
             <Node name="FranchiseUI" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
                 <Node name="Locations" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
@@ -19,11 +18,7 @@
                 </Node>
               </Node>
             </Node>
-            <Node name="ParserLibrary" expanded="True">
-              <Node name="Data" expanded="True" />
-              <Node name="Interfaces" expanded="True" />
-              <Node name="Models" expanded="True" />
-            </Node>
+            <Node name="ParserLibrary" expanded="True" />
           </Node>
         </State>
       </Pad>

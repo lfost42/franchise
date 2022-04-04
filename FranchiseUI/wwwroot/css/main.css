@@ -2010,39 +2010,12 @@ table {
     background-color: white;
     color: black;
     text-align: left;
-}
 
     table.locations {
         -webkit-appearance: none;
         background-color: white;
         color: black;
         text-align: left;
-    }
-
-
-tabhead {
-}
-
-table.default {
-    width: 60%;
-}
-
-    table.default tbody tr {
-        border-top: solid 1px #D2D7DC;
-    }
-
-        table.default tbody tr:nth-child(2n+1) {
-            background: #f9fbfe;
-        }
-
-    table.default th {
-        text-align: left;
-        font-weight: 400;
-        padding: 0.5em 1em 0.5em 1em;
-    }
-
-    table.default tfoot {
-        border-top: solid 1px #D2D7DC;
     }
 
 /* Button */
