@@ -15,6 +15,7 @@ namespace FranchiseUI
 {
     public class Startup
     {
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -29,6 +30,8 @@ namespace FranchiseUI
             services.AddTransient<IDatabaseData, ParserDataAccess>();
             services.AddTransient<ITrackable, LocationModel>();
             services.AddTransient<ILog, LocationLogger>();
+            services.AddDistributedMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,6 +40,7 @@ namespace FranchiseUI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSession();
             }
             else
             {
