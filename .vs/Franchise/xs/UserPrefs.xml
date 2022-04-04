@@ -1,21 +1,17 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Views/Locations/Index.cshtml">
+    <Files>
+      <File FileName="FranchiseUI/Views/Locations/Index.cshtml" Line="17" Column="16" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Franchise" expanded="True">
             <Node name="FranchiseUI" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Locations" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True">
-                  <Node name="main.css" selected="True" />
-                </Node>
+                <Node name="Locations" expanded="True" selected="True" />
               </Node>
             </Node>
-            <Node name="ParserLibrary" expanded="True" />
           </Node>
         </State>
       </Pad>

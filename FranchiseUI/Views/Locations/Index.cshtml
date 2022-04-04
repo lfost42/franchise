@@ -14,10 +14,16 @@
             <header>
                 <h2>View Locations</h2>
             </header>
+            <p>
+                    <a asp-controller="Home" asp-action="Index">Cancel</a>
+            </p>
             <table class="table locations" id="LocationsTable">
                 <br />
                 <thead>
                     <tr>
+                        <th>
+                            Id
+                        </th>
                         <th>
                             Latitude
                         </th>
@@ -35,6 +41,9 @@
                     {
                         <tr>
                             <td>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </td>
+                            <td>
                                 @Html.DisplayFor(modelItem => item.GeoPoint.Latitude)
                             </td>
                             <td>
@@ -42,6 +51,16 @@
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <div class="mr-1 mb-1 col-md-12 col-lg-4">
+                                        <a asp-action="Edit" asp-route-id="@item.Id" alt="edit">Edit</a>
+                                    </div>
+                                    <div class="mr-1 col-md-12 col-lg-4">
+                                        <a asp-action="Delete" asp-route-id="@item.Id" alt="delete">Delete</a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     }
