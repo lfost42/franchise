@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using FranchiseUI.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -6,6 +7,7 @@ using ParserLibrary;
 using ParserLibrary.Databases;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -28,13 +30,12 @@ namespace FranchiseUI.Controllers
         }
 
         // GET: LocationsController
-        public ActionResult Index(ITrackable view, string csvFile)
+        public ActionResult Index(List<ITrackable> view, string csvFile)
         {
             if (ModelState.IsValid)
             {
-                ParserControl control = new ParserControl();
                 csvFile = "Files/TacoBell-US-AL.csv";
-                ParserControl.GetAllLocations(csvFile);
+                view = ParserControl.GetAllLocations(csvFile);
             }
             return View(view);
         }
@@ -106,6 +107,12 @@ namespace FranchiseUI.Controllers
             {
                 return View();
             }
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
