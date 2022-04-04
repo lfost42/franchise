@@ -26,35 +26,21 @@ namespace ParserLibrary.Databases
         {
             var locations = GetAllLocations(csvFile);
             locations.Add(location);
-            db.WriteAllRecords(locations, csvFile);
         }
 
-        public static void UpdateLatitude(double latitude)
+        public static void UpdateName(int Id, double longitude, double latitude, string name)
         {
             var locations = GetAllLocations(csvFile);
-            locations[0].GeoPoint.Latitude = latitude;
-            db.WriteAllRecords(locations, csvFile);
-        }
-
-        public static void UpdateLongitude(double longitude)
-        {
-            var locations = GetAllLocations(csvFile);
-            locations[1].GeoPoint.Longitude = longitude;
-            db.WriteAllRecords(locations, csvFile);
-        }
-
-        public static void UpdateName(string name)
-        {
-            var locations = GetAllLocations(csvFile);
-            locations[2].Name = name;
-            db.WriteAllRecords(locations, csvFile);
+            locations[Id].GeoPoint.Longitude = longitude;
+            locations[Id].GeoPoint.Latitude = latitude;
+            locations[Id].Name = name;
         }
 
 
-        private static void RemoveLocation(int position)
+        private static void RemoveLocation(int Id)
         {
             var locations = GetAllLocations(csvFile);
-            locations.RemoveAt(position);
+            locations.RemoveAt(Id);
         }
 
         public ParserControl GetFurthestLocations(List<ITrackable> locations)

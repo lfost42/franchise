@@ -16,20 +16,22 @@ namespace FranchiseUI.Controllers
     public class LocationsController : Controller
     {
         private readonly ILogger<LocationsController> _logger;
+        public static string csvFile = "Files/TacoBell-US-AL.csv";
 
         public LocationsController(ILogger<LocationsController> logger)
         {
             _logger = logger;
         }
 
-        [HttpGet]
-        public IActionResult Index()
+        //GET: LocationsController
+       [HttpGet]
+        public IActionResult Index(List<ITrackable> view)
         {
-            ParserControl control = new ParserControl();
-            return View(control);
+            return View(view);
         }
 
-        // GET: LocationsController
+
+        [HttpPost]
         public ActionResult Index(List<ITrackable> view, string csvFile)
         {
             if (ModelState.IsValid)
@@ -40,13 +42,8 @@ namespace FranchiseUI.Controllers
             return View(view);
         }
 
-        // GET: LocationsController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
         // GET: LocationsController/Create
+        [HttpGet]
         public ActionResult Create()
         {
             return View();
@@ -55,19 +52,26 @@ namespace FranchiseUI.Controllers
         // POST: LocationsController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public IActionResult Create(List<ITrackable> list, ITrackable location)
         {
-            try
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                ParserControl.CreateLocation(location);
+                list.Add(location);
             }
-            catch
-            {
-                return View();
-            }
+
+            return View(location);
+        }
+
+        // GET: LocationsController/Details/5
+        [HttpGet]
+        public ActionResult Details(int id)
+        {
+            return View();
         }
 
         // GET: LocationsController/Edit/5
+        [HttpGet]
         public ActionResult Edit(int id)
         {
             return View();
@@ -76,7 +80,7 @@ namespace FranchiseUI.Controllers
         // POST: LocationsController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, ITrackable location)
         {
             try
             {
@@ -89,6 +93,7 @@ namespace FranchiseUI.Controllers
         }
 
         // GET: LocationsController/Delete/5
+        [HttpGet]
         public ActionResult Delete(int id)
         {
             return View();

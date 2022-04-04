@@ -116,3 +116,6 @@
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/FranchiseUI.pdb
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/FranchiseUI.genruntimeconfig.cache
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Locations/Index.cshtml.g.cs
+/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Locations/Create.cshtml.g.cs
+/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Locations/Delete.cshtml.g.cs
+/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Locations/Update.cshtml.g.cs
