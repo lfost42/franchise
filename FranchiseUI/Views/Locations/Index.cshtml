@@ -15,6 +15,7 @@
                 <h2>View Locations</h2>
             </header>
             <table class="table locations" id="LocationsTable">
+                <br />
                 <thead>
                     <tr>
                         <th>
@@ -28,6 +29,7 @@
                         </th>
                     </tr>
                 </thead>
+
                 <tbody>
                     @foreach (var item in Model)
                     {
@@ -41,12 +43,12 @@
                             <td>
                                 @Html.DisplayFor(modelItem => item.Name)
                             </td>
-
                         </tr>
                     }
                 </tbody>
             </table>
         </article>
+
     </div>
 </div>
 
@@ -55,3 +57,4 @@
     <script>$(document).ready(function () {
             $('#LocationsTable').DataTable();
         });</script>
+}
