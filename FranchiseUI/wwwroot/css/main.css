@@ -1991,7 +1991,7 @@ form ::-moz-focus-inner {
         white-space: nowrap;
     }
 
-table {
+.tabledistance {
     -webkit-appearance: none;
     background-color: var(--white-color);
     color: black;
@@ -2004,6 +2004,21 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
+
+table {
+    -webkit-appearance: none;
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+
+    table.locations {
+        -webkit-appearance: none;
+        background-color: white;
+        color: black;
+        text-align: left;
+    }
+
 
 tabhead {
 }

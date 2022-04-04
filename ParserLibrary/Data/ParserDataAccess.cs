@@ -37,6 +37,14 @@ namespace ParserLibrary.Data
             if (lines.Length == 0) logger.LogError("files has no input");
             if (lines.Length == 1) logger.LogInfo($"Lines: {lines[0]}");
             List<ITrackable> locations = lines.Select(line => db.Parse(line)).ToList();
+
+            int idKey = 0;
+            foreach (var location in locations)
+            {
+                idKey++;
+                location.Id = idKey;
+            }
+
             return locations;
         }
 
