@@ -1991,7 +1991,7 @@ form ::-moz-focus-inner {
         white-space: nowrap;
     }
 
-table {
+.tabledistance {
     -webkit-appearance: none;
     background-color: var(--white-color);
     color: black;
@@ -2005,30 +2005,19 @@ table {
     margin-right: auto;
 }
 
-tabhead {
+table {
+    -webkit-appearance: none;
+    background-color: white;
+    color: black;
+    text-align: left;
 }
 
-table.default {
-    width: 60%;
+table.locations {
+    -webkit-appearance: none;
+    background-color: white;
+    color: black;
+    text-align: left;
 }
-
-    table.default tbody tr {
-        border-top: solid 1px #D2D7DC;
-    }
-
-        table.default tbody tr:nth-child(2n+1) {
-            background: #f9fbfe;
-        }
-
-    table.default th {
-        text-align: left;
-        font-weight: 400;
-        padding: 0.5em 1em 0.5em 1em;
-    }
-
-    table.default tfoot {
-        border-top: solid 1px #D2D7DC;
-    }
 
 /* Button */
 
