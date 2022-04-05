@@ -27,9 +27,9 @@ namespace FranchiseUI.Controllers
 
         //GET: LocationsController
        [HttpGet]
-        public IActionResult Index(List<ITrackable>  view)
+        public IActionResult Index()
         {
-            return View(view);
+            return View(new List<ITrackable>());
         }
 
 

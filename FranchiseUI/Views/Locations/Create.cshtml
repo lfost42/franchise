@@ -4,36 +4,37 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<link href="/css/site.css" rel="stylesheet" />
 
-<h4>New Location</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-                <label asp-for="GeoPoint.Latitude" class="control-label"></label>
-                <input asp-for="GeoPoint.Latitude" class="form-control" />
-                <span asp-validation-for="GeoPoint.Latitude" class="text-danger"></span>
-                <label asp-for="GeoPoint.Longitude" class="control-label"></label>
-                <input asp-for="GeoPoint.Longitude" class="form-control" />
-                <span asp-validation-for="GeoPoint.Longitude" class="text-danger"></span>
-            </div>
-            <div class="row mx-8 my-4">
+<div class="wrapper container" id="CRUD">
+    <h3>Create New Location</h3>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
-                    <input type="submit" value="Create" class="btn btn-warning gy-3 px-4 me-md-2" />
-                    <a type="button" class="btn-success btn" asp-action="Index">Cancel</a>
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                    <label asp-for="GeoPoint.Latitude" class="control-label"></label>
+                    <input asp-for="GeoPoint.Latitude" class="form-control" />
+                    <span asp-validation-for="GeoPoint.Latitude" class="text-danger"></span>
+                    <label asp-for="GeoPoint.Longitude" class="control-label"></label>
+                    <input asp-for="GeoPoint.Longitude" class="form-control" />
+                    <span asp-validation-for="GeoPoint.Longitude" class="text-danger"></span>
                 </div>
-            </div>
-        </form>
+                <div class="row mx-8 my-4">
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-warning gy-3 px-4 me-md-2" />
+                        <a type="button" class="btn-success btn" asp-action="Index" method="post">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }

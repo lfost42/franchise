@@ -1,44 +1,45 @@
 ﻿@model ParserLibrary.ITrackable
 
 @{
-    ViewData["Title"] = "Update";
+    ViewData["Title"] = "Edit Location";
 }
 
-<h1>Update</h1>
+<link href="/css/site.css" rel="stylesheet" />
 
-<h4>Location</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="Id" />
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="GeoPoint.Latitude" class="control-label"></label>
-                <input asp-for="GeoPoint.Latitude" class="form-control" />
-                <span asp-validation-for="GeoPoint.Latitude" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="GeoPoint.Longitude" class="control-label"></label>
-                <input asp-for="GeoPoint.Longitude" class="form-control" />
-                <span asp-validation-for="GeoPoint.Longitude" class="text-danger"></span>
-            </div>
+<div class="wrapper container" id="CRUD">
+    <h3>Edit Location</h3>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="GeoPoint.Latitude" class="control-label"></label>
+                    <input asp-for="GeoPoint.Latitude" class="form-control" />
+                    <span asp-validation-for="GeoPoint.Latitude" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="GeoPoint.Longitude" class="control-label"></label>
+                    <input asp-for="GeoPoint.Longitude" class="form-control" />
+                    <span asp-validation-for="GeoPoint.Longitude" class="text-danger"></span>
+                </div>
 
 
-            <div class="col form-group">
-                <input type="submit" class="btn btn-warning" value="Commit" />
-                <a type="button" class="btn-success btn mx-3" asp-action="Index">Cancel</a>
-            </div>
+                <div class="col form-group">
+                    <input type="submit" class="btn btn-warning" value="Commit" />
+                    <a type="button" class="btn-success btn mx-3" asp-action="Index" method="post">Cancel</a>
+                </div>
 
-        </form>
+            </form>
+        </div>
     </div>
 </div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
