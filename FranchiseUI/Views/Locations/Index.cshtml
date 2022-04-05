@@ -8,11 +8,11 @@
 <link href="/css/site.css" rel="stylesheet" />
 
 <div class="wrapper">
-    <div class="container">
+    <section class="container" id="locations">
 
         <article id="content">
             <header>
-                <h2>View Locations</h2>
+                <h2>Data Table</h2>
             </header>
             <p>
                 <a asp-action="Create">Create</a> |
@@ -61,14 +61,14 @@
                             <td>
                                 <a asp-action="Edit" asp-route-id="@item.Id" alt="edit"><i class="fas fa-edit"></i></a>
                                 <a asp-action="Delete" asp-route-id="@item.Id" alt="delete"><i class="fa fa-trash"></i></a>
-                             </td>
+                            </td>
                         </tr>
                     }
                 </tbody>
             </table>
         </article>
 
-    </div>
+    </section>
 </div>
 
 @section scripts {

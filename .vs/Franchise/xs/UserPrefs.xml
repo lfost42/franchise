@@ -1,5 +1,10 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Views/Locations/Delete.cshtml">
+    <Files>
+      <File FileName="FranchiseUI/Views/Locations/Edit.cshtml" Line="40" Column="67" />
+      <File FileName="FranchiseUI/Views/Locations/Create.cshtml" Line="35" Column="64" />
+      <File FileName="FranchiseUI/Views/Locations/Delete.cshtml" Line="38" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -9,13 +14,14 @@
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Locations" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
+                  <Node name="Delete.cshtml" selected="True" />
                 </Node>
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
               </Node>
             </Node>
+            <Node name="ParserConsoleUI" expanded="True" />
             <Node name="ParserLibrary" expanded="True">
               <Node name="Data" expanded="True" />
               <Node name="Databases" expanded="True" />
