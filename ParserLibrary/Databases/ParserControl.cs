@@ -14,7 +14,10 @@ namespace ParserLibrary.Databases
         private static LocationLogger logger = new LocationLogger();
         public SolutionModel solution = new SolutionModel();
         private static ParserDataAccess db = new ParserDataAccess();
+        public static LocationListModel localList = new LocationListModel();
+
         public static string csvFile = "Files/TacoBell-US-AL.csv";
+
 
         public static List<ITrackable> GetAllLocations(string csvFile)
         {
@@ -22,25 +25,35 @@ namespace ParserLibrary.Databases
             return locations;
         }
 
-        public static void CreateLocation(ITrackable location)
+        public static LocationListModel GetListLocations(string csvFile)
         {
             var locations = GetAllLocations(csvFile);
-            locations.Add(location);
+            foreach (ITrackable location in locations)
+            {
+                localList.List.Add(location);
+            }
+            return localList;
+        }
+
+        public static void CreateLocation(ITrackable location)
+        {
+            var list = GetListLocations(csvFile);
+            list.List.Add(location);
         }
 
         public static void UpdateName(int Id, double longitude, double latitude, string name)
         {
-            var locations = GetAllLocations(csvFile);
-            locations[Id].GeoPoint.Longitude = longitude;
-            locations[Id].GeoPoint.Latitude = latitude;
-            locations[Id].Name = name;
+            var list = GetListLocations(csvFile);
+            list.List[Id].GeoPoint.Longitude = longitude;
+            list.List[Id].GeoPoint.Latitude = latitude;
+            list.List[Id].Name = name;
         }
 
 
         private static void RemoveLocation(int Id)
         {
-            var locations = GetAllLocations(csvFile);
-            locations.RemoveAt(Id);
+            var list = GetListLocations(csvFile);
+            list.List.RemoveAt(Id);
         }
 
         public ParserControl GetFurthestLocations(List<ITrackable> locations)

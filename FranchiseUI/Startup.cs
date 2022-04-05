@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ParserLibrary;
 using ParserLibrary.Data;
+using ParserLibrary.Models;
 
 namespace FranchiseUI
 {
@@ -30,6 +31,7 @@ namespace FranchiseUI
             services.AddTransient<IDatabaseData, ParserDataAccess>();
             services.AddTransient<ITrackable, LocationModel>();
             services.AddTransient<ILog, LocationLogger>();
+            services.AddTransient<IListModel, LocationListModel>();
             services.AddDistributedMemoryCache();
             services.AddSession();
         }

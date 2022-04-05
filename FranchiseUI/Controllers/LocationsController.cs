@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using ParserLibrary;
 using ParserLibrary.Databases;
+using ParserLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -16,7 +17,8 @@ namespace FranchiseUI.Controllers
     public class LocationsController : Controller
     {
         private readonly ILogger<LocationsController> _logger;
-        public static string csvFile = "Files/TacoBell-US-AL.csv";
+        public LocationListModel localList = new LocationListModel();
+
 
         public LocationsController(ILogger<LocationsController> logger)
         {
@@ -25,7 +27,7 @@ namespace FranchiseUI.Controllers
 
         //GET: LocationsController
        [HttpGet]
-        public IActionResult Index(List<ITrackable> view)
+        public IActionResult Index(List<ITrackable>  view)
         {
             return View(view);
         }
@@ -52,15 +54,14 @@ namespace FranchiseUI.Controllers
         // POST: LocationsController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(List<ITrackable> list, ITrackable location)
+        public IActionResult Create(ITrackable create)
         {
             if (ModelState.IsValid)
             {
-                ParserControl.CreateLocation(location);
-                list.Add(location);
+                ParserControl.CreateLocation(create);
             }
 
-            return View(location);
+            return View(create);
         }
 
         // GET: LocationsController/Details/5
@@ -72,8 +73,13 @@ namespace FranchiseUI.Controllers
 
         // GET: LocationsController/Edit/5
         [HttpGet]
-        public ActionResult Edit(int id)
+        public IActionResult Edit(int? id)
         {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
             return View();
         }
 
@@ -82,14 +88,8 @@ namespace FranchiseUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, ITrackable location)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+
+            return View(location);
         }
 
         // GET: LocationsController/Delete/5

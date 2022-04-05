@@ -102,6 +102,10 @@
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/FranchiseUI.TagHelpers.output.cache
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/FranchiseUI.RazorCoreGenerate.cache
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
+/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Locations/Create.cshtml.g.cs
+/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Locations/Delete.cshtml.g.cs
+/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Locations/Edit.cshtml.g.cs
+/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Locations/Index.cshtml.g.cs
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
@@ -115,7 +119,3 @@
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/ref/FranchiseUI.dll
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/FranchiseUI.pdb
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/FranchiseUI.genruntimeconfig.cache
-/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Locations/Index.cshtml.g.cs
-/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Locations/Create.cshtml.g.cs
-/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Locations/Delete.cshtml.g.cs
-/Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/Razor/Views/Locations/Update.cshtml.g.cs

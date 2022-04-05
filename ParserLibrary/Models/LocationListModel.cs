@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace ParserLibrary.Models
 {
-    public class LocationListModel
+    public class LocationListModel : IListModel
     {
-        public List<LocationModel> List { get; set; } = new List<LocationModel>();
+        public List<ITrackable> List { get; set; } = new List<ITrackable>();
     }
 }
