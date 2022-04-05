@@ -15,7 +15,7 @@
                 <h2>View Locations</h2>
             </header>
             <p>
-                <a asp-action="Create">Create</a> <a asp-controller="Home" asp-action="Index">Cancel</a>
+                <a asp-action="Create">Create</a> <a asp-controller="Home" asp-action="Index" asp-fragment="promo">Cancel</a>
             </p>
             <table class="table locations" id="LocationsTable">
 
@@ -33,7 +33,9 @@
                         <th>
                             Location Name
                         </th>
-                        <th></th>
+
+                        @*<th></th>*@
+
                     </tr>
                 </thead>
 
@@ -53,10 +55,10 @@
                             <td>
                                 @Html.DisplayFor(modelItem => item.Name)
                             </td>
-                            <td>
+                            @*<td>
                                 <a asp-action="Edit" asp-route-id="@item.Id" alt="edit"><i class="fas fa-edit"></i></a>
                                 <a asp-action="Delete" asp-route-id="@item.Id" alt="delete"><i class="fa fa-trash"></i></a>
-                             </td>
+                             </td>*@
                         </tr>
                     }
                 </tbody>

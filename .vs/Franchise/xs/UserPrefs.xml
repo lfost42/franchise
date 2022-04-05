@@ -1,20 +1,19 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Controllers/LocationsController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Views/Locations/Index.cshtml">
     <Files>
-      <File FileName="ParserLibrary/Databases/ParserControl.cs" Line="57" Column="10" />
-      <File FileName="FranchiseUI/Controllers/LocationsController.cs" Line="94" Column="27" />
+      <File FileName="FranchiseUI/Views/Locations/Index.cshtml" Line="38" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Franchise" expanded="True">
             <Node name="FranchiseUI" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="LocationsController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
-                <Node name="Locations" expanded="True" />
+                <Node name="Locations" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
               </Node>
             </Node>
             <Node name="ParserLibrary" expanded="True">
