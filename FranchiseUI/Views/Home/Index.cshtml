@@ -101,28 +101,24 @@
 
         @*====== TODO CRUD LOCATIONS ======*@
         <li>
-            <form class="col" asp-action="Index" asp-controller="Locations">
-                <div class="col" title="View or modify the current list of locations">
-                    <button type="submit" class="button">
-                        Data Table
-                    </button>
-                </div>
-            </form>
+            <div class="col" title="View or modify the current list of locations">
+                @Html.ActionLink("Data Table", "Index", "Locations", null, new { @class = "button" })
+            </div>
         </li>
         @*====== END CRUD LOCATIONS ======*@
 
 
 
         @*====== DISTANCE BUTTON ======*@
-        <li>
-            <form class="col" asp-action="Index" asp-controller="Home" asp-fragment="promo" method="post">
-                <div id="dvScroll" title="Determine which locations in the current franchise list are farthest apart.">
-                    <button type="submit" class="button">
-                        Distance
-                    </button>
-                </div>
-            </form>
-        </li>
+    <li>
+        <form class="col" asp-action="Index" asp-controller="Home" asp-fragment="promo" method="post">
+            <div id="dvScroll" title="Determine which locations in the current franchise list are farthest apart.">
+                <button type="submit" class="button">
+                    Distance
+                </button>
+            </div>
+        </form>
+    </li>
     </ul>
 
     <div class="distance_position">

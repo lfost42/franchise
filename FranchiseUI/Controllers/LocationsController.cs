@@ -27,21 +27,15 @@ namespace FranchiseUI.Controllers
 
         //GET: LocationsController
         [HttpGet]
-        public IActionResult Index()
+        public ActionResult Index()
         {
-            return View(new List<ITrackable>());
-        }
-
-
-        [HttpPost]
-        public ActionResult Index(List<ITrackable> view, string csvFile)
-        {
+            IEnumerable<ITrackable> locations = new List<LocationModel>();
             if (ModelState.IsValid)
             {
-                csvFile = "Files/TacoBell-US-AL.csv";
-                view = ParserControl.GetAllLocations(csvFile);
+                var csvFile = "Files/TacoBell-US-AL.csv";
+                locations = ParserControl.GetAllLocations(csvFile);
             }
-            return View(view);
+            return View(locations);
         }
 
         // GET: LocationsController/Create
@@ -54,14 +48,14 @@ namespace FranchiseUI.Controllers
         // POST: LocationsController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(ITrackable create)
+        public IActionResult Create(LocationModel model)
         {
             if (ModelState.IsValid)
             {
-                ParserControl.CreateLocation(create);
+                ParserControl.CreateLocation(model);
             }
 
-            return View(create);
+            return RedirectToAction("Index");
         }
 
         // GET: LocationsController/Details/5

@@ -1,4 +1,5 @@
-﻿@model ParserLibrary.ITrackable
+﻿@using ParserLibrary
+@model LocationModel
 
 @{
     ViewData["Title"] = "Create";
@@ -15,39 +16,35 @@
             <hr />
             <div class="row">
                 <div class="col-md-4">
-                    <form asp-action="Create">
-                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    @using (Html.BeginForm("Create", "Locations", FormMethod.Post))
+                    {
+                        Html.ValidationSummary(true, "", new { @class = "text-danger" });
+
                         <div class="form-group">
-                            <label asp-for="Name" class="control-label"></label>
-                            <input asp-for="Name" class="form-control" />
-                            <span asp-validation-for="Name" class="text-danger"></span>
-                            <label asp-for="GeoPoint.Latitude" class="control-label"></label>
-                            <input asp-for="GeoPoint.Latitude" class="form-control" />
-                            <span asp-validation-for="GeoPoint.Latitude" class="text-danger"></span>
-                            <label asp-for="GeoPoint.Longitude" class="control-label"></label>
-                            <input asp-for="GeoPoint.Longitude" class="form-control" />
-                            <span asp-validation-for="GeoPoint.Longitude" class="text-danger"></span>
+                            @Html.LabelFor(x => x.Name, "Name", new { @class = "control-label" })
+                            @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                            @Html.LabelFor(x => x.GeoPoint.Latitude, "Latitude", new { @class = "control-label" })
+                            @Html.TextBoxFor(x => x.GeoPoint.Latitude, new { @class = "form-control", @type = "number" })
+                            @Html.LabelFor(x => x.GeoPoint.Longitude, "Longitude", new { @class = "control-label" })
+                            @Html.TextBoxFor(x => x.GeoPoint.Longitude, new { @class = "form-control", @type = "number" })
                         </div>
-                    </form>
 
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                            </button>
 
-                            <div class="row">
-                                <div class="col-auto">
-                                    <div class="form-group">
-                                        <input type="submit" value="Create" class="button btn-success gy-3 px-4 me-md-2" />
-                                    </div>
-                                </div>
-                                <div class="col-auto">
-                                    <a type="button" class="button btn-warning" asp-action="Index">Cancel</a>
-                                </div>
-
-                             </div>
+                            @Html.ActionLink("Cancel", "Index", "Locations", new { @class = "btn btn-warning" })
                         </div>
+                    }
+
+                </div>
                 </div>
         </article>
     </section>
 </div>
 
-    @section Scripts {
-        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    }
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

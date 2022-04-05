@@ -54,10 +54,9 @@ namespace ParserLibrary.Data
 
             foreach (var l in locations)
             {
-
                 lines.Add($"{l.GeoPoint.Latitude},{l.GeoPoint.Longitude},{l.Name}");
             }
-            string newFile = "$new_{csvFile}";
+            string newFile = "$temp_{csvFile}";
             File.WriteAllLines(newFile, lines);
         }
 

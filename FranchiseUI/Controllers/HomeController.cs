@@ -40,7 +40,7 @@ namespace FranchiseUI.Controllers
             if (ModelState.IsValid)
             {
                 csvFile = "Files/TacoBell-US-AL.csv";
-                List<ITrackable> locations = ParserControl.GetAllLocations(csvFile);
+                List<LocationModel> locations = ParserControl.GetAllLocations(csvFile);
                 control.GetFurthestLocations(locations);
             }
             return View(control);
