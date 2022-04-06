@@ -2898,15 +2898,12 @@ button,
         font-size: 1.1em;
     }
 
-
-
     /* Promo */
 
     #promo {
         padding: 1.75em 2.5em 1.75em 2.5em;
         display: inline-block;
         text-align: left;
-        margin-top: calc(100vmin / 2);
     }
 
     /* Nav */
@@ -3197,7 +3194,6 @@ button,
 
     #promo {
         padding: 2em 2em 2em 2em;
-        margin-top: calc(100vmin / 7);
     }
 
     /* Content */
