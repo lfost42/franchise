@@ -12,6 +12,8 @@ using ParserLibrary.Models;
 using ParserLibrary.Data;
 using Microsoft.AspNetCore.Http;
 using System.IO;
+using Microsoft.AspNetCore.Authorization;
+using CsvHelper;
 
 namespace FranchiseUI.Controllers
 {
@@ -54,25 +56,26 @@ namespace FranchiseUI.Controllers
             return View();
         }
 
-        [HttpPost("FormFileUpload")]
-        public async Task<IActionResult> FormFileUpload(List<IFormFile> files)
+        [Authorize]
+        public ActionResult FormFileUpload()
         {
-            long size = files.Sum(f => f.Length);
+            return View();
+        }
+
+        [HttpPost("FormFileUpload")]
+        public async Task<IActionResult> FormFileUpload(IFormFile file)
+        {
 
             var filePath = Path.GetTempFileName();
 
-            foreach (var formFile in files)
+            if (file.Length > 0)
             {
-                if (formFile.Length > 0)
+                using (var stream = new FileStream(filePath, FileMode.Create))
                 {
-                    using (var stream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await formFile.CopyToAsync(stream);
-                    }
+                    await file.CopyToAsync(stream);
                 }
             }
-
-            return Ok(new { count = files.Count, size, filePath });
+            return Ok(new { filePath });
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

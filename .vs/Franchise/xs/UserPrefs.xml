@@ -1,9 +1,5 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Views/Home/FileUpload.cshtml">
-    <Files>
-      <File FileName="FranchiseUI/Controllers/HomeController.cs" Line="56" Column="1" />
-      <File FileName="FranchiseUI/Views/Home/FileUpload.cshtml" Line="31" Column="38" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">

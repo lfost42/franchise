@@ -15,24 +15,34 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <p>
-                        Required file columns:<br />
+                        Required columns: <br />
                         Latitude , Longitude , Name
                     </p>
+                    <form action="BufferedSingleFileUploadPhysical/?handler=Upload"
+                          enctype="multipart/form-data" onsubmit="AJAXSubmit(this);return false;"
+                          method="post">
+                        <dd>
+                            <input id="FileUpload_FormFile" type="file"
+                                   name="FileUpload.FormFile" />
+                        </dd>
 
-                    @using (Html.BeginForm("FormFileUpload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
-                    {
-                        <span>Select File:</span>
-                        <input type="file" name="postedFile" />
-                        <hr />
-                        <input type="submit" value="FormFileUpload" />
-                        <br />
-                    }
-
-                    <div class="row">
-                        <div class="col-auto">
-                            <a type="button" class="button btn-success" asp-action="Index">Cancel</a>
+                        <div style="margin-top:15px">
+                            <output name="result">::Upload feature currently under construction.::</output>
                         </div>
-                    </div>
+                        
+                        <div class="row">
+                            <ul class="actions col-12 mt-4">
+                                <li>
+                                    <input class="button btn-warning" type="submit" value="Upload" />
+                                </li>
+                                <li>
+                                    <a type="button" class="button" asp-action="Index">Cancel</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+
+                    
                 </div>
 
 
@@ -44,3 +54,23 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+<script>async function AJAXSubmit(oFormElement) {
+        var resultElement = oFormElement.elements.namedItem("result");
+        const formData = new FormData(oFormElement);
+
+        try {
+            const response = await fetch(oFormElement.action, {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                window.location.href = '/';
+            }
+
+            resultElement.value = 'Result: ' + response.status + ' ' +
+                response.statusText;
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }</script>

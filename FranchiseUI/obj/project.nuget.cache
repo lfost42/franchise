@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PoV+jmDqddv9qdSKrpZagXZHXnF/Q/QNh2kW9WTXP3OafliImV/2Bv/2mcdy4MAIR38PtZ621GB/QrLI4jVgBw==",
+  "dgSpecHash": "2IU2Ip1uhzZ7lxQ/Ivrdy6EcOXUE9bQ2AjgI/aO1dbXa3ENE14jtBp9WHzQrJhe+rEl11WusOaN65OBWK63yIQ==",
   "success": true,
   "projectFilePath": "/Users/lynda/Desktop/repo/Franchise/FranchiseUI/FranchiseUI.csproj",
   "expectedPackageFiles": [
+    "/Users/lynda/.nuget/packages/csvhelper/27.2.1/csvhelper.27.2.1.nupkg.sha512",
     "/Users/lynda/.nuget/packages/geocoordinate.netcore/1.0.0.1/geocoordinate.netcore.1.0.0.1.nupkg.sha512",
     "/Users/lynda/.nuget/packages/humanizer.core/2.2.0/humanizer.core.2.2.0.nupkg.sha512",
     "/Users/lynda/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
