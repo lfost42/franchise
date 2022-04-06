@@ -41,32 +41,33 @@
 
 <!-- Map Section -->
 <div class="wrapper">
-    <div class="container" id="map">
+    <div class="container iframe-container" id="map">
         <article id="content">
-            <div class="image featured "></div>
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1KOCWWtSISOanuMx0WAbfQ9djhId_cIUs&ehbc=2E312F" width="840" height="480"></iframe>
+            <iframe class="responsive-iframe" height="425px" width="100%" aria-hidden="false" src="https://www.google.com/maps/d/u/0/embed?mid=1KOCWWtSISOanuMx0WAbfQ9djhId_cIUs&ehbc=2E312F"></iframe>
             <p>
                 Our sample data includes 237 Taco Bell locations in Alabama.
             </p>
-        </div>   
         </article>
-
-        @*====== MAP FILTERS ======*@
-        <!--<ul class="actions major gx-3 gy-2">
-            <li>
-                <div title="View all locations in the current dataset on the map">
-                    <a href="#map" class="button" onclick="allLocations()">All Locations</a>
-                </div>
-            </li>
-
-            <li>
-                <div title="View the two locations that are farthest apart in the current dataset">
-                    <a href="#map" class="button" onclick="distance()">Distance Results</a>
-                </div>
-            </li>
-        </ul>-->
-        @*====== END MAP FILTERS ======*@
     </div>
+</div>
+    
+
+    @*====== MAP FILTERS ======*@
+    <!--<ul class="actions major gx-3 gy-2">
+        <li>
+            <div title="View all locations in the current dataset on the map">
+                <a href="#map" class="button" onclick="allLocations()">All Locations</a>
+            </div>
+        </li>
+
+        <li>
+            <div title="View the two locations that are farthest apart in the current dataset">
+                <a href="#map" class="button" onclick="distance()">Distance Results</a>
+            </div>
+        </li>
+    </ul>-->
+    @*====== END MAP FILTERS ======*@
+</div>
 </div>
 
 <!-- Promo Section -->
@@ -196,3 +197,7 @@
         alert("User may export the dashboard as a png.");
     }</script>
 
+<script>
+    let el = document.getElementById('legendPanel');
+    el.ariaHidden = "false"
+</script>
