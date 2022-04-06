@@ -24,9 +24,13 @@ Completed:
 - Add mapping for all locations. 
 - Display locations and analysis results on a map. 
 
-Future Updates:
+Current Issue:
+* Mapping the locations revealed our algorithm needs to exclude locations that can connect through other locations. To fix this we need the following:
+-- Create a graph that connects all locations to each other. 
+-- Exclude vectors that can connect through another location. 
+-- Determine which of the remaining vectors have the greatest length.  
 
-- Add statistical information. 
+Future Updates:
 - Option to view, add, delete, and modify locations. 
 - Allow CRUD applications to modify map and statistics.
 - Option to upload a new csv file and run analysis on it. 
