@@ -89,10 +89,13 @@
     <ul class="actions col-12 mt-4">
         @*====== TODO DATA FILE ======*@
         <li>
-            <div class="col" title="Upload a new csv file">
-                <button type="submit" class="button" href="#promo" onclick="csv()">
-                    Data File
+            @*<form class="col" asp-action="FileUpload">
+                <button type="submit" class="button">
+                    CSV File
                 </button>
+            </form>*@
+            <div class="col" title="Upload a new csv file">
+                @Html.ActionLink("CSV File", "FileUpload", "Home", null, new { @class = "button" })
             </div>
         </li>
         @*====== END DATA FILE ======*@
@@ -100,11 +103,11 @@
 
 
         @*====== TODO CRUD LOCATIONS ======*@
-        <li>
+    <li>
             <div class="col" title="View or modify the current list of locations">
                 @Html.ActionLink("Data Table", "Index", "Locations", null, new { @class = "button" })
             </div>
-        </li>
+    </li>
         @*====== END CRUD LOCATIONS ======*@
 
 
@@ -193,11 +196,6 @@
 
 
 <script>
-    @*====== CRUD FILE ======*@
-    function csv() {
-        alert("Allows the user to upload a csv file with geocoordinate data for analysis");
-    }
-
     @*====== MAP FILTERS ======*@
     function map() {
         alert("Consumes a mapping API to display geocoordinate locations");

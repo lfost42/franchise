@@ -10,6 +10,8 @@ using ParserLibrary;
 using ParserLibrary.Databases;
 using ParserLibrary.Models;
 using ParserLibrary.Data;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace FranchiseUI.Controllers
 {
@@ -44,6 +46,33 @@ namespace FranchiseUI.Controllers
                 control.GetFurthestLocations(locations);
             }
             return View(control);
+        }
+
+        [HttpGet]
+        public IActionResult FileUpload()
+        {
+            return View();
+        }
+
+        [HttpPost("FormFileUpload")]
+        public async Task<IActionResult> FormFileUpload(List<IFormFile> files)
+        {
+            long size = files.Sum(f => f.Length);
+
+            var filePath = Path.GetTempFileName();
+
+            foreach (var formFile in files)
+            {
+                if (formFile.Length > 0)
+                {
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await formFile.CopyToAsync(stream);
+                    }
+                }
+            }
+
+            return Ok(new { count = files.Count, size, filePath });
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,4 +1,5 @@
-﻿@model ParserLibrary.ITrackable
+﻿@using ParserLibrary
+@model LocationModel
 
 @{
     ViewData["Title"] = "Delete";
@@ -44,7 +45,7 @@
                 </div>
 
                 <div class="col-auto">
-                     <a type="button" class="button btn-warning" asp-action="Index">Cancel</a>
+                    <a type="button" class="button btn-warning" asp-action="Index">Cancel</a>
                 </div>
             </div>
         </article>
