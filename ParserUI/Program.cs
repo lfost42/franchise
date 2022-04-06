@@ -14,8 +14,8 @@ namespace ParserUI
 
         static void Main(string[] args)
         {
-            //var locations = ParserControl.GetAllLocations(csvFile);
-            //control.GetFurthestLocations(locations);
+            var locations = ParserControl.GetAllLocations(csvFile);
+            control.GetFurthestLocations(locations);
 
 
             Console.ReadLine();

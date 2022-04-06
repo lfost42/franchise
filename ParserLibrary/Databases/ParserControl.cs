@@ -81,7 +81,7 @@ namespace ParserLibrary.Databases
             ParserControl result = new ParserControl();
 
             logger.LogInfo("Log initialized, locating two locations furthest from one another.");
-
+            solution.Distance = 0;
             for (int i = 0; i < locations.Count; i++)
             {
                 var locA = locations[i];
@@ -92,13 +92,16 @@ namespace ParserLibrary.Databases
                     {
                         solution.Location1 = locA;
                         solution.Location2 = locB;
-                        solution.Distance = Math.Round(locA.GeoPoint.GetDistanceTo(locB.GeoPoint) * 0.00062, 2);
-                        solution.isPosted = true;
-                        string fileName = csvFile.Substring(csvFile.IndexOf("/") + 1);
-                        solution.FileName = $"{fileName}";
+                        solution.Distance = locA.GeoPoint.GetDistanceTo(locB.GeoPoint);
                     }
                 }
             }
+
+            solution.isPosted = true;
+            string fileName = csvFile.Substring(csvFile.IndexOf("/") + 1);
+            solution.FileName = $"{fileName}";
+
+            solution.Distance = Math.Round(solution.Distance * 0.00062, 2);
             logger.LogInfo($"{solution.Location1.Name} and {solution.Location2.Name} are {solution.Distance} miles apart.");
             return result;
         }

@@ -45,16 +45,16 @@
 
         <!-- Content -->
         <article id="content">
-            <header>
-                <h2>Live Map</h2>
-            </header>
-            <a href="#map" class="image featured"><img src="images/pic06.jpg" alt="" onclick="map()" /></a>
+            <div class="image featured">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1KOCWWtSISOanuMx0WAbfQ9djhId_cIUs&ehbc=2E312F" width="840" height="480"></iframe>
+            </div>
+                <p>
+                Our sample data includes 237 Taco Bell locations in Alabama.
+            </p>
         </article>
 
-
-
         @*====== MAP FILTERS ======*@
-        <ul class="actions major gx-3 gy-2">
+        <!--<ul class="actions major gx-3 gy-2">
             <li>
                 <div title="View all locations in the current dataset on the map">
                     <a href="#map" class="button" onclick="allLocations()">All Locations</a>
@@ -66,19 +66,18 @@
                     <a href="#map" class="button" onclick="distance()">Distance Results</a>
                 </div>
             </li>
-        </ul>
+        </ul>-->
         @*====== END MAP FILTERS ======*@
     </div>
 </div>
-
 
 <!-- Promo Section -->
 <div id="promo-wrapper">
     <section id="promo" class="row">
         <ul>
             <h3>
-            <li>Upload a new csv file to analyze  data</li>
-            <li>View or modify current locations</li>
+                @*<li>Upload a new csv file to analyze  data</li>*@
+            <li>Explore Data Table</li>
             <li>Determine which locations are farthest apart</li>
             </h3>
         </ul>
@@ -88,40 +87,35 @@
 
     <ul class="actions col-12 mt-4">
         @*====== TODO DATA FILE ======*@
-        <li>
-            @*<form class="col" asp-action="FileUpload">
-                <button type="submit" class="button">
-                    CSV File
-                </button>
-            </form>*@
-            <div class="col" title="Upload a new csv file">
-                @Html.ActionLink("CSV File", "FileUpload", "Home", null, new { @class = "button" })
-            </div>
-        </li>
+        @*<li>
+                <div class="col" title="Upload a new csv file">
+                    @Html.ActionLink("CSV File", "FileUpload", "Home", null, new { @class = "button" })
+                </div>
+            </li>*@
         @*====== END DATA FILE ======*@
 
 
 
         @*====== TODO CRUD LOCATIONS ======*@
-    <li>
-            <div class="col" title="View or modify the current list of locations">
+        <li>
+            <div class="col" title="View the current list of locations">
                 @Html.ActionLink("Data Table", "Index", "Locations", null, new { @class = "button" })
             </div>
-    </li>
+        </li>
         @*====== END CRUD LOCATIONS ======*@
 
 
 
         @*====== DISTANCE BUTTON ======*@
-    <li>
-        <form class="col" asp-action="Index" asp-controller="Home" asp-fragment="promo" method="post">
-            <div id="dvScroll" title="Determine which locations in the current franchise list are farthest apart.">
-                <button type="submit" class="button">
-                    Distance
-                </button>
-            </div>
-        </form>
-    </li>
+        <li>
+            <form class="col" asp-action="Index" asp-controller="Home" asp-fragment="promo" method="post">
+                <div id="dvScroll" title="Determine which locations in the current data set are farthest apart.">
+                    <button type="submit" class="button">
+                        Distance
+                    </button>
+                </div>
+            </form>
+        </li>
     </ul>
 
     <div class="distance_position">
@@ -196,16 +190,6 @@
 
 
 <script>
-    @*====== MAP FILTERS ======*@
-    function map() {
-        alert("Consumes a mapping API to display geocoordinate locations");
-    }
-    function allLocations() {
-        alert("Shows all locations in the working dataset on the map");
-    }
-    function distance() {
-        alert("Shows the two locations that are farthest apart on the map");
-    }
     @*====== DASHBOARD ======*@
     function dashboard() {
         alert("Chart to display live statistics as the datastet is modified");
@@ -213,5 +197,4 @@
     function exportDashboard() {
         alert("User may export the dashboard as a png.");
     }</script>
-
 

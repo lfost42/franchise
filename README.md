@@ -21,15 +21,17 @@ Completed:
 - Swap the UI and develop an ASP.NET Core MVC web application. 
 - Make algorithm onclick.
 - Develop front-end
+- Add mapping for all locations. 
+- Display locations and analysis results on a map. 
 
 Future Updates:
 
+- Add statistical information. 
 - Option to view, add, delete, and modify locations. 
+- Allow CRUD applications to modify map and statistics.
 - Option to upload a new csv file and run analysis on it. 
-- Consume an API for mapping purposes. 
-- Display locations and analysis results on a map. 
 - Improve time complexity?
-- Option to export analysis.
+- Option to export analysis
 - Add a dashboard 
 
 DASHBOARD
