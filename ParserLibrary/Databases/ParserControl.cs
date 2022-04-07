@@ -14,7 +14,6 @@ namespace ParserLibrary.Databases
         private static LocationLogger logger = new LocationLogger();
         public SolutionModel solution = new SolutionModel();
         private static ParserDataAccess db = new ParserDataAccess();
-        public static LocationListModel localList = new LocationListModel();
 
         public static string csvFile = "Files/TacoBell-US-AL.csv";
 
@@ -26,54 +25,6 @@ namespace ParserLibrary.Databases
                 .Select(record => new LocationModel { Name = record.Name, GeoPoint = record.GeoPoint, Id = record.Id })
                 .ToList();
             return locations;
-        }
-
-        public static LocationListModel GetListLocations(string csvFile)
-        {
-            var locations = GetAllLocations(csvFile);
-            foreach (ITrackable location in locations)
-            {
-                localList.List.Add(location);
-            }
-            return localList;
-        }
-
-        //public static List<LocationModel> GetITrackableLocations(LocationListModel list)
-        //{
-
-
-        //}
-
-        //public void SaveRecords(LocationListModel locations, string csvFile)
-        //{
-        //    List<string> lines = new List<string>();
-
-        //    foreach (var loc in locations)
-        //    {
-        //        lines.Add($"{l.GeoPoint.Latitude},{l.GeoPoint.Longitude},{l.Name}");
-        //    }
-        //    string newFile = "$temp_{csvFile}";
-        //    File.WriteAllLines(newFile, lines);
-        //}
-
-        public static void CreateLocation(LocationModel location)
-        {
-            var list = GetListLocations(csvFile);
-            list.List.Add(location);
-        }
-
-        public static void UpdateName(int Id, double longitude, double latitude, string name)
-        {
-            var list = GetListLocations(csvFile);
-            list.List[Id].GeoPoint.Longitude = longitude;
-            list.List[Id].GeoPoint.Latitude = latitude;
-            list.List[Id].Name = name;
-        }
-
-        private static void RemoveLocation(int Id)
-        {
-            var list = GetListLocations(csvFile);
-            list.List.RemoveAt(Id);
         }
 
         public ParserControl GetFurthestLocations(List<LocationModel> locations)

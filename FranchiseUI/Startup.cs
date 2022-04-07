@@ -31,7 +31,6 @@ namespace FranchiseUI
             services.AddTransient<IDatabaseData, ParserDataAccess>();
             services.AddTransient<ITrackable, LocationModel>();
             services.AddTransient<ILog, LocationLogger>();
-            services.AddTransient<IListModel, LocationListModel>();
             services.AddDistributedMemoryCache();
             services.AddSession();
         }

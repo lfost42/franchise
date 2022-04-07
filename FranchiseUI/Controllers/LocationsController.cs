@@ -17,8 +17,6 @@ namespace FranchiseUI.Controllers
     public class LocationsController : Controller
     {
         private readonly ILogger<LocationsController> _logger;
-        public LocationListModel localList = new LocationListModel();
-
 
         public LocationsController(ILogger<LocationsController> logger)
         {
@@ -50,11 +48,10 @@ namespace FranchiseUI.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(LocationModel model)
         {
-            if (ModelState.IsValid)
-            {
-                ParserControl.CreateLocation(model);
-            }
-
+            //if (ModelState.IsValid)
+            //{
+               
+            //}
             return RedirectToAction("Index");
         }
 
@@ -82,8 +79,11 @@ namespace FranchiseUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, ITrackable location)
         {
+            //if (ModelState.IsValid)
+            //{
 
-            return View(location);
+            //}
+            return RedirectToAction("Index");
         }
 
         // GET: LocationsController/Delete/5
