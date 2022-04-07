@@ -45,3 +45,4 @@
 /Users/lynda/Desktop/repo/Franchise/ParserUI/obj/Debug/net5.0/ref/ParserConsoleUI.dll
 /Users/lynda/Desktop/repo/Franchise/ParserUI/obj/Debug/net5.0/ParserConsoleUI.pdb
 /Users/lynda/Desktop/repo/Franchise/ParserUI/obj/Debug/net5.0/ParserConsoleUI.genruntimeconfig.cache
+/Users/lynda/Desktop/repo/Franchise/ParserUI/bin/Debug/net5.0/Newtonsoft.Json.dll

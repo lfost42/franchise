@@ -17,8 +17,8 @@ namespace FranchiseUI.Controllers
     public class LocationsController : Controller
     {
         private readonly ILogger<LocationsController> _logger;
-        public LocationListModel localList = new LocationListModel();
-
+        public List<LocationModel> mainLoc = new List<LocationModel>();
+        public DictModel mainDict = new DictModel();
 
         public LocationsController(ILogger<LocationsController> logger)
         {
@@ -30,10 +30,12 @@ namespace FranchiseUI.Controllers
         public ActionResult Index()
         {
             IEnumerable<ITrackable> locations = new List<LocationModel>();
+
             if (ModelState.IsValid)
             {
                 var csvFile = "Files/TacoBell-US-AL.csv";
-                locations = ParserControl.GetAllLocations(csvFile);
+                var dict = DictControl.dictControl.DictRecords(csvFile);
+                locations = DictControl.dictControl.DictToModels(dict);
             }
             return View(locations);
         }
@@ -42,48 +44,55 @@ namespace FranchiseUI.Controllers
         [HttpGet]
         public ActionResult Create()
         {
+
             return View();
         }
 
         // POST: LocationsController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(LocationModel model)
+        public IActionResult Create(DictModel dict, LocationModel location)
         {
+            LocationModel loc = new LocationModel();
             if (ModelState.IsValid)
             {
-                ParserControl.CreateLocation(model);
+                dict = DictControl.dictControl.AddLocation(dict, location);
+                mainLoc = DictControl.dictControl.DictToModels(dict);
             }
 
-            return RedirectToAction("Index");
+            return View(mainLoc);
         }
 
         // GET: LocationsController/Details/5
+        [HttpGet]
+        public ActionResult Details(DictModel dict, int id)
+        {
+            if (ModelState.IsValid)
+            {
+                DictControl.dictControl.ViewLocation(dict, id);
+            }
+            return RedirectToAction("Index");
+        }
+
+        // GET: LocationsController/Edit/5
+        [HttpGet]
         [HttpGet]
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: LocationsController/Edit/5
-        [HttpGet]
-        public IActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            return View();
-        }
-
         // POST: LocationsController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, ITrackable location)
+        public ActionResult Edit(DictModel dict, int id, LocationModel model)
         {
-
-            return View(location);
+            DictModel tempDict = new DictModel();
+            if (ModelState.IsValid)
+            {
+                DictControl.dictControl.EditLocation(dict, id, model);
+            }
+            return RedirectToAction("Index");
         }
 
         // GET: LocationsController/Delete/5
@@ -96,16 +105,13 @@ namespace FranchiseUI.Controllers
         // POST: LocationsController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(DictModel dict, int id)
         {
-            try
+            if (ModelState.IsValid)
             {
-                return RedirectToAction(nameof(Index));
+                DictControl.dictControl.DeleteLocation(dict, id);
             }
-            catch
-            {
-                return View();
-            }
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

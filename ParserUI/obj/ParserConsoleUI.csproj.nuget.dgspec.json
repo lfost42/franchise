@@ -116,6 +116,10 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "ServiceStack.Text": {
               "target": "Package",
               "version": "[6.0.2, )"

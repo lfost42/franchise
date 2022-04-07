@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using GeoCoordinatePortable;
 
-namespace ParserLibrary
+namespace ParserLibrary.Models
 {
     public class LocationModel : ITrackable
     {

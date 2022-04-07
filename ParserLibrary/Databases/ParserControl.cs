@@ -14,7 +14,6 @@ namespace ParserLibrary.Databases
         private static LocationLogger logger = new LocationLogger();
         public SolutionModel solution = new SolutionModel();
         private static ParserDataAccess db = new ParserDataAccess();
-        public static LocationListModel localList = new LocationListModel();
 
         public static string csvFile = "Files/TacoBell-US-AL.csv";
 
@@ -23,59 +22,12 @@ namespace ParserLibrary.Databases
         {
             List<LocationModel> locations = db
                 .ReadAllRecords(csvFile)
-                .Select(record => new LocationModel { Name = record.Name, GeoPoint = record.GeoPoint, Id = record.Id })
+                .Select(record => new LocationModel { Name = record.Name, GeoPoint = record.GeoPoint})
                 .ToList();
             return locations;
         }
 
-        public static LocationListModel GetListLocations(string csvFile)
-        {
-            var locations = GetAllLocations(csvFile);
-            foreach (ITrackable location in locations)
-            {
-                localList.List.Add(location);
-            }
-            return localList;
-        }
-
-        //public static List<LocationModel> GetITrackableLocations(LocationListModel list)
-        //{
-
-
-        //}
-
-        //public void SaveRecords(LocationListModel locations, string csvFile)
-        //{
-        //    List<string> lines = new List<string>();
-
-        //    foreach (var loc in locations)
-        //    {
-        //        lines.Add($"{l.GeoPoint.Latitude},{l.GeoPoint.Longitude},{l.Name}");
-        //    }
-        //    string newFile = "$temp_{csvFile}";
-        //    File.WriteAllLines(newFile, lines);
-        //}
-
-        public static void CreateLocation(LocationModel location)
-        {
-            var list = GetListLocations(csvFile);
-            list.List.Add(location);
-        }
-
-        public static void UpdateName(int Id, double longitude, double latitude, string name)
-        {
-            var list = GetListLocations(csvFile);
-            list.List[Id].GeoPoint.Longitude = longitude;
-            list.List[Id].GeoPoint.Latitude = latitude;
-            list.List[Id].Name = name;
-        }
-
-        private static void RemoveLocation(int Id)
-        {
-            var list = GetListLocations(csvFile);
-            list.List.RemoveAt(Id);
-        }
-
+        //Original Algorithm
         public ParserControl GetFurthestLocations(List<LocationModel> locations)
         {
             ParserControl result = new ParserControl();
@@ -98,10 +50,12 @@ namespace ParserLibrary.Databases
             }
 
             solution.isPosted = true;
-            string fileName = csvFile.Substring(csvFile.IndexOf("/") + 1);
-            solution.FileName = $"{fileName}";
 
+            string fileName = csvFile.Substring(csvFile.IndexOf("/") + 1);
+
+            solution.FileName = $"{fileName}";
             solution.Distance = Math.Round(solution.Distance * 0.00062, 2);
+
             logger.LogInfo($"{solution.Location1.Name} and {solution.Location2.Name} are {solution.Distance} miles apart.");
             return result;
         }

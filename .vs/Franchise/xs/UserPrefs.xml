@@ -1,10 +1,5 @@
-﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Views/Locations/Index.cshtml">
-    <Files>
-      <File FileName="FranchiseUI/Views/Home/Index.cshtml" Line="87" Column="47" />
-      <File FileName="FranchiseUI/wwwroot/css/main.css" />
-      <File FileName="FranchiseUI/Views/Locations/Index.cshtml" Line="14" Column="9" />
-    </Files>
+﻿<Properties StartupConfiguration="{7ADECD8F-C2B8-437F-9BCD-80CA280CB46F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParserUI/Program.cs">
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -13,19 +8,21 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
-                <Node name="Locations" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
+                <Node name="Locations" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
               </Node>
             </Node>
             <Node name="Parser.Test" expanded="True" />
-            <Node name="ParserConsoleUI" expanded="True" />
+            <Node name="ParserConsoleUI" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
             <Node name="ParserLibrary" expanded="True">
               <Node name="Data" expanded="True" />
               <Node name="Databases" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>

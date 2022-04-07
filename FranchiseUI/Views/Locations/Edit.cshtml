@@ -1,4 +1,5 @@
-﻿@model ParserLibrary.ITrackable
+﻿@using ParserLibrary.Models
+@model LocationModel
 
 @{
     ViewData["Title"] = "Edit Location";
@@ -47,11 +48,11 @@
                         </div>
                     </div>
 
-                    </div>
                 </div>
+            </div>
         </article>
     </section>
 </div>
-    @section Scripts {
-        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    }
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

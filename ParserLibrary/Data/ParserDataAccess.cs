@@ -12,7 +12,6 @@ namespace ParserLibrary.Data
         private static LocationLogger logger = new LocationLogger();
         public static ParserDataAccess db = new ParserDataAccess();
 
-
         public ITrackable Parse(string csvFile)
         {
             var cells = csvFile.Split(',');
@@ -58,6 +57,24 @@ namespace ParserLibrary.Data
             }
             string newFile = "$temp_{csvFile}";
             File.WriteAllLines(newFile, lines);
+        }
+
+        public string DictToJson(DictModel dict)
+        {
+            List<string> tolines = new List<string>();
+
+            foreach (int key in dict.mainDict.Keys)
+            {
+                tolines.Add($"\"{dict.mainDict[key].ToString()}\"" +
+                    $":[\"{dict.mainDict[key].Id.ToString()}\"" +
+                    $",\"{dict.mainDict[key].GeoPoint.Latitude.ToString()}\"" +
+                    $",\"{dict.mainDict[key].GeoPoint.Longitude.ToString()}\"" +
+                    $",\"{dict.mainDict[key].Name.ToString()}\"],");
+            }
+
+            string final = "{" + tolines + "}";
+            Console.WriteLine(final);
+            return final;
         }
 
     }
