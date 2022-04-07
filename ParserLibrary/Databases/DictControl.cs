@@ -26,13 +26,15 @@ namespace ParserLibrary.Databases
         {
             var maxKey = dict.Keys.Max();
 
-            var loc = new LocationModel();
-
-            loc.Id = maxKey + 1;
-            loc.Name = name;
-            loc.GeoPoint = new GeoCoordinatePortable.GeoCoordinate(latitude, longitude);
+            var loc = new LocationModel
+            {
+                Id = maxKey + 1,
+                Name = name,
+                GeoPoint = new GeoCoordinatePortable.GeoCoordinate(latitude, longitude)
+            };
 
             dict.Add(maxKey + 1, loc);
+
             return dict;
         }
 
@@ -46,10 +48,12 @@ namespace ParserLibrary.Databases
         //UPDATE
         public static IDictionary<int, LocationModel> EditLocation(IDictionary<int, LocationModel> dict, int id, long longitude, long latitude, string name)
         {
-            var loc = new LocationModel();
-            loc.Id = id;
-            loc.GeoPoint = new GeoCoordinatePortable.GeoCoordinate(latitude, longitude);
-            loc.Name = name;
+            var loc = new LocationModel
+            {
+                Id = id,
+                GeoPoint = new GeoCoordinatePortable.GeoCoordinate(latitude, longitude),
+                Name = name
+            };
 
             dict[id] = loc;
             return dict;
@@ -97,9 +101,6 @@ namespace ParserLibrary.Databases
             Console.WriteLine(final);
             return final;
         }
-
-
-
 
     }
 }
