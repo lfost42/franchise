@@ -1,5 +1,9 @@
-﻿<Properties StartupConfiguration="{7ADECD8F-C2B8-437F-9BCD-80CA280CB46F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ParserUI/Program.cs">
+﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
+  <MonoDevelop.Ide.ItemProperties.Parser.Test PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Program.cs">
+    <Files>
+      <File FileName="FranchiseUI/Program.cs" Line="16" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -7,22 +11,13 @@
             <Node name="FranchiseUI" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
                 <Node name="Locations" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Parser.Test" expanded="True" />
-            <Node name="ParserConsoleUI" expanded="True">
               <Node name="Program.cs" selected="True" />
             </Node>
+            <Node name="ParserConsoleUI" expanded="True" />
             <Node name="ParserLibrary" expanded="True">
               <Node name="Data" expanded="True" />
-              <Node name="Databases" expanded="True" />
-              <Node name="Interfaces" expanded="True" />
-              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -34,7 +29,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.ParserConsoleUI PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/lynda/Desktop/repo/Franchise/ParserLibrary/Data/ParserDataAccess.cs" relfile="ParserLibrary/Data/ParserDataAccess.cs" line="35" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

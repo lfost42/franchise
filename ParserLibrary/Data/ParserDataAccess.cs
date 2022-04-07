@@ -11,6 +11,7 @@ namespace ParserLibrary.Data
     {
         private static LocationLogger logger = new LocationLogger();
         public static ParserDataAccess db = new ParserDataAccess();
+        //private static string csvFile = "TacoBell-US-AL.csv";
 
         public ITrackable Parse(string csvFile)
         {
@@ -32,6 +33,7 @@ namespace ParserLibrary.Data
 
         public List<ITrackable> ReadAllRecords(string csvFile)
         {
+            csvFile = "Files/TacoBell-US-AL.csv";
             string[] lines = File.ReadAllLines(csvFile);
             if (lines.Length == 0) logger.LogError("files has no input");
             if (lines.Length == 1) logger.LogInfo($"Lines: {lines[0]}");

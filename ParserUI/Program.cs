@@ -15,7 +15,7 @@ namespace ParserUI
 {
     class Program
     {
-        private static string csvFile = "TacoBell-US-AL.csv";
+        //private static string csvFile = "TacoBell-US-AL.csv";
         private static ParserControl pars = new ParserControl();
         private static DictControl dict = new DictControl();
         private static DictModel mainDict = new DictModel();
@@ -43,8 +43,12 @@ namespace ParserUI
             //localizedWelcomeLabels.Add("de", "Willkommen");
             //Console.WriteLine(JsonConvert.SerializeObject(localizedWelcomeLabels));
 
-            var locations = dict.DictRecords(csvFile);
-            ParserDataAccess.db.DictToJson(locations);
+            //var locations = dict.DictRecords(csvFile);
+            //ParserDataAccess.db.DictToJson(locations);
+
+            //var csvFile = "Files/TacoBell-US-AL.csv";
+            //var dict = DictControl.dictControl.DictRecords(csvFile);
+            //var locations = DictControl.dictControl.DictToModels(dict);
 
             Console.ReadLine();
         }
