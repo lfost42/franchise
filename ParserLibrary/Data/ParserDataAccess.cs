@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using ParserLibrary.Databases;
+using ParserLibrary.Interfaces;
 using ParserLibrary.Models;
 
 namespace ParserLibrary.Data

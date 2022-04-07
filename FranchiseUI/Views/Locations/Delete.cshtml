@@ -1,5 +1,4 @@
-﻿@using ParserLibrary
-@model LocationModel
+﻿
 
 @{
     ViewData["Title"] = "Delete";
@@ -15,7 +14,7 @@
                 <h2>Delete Location</h2>
             </header>
             <hr />
-            <dl class="row">
+            @*<dl class="row">
                 <dt class="col-sm-2">
                     @Html.DisplayNameFor(model => model.Name)
                 </dt>
@@ -42,7 +41,7 @@
                         <input type="hidden" asp-for="Id" />
                         <input type="submit" value="Delete" class="button btn-danger" />
                     </form>
-                </div>
+                </div>*@
 
                 <div class="col-auto">
                     <a type="button" class="button btn-warning" asp-action="Index">Cancel</a>

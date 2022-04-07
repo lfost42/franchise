@@ -1,8 +1,9 @@
 using System;
 using System.Collections.Generic;
 using GeoCoordinatePortable;
+using ParserLibrary.Interfaces;
 
-namespace ParserLibrary
+namespace ParserLibrary.Models
 {
     public class LocationModel : ITrackable
     {

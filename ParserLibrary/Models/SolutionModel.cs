@@ -1,4 +1,6 @@
 ﻿using System;
+using ParserLibrary.Interfaces;
+
 namespace ParserLibrary.Models
 {
     public class SolutionModel

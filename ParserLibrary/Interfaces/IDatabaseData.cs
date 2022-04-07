@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ParserLibrary.Data
+namespace ParserLibrary.Interfaces
 {
     public interface IDatabaseData
     {

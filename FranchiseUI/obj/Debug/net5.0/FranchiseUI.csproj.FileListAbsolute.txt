@@ -9,6 +9,7 @@
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/bin/Debug/net5.0/FranchiseUI.pdb
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/bin/Debug/net5.0/FranchiseUI.Views.dll
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/bin/Debug/net5.0/FranchiseUI.Views.pdb
+/Users/lynda/Desktop/repo/Franchise/FranchiseUI/bin/Debug/net5.0/CsvHelper.dll
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/bin/Debug/net5.0/GeoCoordinate.NetCore.dll
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/bin/Debug/net5.0/Humanizer.dll
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/bin/Debug/net5.0/Microsoft.AspNetCore.Razor.Language.dll
@@ -120,4 +121,3 @@
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/ref/FranchiseUI.dll
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/FranchiseUI.pdb
 /Users/lynda/Desktop/repo/Franchise/FranchiseUI/obj/Debug/net5.0/FranchiseUI.genruntimeconfig.cache
-/Users/lynda/Desktop/repo/Franchise/FranchiseUI/bin/Debug/net5.0/CsvHelper.dll

@@ -1,4 +1,4 @@
-﻿@model ParserLibrary.ITrackable
+﻿
 
 @{
     ViewData["Title"] = "Edit Location";
@@ -16,7 +16,7 @@
             <hr />
             <div class="row">
                 <div class="col-md-6">
-                    <form asp-action="Edit">
+                    @*<form asp-action="Edit">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <input type="hidden" asp-for="Id" />
                         <div class="form-group">
@@ -34,7 +34,7 @@
                             <input asp-for="GeoPoint.Longitude" class="form-control" />
                             <span asp-validation-for="GeoPoint.Longitude" class="text-danger"></span>
                         </div>
-                    </form>
+                    </form>*@
 
                     <div class="row">
                         <div class="col-auto">

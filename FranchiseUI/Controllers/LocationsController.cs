@@ -18,6 +18,9 @@ namespace FranchiseUI.Controllers
     {
         private readonly ILogger<LocationsController> _logger;
 
+        public static string csvFile = "Files/TacoBell-US-AL.csv";
+        public static IDictionary<int, LocationModel> globalDict = DictControl.CreateDict(csvFile);
+
         public LocationsController(ILogger<LocationsController> logger)
         {
             _logger = logger;
@@ -27,13 +30,11 @@ namespace FranchiseUI.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            IEnumerable<ITrackable> locations = new List<LocationModel>();
             if (ModelState.IsValid)
             {
-                var csvFile = "Files/TacoBell-US-AL.csv";
-                locations = ParserControl.GetAllLocations(csvFile);
+                ViewData["dict"] = globalDict;
             }
-            return View(locations);
+            return View(globalDict);
         }
 
         // GET: LocationsController/Create
@@ -77,7 +78,7 @@ namespace FranchiseUI.Controllers
         // POST: LocationsController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, ITrackable location)
+        public ActionResult Edit(int id)
         {
             //if (ModelState.IsValid)
             //{
@@ -94,19 +95,19 @@ namespace FranchiseUI.Controllers
         }
 
         // POST: LocationsController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Delete(int id)
+        //{
+        //    try
+        //    {
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch
+        //    {
+        //        return View();
+        //    }
+        //}
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

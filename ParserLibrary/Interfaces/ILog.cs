@@ -1,5 +1,5 @@
 using System;
-namespace ParserLibrary
+namespace ParserLibrary.Interfaces
 {
     public interface ILog
     {

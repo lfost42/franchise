@@ -1,6 +1,8 @@
-﻿@model IEnumerable<ParserLibrary.ITrackable>
+﻿@model IDictionary<int, ParserLibrary.Models.LocationModel>
 
 @{
+
+    Dictionary<int, ParserLibrary.Models.LocationModel> dictModel = (Dictionary<int, ParserLibrary.Models.LocationModel>)ViewData["dict"];
     ViewData["Title"] = "Index";
 }
 
@@ -41,25 +43,25 @@
                 </thead>
 
                 <tbody>
-                    @foreach (var item in Model)
+                    @foreach (KeyValuePair<int, ParserLibrary.Models.LocationModel> kvp in dictModel)
                     {
                         <tr>
                             <td>
-                                @Html.DisplayFor(modelItem => item.Id)
+                                @Html.DisplayFor(modelItem => kvp.Value.Id)
                             </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.GeoPoint.Latitude)
+                                @Html.DisplayFor(modelItem => kvp.Value.GeoPoint.Latitude)
                             </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.GeoPoint.Longitude)
+                                @Html.DisplayFor(modelItem => kvp.Value.GeoPoint.Longitude)
                             </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.Name)
+                                @Html.DisplayFor(modelItem => kvp.Value.Name)
                             </td>
                             @*<td>
-                                <a asp-action="Edit" asp-route-id="@item.Id" alt="edit"><i class="fas fa-edit"></i></a>
-                                <a asp-action="Delete" asp-route-id="@item.Id" alt="delete"><i class="fa fa-trash"></i></a>
-                            </td>*@
+                                    <a asp-action="Edit" asp-route-id="@item.Id" alt="edit"><i class="fas fa-edit"></i></a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" alt="delete"><i class="fa fa-trash"></i></a>
+                                </td>*@
                         </tr>
                     }
                 </tbody>

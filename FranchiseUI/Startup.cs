@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using ParserLibrary;
 using ParserLibrary.Data;
 using ParserLibrary.Databases;
+using ParserLibrary.Interfaces;
 using ParserLibrary.Models;
 
 namespace FranchiseUI

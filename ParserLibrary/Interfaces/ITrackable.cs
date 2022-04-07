@@ -1,6 +1,6 @@
 using GeoCoordinatePortable;
 
-namespace ParserLibrary
+namespace ParserLibrary.Interfaces
 {
     public interface ITrackable
     {

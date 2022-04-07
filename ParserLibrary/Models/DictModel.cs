@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ParserLibrary.Databases
+namespace ParserLibrary.Models
 {
     public class DictModel
     {
