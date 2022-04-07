@@ -1,30 +1,19 @@
-﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Views/Home/Index.cshtml">
+﻿<Properties StartupConfiguration="{7ADECD8F-C2B8-437F-9BCD-80CA280CB46F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParserLibrary/Databases/DictControl.cs">
     <Files>
-      <File FileName="FranchiseUI/Views/Locations/Index.cshtml" Line="50" Column="76" />
-      <File FileName="FranchiseUI/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="ParserLibrary/Databases/DictControl.cs" Line="47" Column="156" />
+      <File FileName="ParserUI/Program.cs" Line="52" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Franchise" expanded="True">
-            <Node name="FranchiseUI" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
-                <Node name="Locations" expanded="True" />
-              </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-              </Node>
-            </Node>
             <Node name="ParserConsoleUI" expanded="True" />
             <Node name="ParserLibrary" expanded="True">
               <Node name="Data" expanded="True" />
-              <Node name="Databases" expanded="True" />
-              <Node name="Interfaces" expanded="True" />
+              <Node name="Databases" expanded="True">
+                <Node name="DictControl.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
             </Node>
           </Node>
@@ -40,7 +29,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.ParserConsoleUI PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/lynda/Desktop/repo/Franchise/ParserLibrary/Databases/DictControl.cs" relfile="ParserLibrary/Databases/DictControl.cs" line="47" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

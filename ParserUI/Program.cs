@@ -20,14 +20,26 @@ namespace ParserUI
             //var locations = ParserControl.GetAllLocations(csvFile);
             //control.GetFurthestLocations(locations);
 
+            //NEW DICTIONARY
             //IDictionary<int, LocationModel> newDict = DictControl.CreateDict(csvFile);
+            //DictControl.ToConsole(newDict);
 
-            //foreach (KeyValuePair<int, LocationModel> kvp in newDict)
-            //{
-            //    Console.WriteLine($"{kvp.Key} {kvp.Value.GeoPoint.Latitude} {kvp.Value.GeoPoint.Longitude} {kvp.Value.Name}");
-            //}
+            //CREATE
+            //DictControl.AddLocation(newDict, (long)50, (long)50, "TempLoc");
+            //DictControl.ToConsole(newDict);
 
-            Console.ReadLine();
+            //READ
+            //var viewloc = DictControl.ViewLocation(newDict, 200);
+            //Console.WriteLine($"{viewloc.Id} {viewloc.GeoPoint} {viewloc.Name}");
+
+            //UPDATE
+            //DictControl.EditLocation(newDict, 3, (long)33.3333, (long)33.3333, "Changed");
+            //DictControl.ToConsole(newDict);
+
+            //DELETE
+            //DictControl.DeleteLocation(newDict, 10);
+            //DictControl.ToConsole(newDict);
+            //Console.ReadLine();
         }
 
     }
