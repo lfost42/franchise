@@ -1,12 +1,10 @@
-﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FranchiseUI/Startup.cs">
+﻿<Properties StartupConfiguration="{7ADECD8F-C2B8-437F-9BCD-80CA280CB46F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParserLibrary/Databases/DictControl.cs">
     <Files>
       <File FileName="FranchiseUI/Views/Locations/Index.cshtml" Line="14" Column="9" />
-      <File FileName="ParserLibrary/Databases/DictControl.cs" Line="19" Column="10" />
-      <File FileName="ParserUI/Program.cs" Line="30" Column="22" />
-      <File FileName="ParserLibrary/Databases/ParserControl.cs" Line="28" Column="10" />
-      <File FileName="FranchiseUI/Controllers/LocationsController.cs" Line="108" Column="14" />
-      <File FileName="FranchiseUI/Startup.cs" Line="33" Column="59" />
+      <File FileName="ParserLibrary/Databases/DictControl.cs" Line="24" Column="1" />
+      <File FileName="ParserUI/Program.cs" Line="22" Column="1" />
+      <File FileName="ParserLibrary/Databases/ParserControl.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,13 +19,13 @@
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
               </Node>
-              <Node name="Startup.cs" selected="True" />
             </Node>
-            <Node name="Parser.Test" expanded="True" />
             <Node name="ParserConsoleUI" expanded="True" />
             <Node name="ParserLibrary" expanded="True">
               <Node name="Data" expanded="True" />
-              <Node name="Databases" expanded="True" />
+              <Node name="Databases" expanded="True">
+                <Node name="DictControl.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
             </Node>
           </Node>

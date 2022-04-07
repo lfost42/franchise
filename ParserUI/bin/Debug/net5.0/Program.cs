@@ -5,6 +5,7 @@ using System.Reflection;
 using Microsoft.Extensions.Configuration;
 using ParserLibrary;
 using ParserLibrary.Databases;
+using ParserLibrary.Models;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace ParserUI
@@ -19,13 +20,12 @@ namespace ParserUI
             //var locations = ParserControl.GetAllLocations(csvFile);
             //control.GetFurthestLocations(locations);
 
-            IDictionary<int, LocationModel> newDict = DictControl.CreateDict(csvFile);
+            DictModel newDict = DictControl.CreateDict(csvFile);
 
-            foreach (KeyValuePair<int, LocationModel> kvp in newDict)
+            foreach (KeyValuePair<int, LocationModel> kvp in newDict.GlobalDict)
             {
                 Console.WriteLine($"{kvp.Key} {kvp.Value.GeoPoint.Latitude} {kvp.Value.GeoPoint.Longitude} {kvp.Value.Name}");
             }
-
             Console.ReadLine();
         }
 
