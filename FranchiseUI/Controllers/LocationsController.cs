@@ -30,6 +30,7 @@ namespace FranchiseUI.Controllers
         [HttpGet]
         public ActionResult Index()
         {
+
             if (ModelState.IsValid)
             {
                 ViewData["dict"] = globalDict;

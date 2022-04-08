@@ -8,6 +8,8 @@ namespace ParserLibrary.Databases
     public class DictControl
     {
 
+        public static IDictionary<int, LocationModel> GlobalDict { get; set; }
+
         public static IDictionary<int, LocationModel> CreateDict(string csvFile)
         {
             List<LocationModel> models = ParserControl.GetAllLocations(csvFile);
@@ -96,9 +98,7 @@ namespace ParserLibrary.Databases
             {
                 toString += $"\"{key}\":[\"GeoPoint.Latitude\":\"{dict[key].GeoPoint.Latitude}\",\"GeoPoint.Longitude\":\"{dict[key].GeoPoint.Longitude}\",\"Name\":\"{dict[key].Name}\",";
             }
-
             string final = "{" + toString + "}";
-            Console.WriteLine(final);
             return final;
         }
 

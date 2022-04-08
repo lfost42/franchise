@@ -1,25 +1,25 @@
-﻿<Properties StartupConfiguration="{7ADECD8F-C2B8-437F-9BCD-80CA280CB46F}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ParserLibrary/Databases/DictControl.cs">
+﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParserLibrary/Databases/ParserControl.cs">
     <Files>
-      <File FileName="ParserLibrary/Databases/DictControl.cs" Line="37" Column="116" />
+      <File FileName="FranchiseUI/Controllers/LocationsController.cs" Line="19" Column="10" />
+      <File FileName="ParserUI/Program.cs" Line="1" Column="1" />
+      <File FileName="ParserLibrary/Databases/ParserControl.cs" Line="28" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Franchise" expanded="True">
-            <Node name="FranchiseUI" expanded="True" />
+            <Node name="FranchiseUI" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
             <Node name="ParserConsoleUI" expanded="True" />
             <Node name="ParserLibrary" expanded="True">
-              <Node name="Data" expanded="True" />
               <Node name="Databases" expanded="True">
-                <Node name="DictControl.cs" selected="True" />
+                <Node name="ParserControl.cs" selected="True" />
               </Node>
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
