@@ -27,7 +27,7 @@ Completed:
 
 Current Issue:
 * Mapping the locations revealed our algorithm needs to exclude locations that can connect through other locations. To fix this we need the following:
-- Create an adjacency matrix using Dijkstra's Algorithm and output a list of all edges.
+- Create an adjacency matrix and output a list of all edges. I will use a modified nearest-neighbor algorithm to have each node create an edge with 3 of its nearest neighbors and eliminate duplicate edges. 
 - Extract 10 of the longest edges and evaluate the locations on a map.  
 
 Future Updates:
