@@ -89,23 +89,14 @@
     </section>
 
     <ul class="actions col-12 mt-4">
-        @*====== TODO DATA FILE ======*@
-        @*<li>
-                <div class="col" title="Upload a new csv file">
-                    @Html.ActionLink("CSV File", "FileUpload", "Home", null, new { @class = "button" })
-                </div>
-            </li>*@
-        @*====== END DATA FILE ======*@
 
-
-
-        @*====== TODO CRUD LOCATIONS ======*@
+        @*====== TODO VIEW LOCATIONS ======*@
         <li>
             <div class="col" title="View the current list of locations">
                 @Html.ActionLink("Data Table", "Index", "Locations", null, new { @class = "button" })
             </div>
         </li>
-        @*====== END CRUD LOCATIONS ======*@
+        @*====== END VIEW LOCATIONS ======*@
 
 
 
@@ -200,8 +191,3 @@
     function exportDashboard() {
         alert("User may export the dashboard as a png.");
     }</script>
-
-<script>
-    let el = document.getElementById('legendPanel');
-    el.ariaHidden = "false"
-</script>

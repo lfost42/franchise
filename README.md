@@ -24,17 +24,14 @@ Completed:
 - Add mapping for all locations. 
 - Display locations and analysis results on a map. 
 - Create a dictionary and appropriate crud methods.
+- Scaffold the Minimum Spanning Tree models and control classes.
 
 Current Issue:
 * Mapping the locations revealed our algorithm needs to exclude locations that can connect through other locations. To fix this we need the following:
-- Create an adjacency matrix and output a list of all edges. I will use a modified nearest-neighbor algorithm to have each node create an edge with 3 of its nearest neighbors and eliminate duplicate edges. 
+- Build a distance matrix to load to enable GraphControl to implement the MST algorithm. 
 - Extract 10 of the longest edges and evaluate the locations on a map.  
 
 Future Updates:
-- Option to view, add, delete, and modify locations. 
-- Allow CRUD applications to modify map and statistics.
-- Option to upload a new csv file and run analysis on it. 
-- Improve time complexity?
 - Option to export analysis
 - Add a dashboard 
 
@@ -60,9 +57,7 @@ DASHBOARD
 
 ## USER INTERFACE
 - Landing page
-- Options to run algorithm or modify list
 - Options to run algorithm on full or filtered list (or both, different color indicators for map)
-- Dashboard updates after csv file is uploaded, refreshes when algorithm is run
 
 ## LOGIC DESIGN
 - csv parsing

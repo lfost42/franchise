@@ -50,34 +50,6 @@ namespace FranchiseUI.Controllers
             return View(control);
         }
 
-        [HttpGet]
-        public IActionResult FileUpload()
-        {
-            return View();
-        }
-
-        [Authorize]
-        public ActionResult FormFileUpload()
-        {
-            return View();
-        }
-
-        [HttpPost("FormFileUpload")]
-        public async Task<IActionResult> FormFileUpload(IFormFile file)
-        {
-
-            var filePath = Path.GetTempFileName();
-
-            if (file.Length > 0)
-            {
-                using (var stream = new FileStream(filePath, FileMode.Create))
-                {
-                    await file.CopyToAsync(stream);
-                }
-            }
-            return Ok(new { filePath });
-        }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
