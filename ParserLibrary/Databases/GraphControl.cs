@@ -35,6 +35,8 @@ namespace ParserLibrary.Databases
         {
             List<EdgeModel> edges = new List<EdgeModel>();
 
+            // need a method that builds each vertex to load into this list
+            // see DistanceControl
             edges.Add(new EdgeModel()
             {
                 Vertex1 = 1,
