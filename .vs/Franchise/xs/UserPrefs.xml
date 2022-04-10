@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ParserLibrary/Databases/GraphControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ParserLibrary/Databases/DictControl.cs">
     <Files>
-      <File FileName="ParserLibrary/Databases/GraphControl.cs" Line="39" Column="35" />
-      <File FileName="ParserLibrary/Databases/DistanceControl.cs" Line="1" Column="1" />
+      <File FileName="ParserLibrary/Databases/DictControl.cs" Line="21" Column="67" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,11 +14,9 @@
                 <Node name="Locations" expanded="True" />
               </Node>
             </Node>
-            <Node name="ParserConsoleUI" expanded="True" />
+            <Node name="ParserConsoleUI" expanded="True" selected="True" />
             <Node name="ParserLibrary" expanded="True">
-              <Node name="Databases" expanded="True">
-                <Node name="GraphControl.cs" selected="True" />
-              </Node>
+              <Node name="Databases" expanded="True" />
               <Node name="Models" expanded="True" />
             </Node>
           </Node>

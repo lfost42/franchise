@@ -3,11 +3,12 @@ namespace ParserLibrary.Databases
 {
     public class DistanceControl
     {
-        // create a matrix
+        // create a list of all possible edges
         // find distance between each location and every other location
-        /*
-         * l1   l2   l3   l4
-         * dl1  dl2  dl3  dl4
+        /* using the following format
+         * 
+         * edges.Add(new EdgeModel() { Vertex1 = 1, Vertex2 = 3, Weight = 5 });
+         * 
          */
 
     }

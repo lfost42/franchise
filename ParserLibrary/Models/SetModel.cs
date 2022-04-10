@@ -9,7 +9,6 @@ namespace ParserLibrary.Models
         /// <summary>
         /// Initialize n natural numbers
         /// </summary>
-        /// <param name="length">value of n</param>
         public SetModel(int length)
         {
             parent = new int[length];   //initializng length of set

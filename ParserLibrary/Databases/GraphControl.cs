@@ -13,7 +13,7 @@ namespace ParserLibrary.Databases
         {
             List<EdgeModel> result = new List<EdgeModel>();
 
-            SetModel set = new SetModel(100);
+            SetModel set = new SetModel(237/*numlocations*/);
 
             foreach (int vertex in vertices)
                 set.MakeSet(vertex);
@@ -37,17 +37,17 @@ namespace ParserLibrary.Databases
 
             // need a method that builds each vertex to load into this list
             // see DistanceControl
-            edges.Add(new EdgeModel()
-            {
-                Vertex1 = 1,
-                Vertex2 = 3,
-                Weight = 5
-            });
+            //edges.Add(new EdgeModel()
+            //{
+            //    Vertex1 = 1,
+            //    Vertex2 = 3,
+            //    Weight = 5
+            //});
 
             //set of vertices
             List<int> vertices = new List<int>()
             {
-                /* list vertices */
+                0, 1, 2, 3, 4 /* ... 237 list vertices */
             };
 
             List<EdgeModel> MST = Kruskals_MST(edges, vertices);

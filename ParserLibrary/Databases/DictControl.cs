@@ -18,7 +18,8 @@ namespace ParserLibrary.Databases
 
             foreach (LocationModel model in models)
             {
-                dict.Add(Int32.Parse(model.Id.ToString()), model);
+                //starting dictionary key at 0 for distance matrix
+                dict.Add((Int32.Parse(model.Id.ToString())) - 1, model);
             }
             return dict;
         }
