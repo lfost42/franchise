@@ -9,7 +9,9 @@
         <State name="__root__">
           <Node name="Franchise" expanded="True">
             <Node name="FranchiseUI" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
@@ -18,9 +20,7 @@
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="images" expanded="True">
-                  <Node name="app.png" selected="True" />
-                </Node>
+                <Node name="images" expanded="True" />
               </Node>
             </Node>
           </Node>
