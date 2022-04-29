@@ -16,7 +16,7 @@
         <nav id="nav">
             <ul navbar-nav me-auto mb-2 mb-md-0>
                 <li class="nav-item"><a href="#map">Map</a></li>
-                <li class="nav-item"><a href="#dashboard">Dashboard</a></li>
+                <li class="nav-item"><a href="#statistics">Statistics</a></li>
                 <li class="break nav-item"><a href="https://github.com/lfost42/Franchise">Code</a></li>
                 <li class="nav-item"><a href="https://lfost42-portfolio.netlify.app/">About Me</a></li>
             </ul>
@@ -149,9 +149,9 @@
 </div>
 
 
-<!-- Dashboard Section -->
+<!-- Statistics Section -->
 <div class="wrapper">
-    <section class="container" id="dashboard">
+    <section class="container" id="statistics">
         <header class="major">
             <h2>Statistics</h2>
         </header>
@@ -159,35 +159,35 @@
         <div class="row">
             <section class="col-12 col-xs-12 col-sm-12 col-md-4 feature image-center">
                 <div class="image-wrapper">
-                    <img src="images/pic03.jpg" alt="whisker chart placeholder" onclick="dashboard()" />
+                    <img src="images/pic03.jpg" alt="whisker chart placeholder" onclick="statistics()" />
                 </div>
                 <p>Whisker Chart</p>
             </section>
             <section class="col-12 col-xs-12 col-sm-12 col-md-4 feature image-center">
                 <div class="image-wrapper">
-                    <img src="images/pic04.jpg" alt="bubble graph placeholder" onclick="dashboard()" />
+                    <img src="images/pic04.jpg" alt="bubble graph placeholder" onclick="statistics()" />
                 </div>
                 <p>Bubble Graph</p>
             </section>
             <section class="col-12 col-xs-12 col-sm-12 col-md-4 feature image-center">
                 <div class="image-wrapper">
-                    <img src="images/pic05.jpg" alt="heatmap placeholder" onclick="dashboard()" />
+                    <img src="images/pic05.jpg" alt="heatmap placeholder" onclick="statistics()" />
                 </div>
                 <p>Heatmap</p>
             </section>
         </div>
         <ul class="actions major">
-            <li><div title="Export dashboard as a png file."><a href="#dashboard" class="button" onclick="exportDashboard()">Export Dashboard</a></div></li>
+            <li><div title="Export charts as a png file."><a href="#statistics" class="button" onclick="exportStatistics()">Export Charts</a></div></li>
         </ul>
     </section>
 </div>
 
 
 <script>
-    @*====== DASHBOARD ======*@
-    function dashboard() {
+    @*====== STATISTICS ======*@
+    function statistics() {
         alert("Chart to display live statistics as the datastet is modified");
     }
-    function exportDashboard() {
-        alert("User may export the dashboard as a png.");
+    function exportStatistics() {
+        alert("User may export the charts as a png.");
     }</script>
