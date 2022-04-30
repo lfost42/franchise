@@ -1,0 +1,79 @@
+﻿@model IDictionary<int, Parser.Data.Models.LocationModel>
+
+@{
+
+    Dictionary<int, Parser.Data.Models.LocationModel> dictModel = (Dictionary<int, Parser.Data.Models.LocationModel>)ViewData["dict"];
+    ViewData["Title"] = "Index";
+}
+
+<link rel="stylesheet" href="//cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" />
+<link href="/css/site.css" rel="stylesheet" />
+
+<div class="wrapper">
+    <section class="container" id="locations">
+
+        <article id="content">
+            <header>
+                <h2>Data Table</h2>
+            </header>
+            <p>
+                @*@Html.ActionLink("Create", "Create", "Locations", null, new { @class = "btn" })*@
+                @Html.ActionLink("Home", "Index", "Home", null, null, "promo", new { @class = "btn" }, null)
+            </p>
+            <table class="table locations" id="LocationsTable">
+
+                <thead>
+                    <tr>
+                        <th>
+                            Id
+                        </th>
+                        <th>
+                            Latitude
+                        </th>
+                        <th>
+                            Longitude
+                        </th>
+                        <th>
+                            Location Name
+                        </th>
+
+                        @*<th></th>*@
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (KeyValuePair<int, Parser.Data.Models.LocationModel> kvp in dictModel)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => kvp.Value.Id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => kvp.Value.GeoPoint.Latitude)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => kvp.Value.GeoPoint.Longitude)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => kvp.Value.Name)
+                            </td>
+                            @*<td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id" alt="edit"><i class="fas fa-edit"></i></a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" alt="delete"><i class="fa fa-trash"></i></a>
+                                </td>*@
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </article>
+
+    </section>
+</div>
+
+@section scripts {
+    <script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script>$(document).ready(function () {
+            $('#LocationsTable').DataTable();
+        });</script>
+}

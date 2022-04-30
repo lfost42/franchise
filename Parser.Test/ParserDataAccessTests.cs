@@ -1,6 +1,6 @@
-using System;
+﻿using System;
 using Xunit;
-using ParserLibrary.Data;
+using Parser.Data.Data;
 
 namespace Parser.Test
 {

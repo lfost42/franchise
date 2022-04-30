@@ -4,86 +4,14 @@
     "/Users/lynda/Desktop/repo/Franchise/Parser.Test/Parser.Test.csproj": {}
   },
   "projects": {
-    "/Users/lynda/Desktop/repo/Franchise/Parser.Test/Parser.Test.csproj": {
+    "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/Parser.Test.csproj",
-        "projectName": "Parser.Test",
-        "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/Parser.Test.csproj",
+        "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj",
+        "projectName": "Parser.Data",
+        "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj",
         "packagesPath": "/Users/lynda/.nuget/packages/",
-        "outputPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/lynda/.config/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {
-              "/Users/lynda/Desktop/repo/Franchise/ParserLibrary/ParserLibrary.csproj": {
-                "projectPath": "/Users/lynda/Desktop/repo/Franchise/ParserLibrary/ParserLibrary.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[16.6.1, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.4.1, )"
-            },
-            "xunit.runner.visualstudio": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.4.1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.103/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/lynda/Desktop/repo/Franchise/ParserLibrary/ParserLibrary.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/ParserLibrary/ParserLibrary.csproj",
-        "projectName": "ParserLibrary",
-        "projectPath": "/Users/lynda/Desktop/repo/Franchise/ParserLibrary/ParserLibrary.csproj",
-        "packagesPath": "/Users/lynda/.nuget/packages/",
-        "outputPath": "/Users/lynda/Desktop/repo/Franchise/ParserLibrary/obj/",
+        "outputPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lynda/.config/NuGet/NuGet.Config"
@@ -117,6 +45,78 @@
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
               "version": "[2.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/lynda/Desktop/repo/Franchise/Parser.Test/Parser.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/Parser.Test.csproj",
+        "projectName": "Parser.Test",
+        "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/Parser.Test.csproj",
+        "packagesPath": "/Users/lynda/.nuget/packages/",
+        "outputPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/lynda/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj": {
+                "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.6.1, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [
