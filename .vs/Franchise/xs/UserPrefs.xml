@@ -1,9 +1,6 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
   <MonoDevelop.Ide.ItemProperties.Parser.Test PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Franchise/Views/Home/Index.cshtml">
-    <Files>
-      <File FileName="Franchise/Views/Home/Index.cshtml" Line="153" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -20,7 +17,6 @@
                 <Node name="images" expanded="True" />
               </Node>
             </Node>
-            <Node name="Parser.Data" expanded="True" />
           </Node>
         </State>
       </Pad>
