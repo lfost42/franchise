@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{09174816-6C79-48CC-940E-055618BE4736}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/Index.cshtml">
     <Files>
-      <File FileName="Views/Home/Index.cshtml" Line="7" Column="45" />
+      <File FileName="Views/Home/Index.cshtml" Line="17" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
