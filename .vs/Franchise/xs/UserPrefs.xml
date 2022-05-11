@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
   <MonoDevelop.Ide.ItemProperties.Parser.Test PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Franchise/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Franchise/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="Franchise/Views/Home/Index.cshtml" Line="15" Column="96" />
+      <File FileName="Franchise/Views/Shared/_Layout.cshtml" Line="8" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,8 +10,8 @@
           <Node name="Franchise" expanded="True">
             <Node name="Franchise" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
                 </Node>
               </Node>
               <Node name="wwwroot" expanded="True" />
