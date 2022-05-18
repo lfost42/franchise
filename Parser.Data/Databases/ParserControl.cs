@@ -1,5 +1,5 @@
-﻿using Parser.Data.Data;
-using Parser.Data.Models;
+﻿using Franchise.Data.Data;
+using Franchise.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Parser.Data.Databases
+namespace Franchise.Data.Databases
 {
     public class ParserControl
     {

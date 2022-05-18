@@ -1,6 +1,6 @@
 ﻿using GeoCoordinatePortable;
 
-namespace Parser.Data.Interfaces
+namespace Franchise.Data.Interfaces
 {
     public interface ITrackable
     {

@@ -2176,7 +2176,7 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Parser.Data/1.0.0": {
+      "Franchise.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -2184,10 +2184,10 @@
           "Microsoft.AspNetCore.Http": "2.2.2"
         },
         "compile": {
-          "bin/placeholder/Parser.Data.dll": {}
+          "bin/placeholder/Franchise.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Parser.Data.dll": {}
+          "bin/placeholder/Franchise.Data.dll": {}
         }
       }
     }
@@ -7218,18 +7218,18 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Parser.Data/1.0.0": {
+    "Franchise.Data/1.0.0": {
       "type": "project",
-      "path": "../Parser.Data/Parser.Data.csproj",
-      "msbuildProject": "../Parser.Data/Parser.Data.csproj"
+      "path": "../Parser.Data/Franchise.Data.csproj",
+      "msbuildProject": "../Parser.Data/Franchise.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "CsvHelper >= 27.2.1",
+      "Franchise.Data >= 1.0.0",
       "Microsoft.AspNetCore.Session >= 2.2.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
-      "Parser.Data >= 1.0.0"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2"
     ]
   },
   "packageFolders": {
@@ -7257,8 +7257,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj": {
-              "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj"
+            "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Franchise.Data.csproj": {
+              "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Franchise.Data.csproj"
             }
           }
         }

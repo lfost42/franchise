@@ -25,11 +25,7 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {
-              "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj": {
-                "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -57,68 +53,6 @@
             "ServiceStack.Text": {
               "target": "Package",
               "version": "[6.0.2, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.103/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj",
-        "projectName": "Parser.Data",
-        "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj",
-        "packagesPath": "/Users/lynda/.nuget/packages/",
-        "outputPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/lynda/.config/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net5.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
-          "dependencies": {
-            "GeoCoordinate.NetCore": {
-              "target": "Package",
-              "version": "[1.0.0.1, )"
-            },
-            "Microsoft.AspNetCore.Http": {
-              "target": "Package",
-              "version": "[2.2.2, )"
             }
           },
           "imports": [

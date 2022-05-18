@@ -1,12 +1,14 @@
 ﻿using System;
+using Franchise.Data.Data;
+using Franchise.Data.Databases;
 using Xunit;
-using Parser.Data.Data;
 
-namespace Parser.Test
+
+namespace Franchise.Test
 {
     public class ParserDataAccessTests
     {
-        ParserDataAccess parser = new ParserDataAccess();
+        ParserDataAccess parser = new();
 
         [Fact]
         public void LineIsParsable()

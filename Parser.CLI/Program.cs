@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using Franchise.Data.Databases;
 using Microsoft.Extensions.Configuration;
-using Parser.Data;
-using Parser.Data.Databases;
-using Parser.Data.Models;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace ParserUI

@@ -15,6 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Parser.Data\Parser.Data.csproj" />
+    <ProjectReference Include="..\Parser.Data\Franchise.Data.csproj" />
   </ItemGroup>
 </Project>

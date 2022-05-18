@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Parser.Data.Databases;
-using Parser.Data.Interfaces;
-using Parser.Data.Models;
+using Franchise.Data.Databases;
+using Franchise.Data.Interfaces;
+using Franchise.Data.Models;
 
-namespace Parser.Data.Data
+namespace Franchise.Data.Data
 {
     public class ParserDataAccess : IDatabaseData
     {

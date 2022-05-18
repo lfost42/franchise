@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Parser.Data.Models;
+using Franchise.Data.Models;
 
-namespace Parser.Data.Databases
+namespace Franchise.Data.Databases
 {
     public class DictControl
     {

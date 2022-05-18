@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj": {
-                "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj"
+              "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Franchise.Data.csproj": {
+                "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Franchise.Data.csproj"
               }
             }
           }
@@ -77,12 +77,12 @@
         }
       }
     },
-    "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj": {
+    "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Franchise.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj",
-        "projectName": "Parser.Data",
-        "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj",
+        "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Franchise.Data.csproj",
+        "projectName": "Franchise.Data",
+        "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Franchise.Data.csproj",
         "packagesPath": "/Users/lynda/.nuget/packages/",
         "outputPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/obj/",
         "projectStyle": "PackageReference",

@@ -366,7 +366,7 @@
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
         }
       },
-      "Parser.Data/1.0.0": {
+      "Franchise.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -374,10 +374,10 @@
           "Microsoft.AspNetCore.Http": "2.2.2"
         },
         "compile": {
-          "bin/placeholder/Parser.Data.dll": {}
+          "bin/placeholder/Franchise.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Parser.Data.dll": {}
+          "bin/placeholder/Franchise.Data.dll": {}
         }
       }
     }
@@ -1126,18 +1126,18 @@
         "version.txt"
       ]
     },
-    "Parser.Data/1.0.0": {
+    "Franchise.Data/1.0.0": {
       "type": "project",
-      "path": "../Parser.Data/Parser.Data.csproj",
-      "msbuildProject": "../Parser.Data/Parser.Data.csproj"
+      "path": "../Parser.Data/Franchise.Data.csproj",
+      "msbuildProject": "../Parser.Data/Franchise.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Franchise.Data >= 1.0.0",
       "Grpc.Core >= 2.44.0",
       "Microsoft.Extensions.Configuration.Binder >= 5.0.0",
       "Microsoft.Extensions.Configuration.Json >= 5.0.0",
-      "Parser.Data >= 1.0.0",
       "ServiceStack.Text >= 6.0.2"
     ]
   },
@@ -1147,9 +1147,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/Parser.CLI/Parser.CLI.csproj",
-      "projectName": "Parser.CLI",
-      "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.CLI/Parser.CLI.csproj",
+      "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/Parser.CLI/Franchise.CLI.csproj",
+      "projectName": "Franchise.CLI",
+      "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.CLI/Franchise.CLI.csproj",
       "packagesPath": "/Users/lynda/.nuget/packages/",
       "outputPath": "/Users/lynda/Desktop/repo/Franchise/Parser.CLI/obj/",
       "projectStyle": "PackageReference",
@@ -1166,8 +1166,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj": {
-              "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj"
+            "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Franchise.Data.csproj": {
+              "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Franchise.Data.csproj"
             }
           }
         }

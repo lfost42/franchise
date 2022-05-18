@@ -1,24 +1,24 @@
 ﻿<Properties StartupConfiguration="{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}|Default">
-  <MonoDevelop.Ide.ItemProperties.Parser.Test PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Franchise/Views/Home/Index.cshtml">
-    <Files>
-      <File FileName="Franchise/Views/Shared/_Layout.cshtml" Line="17" Column="66" />
-      <File FileName="Franchise/Views/Home/Index.cshtml" Line="6" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.ItemProperties.Franchise.Test PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Franchise" expanded="True">
             <Node name="Franchise" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
+                <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True" />
             </Node>
-            <Node name="Parser.CLI" expanded="True" />
+            <Node name="Franchise.Data" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Databases" expanded="True">
+                <Node name="ParserControl.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="Franchise.Test" expanded="True" />
           </Node>
         </State>
       </Pad>

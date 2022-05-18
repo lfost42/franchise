@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -10,7 +10,7 @@
     <None Remove="Microsoft.Extensions.Configuration.Json" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Parser.CLI.csproj" />
+    <None Include="Franchise.CLI.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="TacoBell-US-AL.csv">
@@ -21,7 +21,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Parser.Data\Parser.Data.csproj" />
+    <ProjectReference Include="..\Parser.Data\Franchise.Data.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Grpc.Core" Version="2.44.0" />

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Parser.Data.Models
+namespace Franchise.Data.Models
 {
     public class SetModel
     {

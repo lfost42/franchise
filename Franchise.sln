@@ -2,11 +2,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parser.CLI", "Parser.CLI\Parser.CLI.csproj", "{7ADECD8F-C2B8-437F-9BCD-80CA280CB46F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Franchise.CLI", "Parser.CLI\Franchise.CLI.csproj", "{7ADECD8F-C2B8-437F-9BCD-80CA280CB46F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parser.Test", "Parser.Test\Parser.Test.csproj", "{D12AA5B6-2F62-4BF2-8080-0C276FC1177C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Franchise.Test", "Parser.Test\Franchise.Test.csproj", "{D12AA5B6-2F62-4BF2-8080-0C276FC1177C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parser.Data", "Parser.Data\Parser.Data.csproj", "{4071EB55-2AA1-405A-9395-74321F3FF909}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Franchise.Data", "Parser.Data\Franchise.Data.csproj", "{4071EB55-2AA1-405A-9395-74321F3FF909}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Franchise", "Franchise\Franchise.csproj", "{83CC0A40-85CE-4E19-8E55-51BF20F01E6B}"
 EndProject

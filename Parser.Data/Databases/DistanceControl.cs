@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Parser.Data.Databases
+namespace Franchise.Data.Databases
 {
     public class DistanceControl
     {

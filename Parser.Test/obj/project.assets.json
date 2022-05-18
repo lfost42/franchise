@@ -1796,7 +1796,7 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "Parser.Data/1.0.0": {
+      "Franchise.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -1804,10 +1804,10 @@
           "Microsoft.AspNetCore.Http": "2.2.2"
         },
         "compile": {
-          "bin/placeholder/Parser.Data.dll": {}
+          "bin/placeholder/Franchise.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Parser.Data.dll": {}
+          "bin/placeholder/Franchise.Data.dll": {}
         }
       }
     }
@@ -6042,16 +6042,16 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "Parser.Data/1.0.0": {
+    "Franchise.Data/1.0.0": {
       "type": "project",
-      "path": "../Parser.Data/Parser.Data.csproj",
-      "msbuildProject": "../Parser.Data/Parser.Data.csproj"
+      "path": "../Parser.Data/Franchise.Data.csproj",
+      "msbuildProject": "../Parser.Data/Franchise.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Franchise.Data >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.6.1",
-      "Parser.Data >= 1.0.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.1"
     ]
@@ -6062,9 +6062,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/Parser.Test.csproj",
-      "projectName": "Parser.Test",
-      "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/Parser.Test.csproj",
+      "projectUniqueName": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/Franchise.Test.csproj",
+      "projectName": "Franchise.Test",
+      "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/Franchise.Test.csproj",
       "packagesPath": "/Users/lynda/.nuget/packages/",
       "outputPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Test/obj/",
       "projectStyle": "PackageReference",
@@ -6081,8 +6081,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj": {
-              "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Parser.Data.csproj"
+            "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Franchise.Data.csproj": {
+              "projectPath": "/Users/lynda/Desktop/repo/Franchise/Parser.Data/Franchise.Data.csproj"
             }
           }
         }

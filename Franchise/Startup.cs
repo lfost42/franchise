@@ -8,11 +8,11 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Parser.Data;
-using Parser.Data.Data;
-using Parser.Data.Databases;
-using Parser.Data.Interfaces;
-using Parser.Data.Models;
+using Franchise.Data;
+using Franchise.Data.Data;
+using Franchise.Data.Databases;
+using Franchise.Data.Interfaces;
+using Franchise.Data.Models;
 
 namespace Franchise
 {

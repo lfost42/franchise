@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using GeoCoordinatePortable;
-using Parser.Data.Interfaces;
+using Franchise.Data.Interfaces;
 
-namespace Parser.Data.Models
+namespace Franchise.Data.Models
 {
     public class LocationModel : ITrackable
     {

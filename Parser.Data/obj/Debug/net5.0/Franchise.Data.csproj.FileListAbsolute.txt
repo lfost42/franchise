@@ -1,0 +1,12 @@
+/Users/lynda/Desktop/repo/Franchise/Parser.Data/bin/Debug/net5.0/Franchise.Data.deps.json
+/Users/lynda/Desktop/repo/Franchise/Parser.Data/bin/Debug/net5.0/Franchise.Data.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Data/bin/Debug/net5.0/ref/Franchise.Data.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Data/bin/Debug/net5.0/Franchise.Data.pdb
+/Users/lynda/Desktop/repo/Franchise/Parser.Data/obj/Debug/net5.0/Franchise.Data.csproj.AssemblyReference.cache
+/Users/lynda/Desktop/repo/Franchise/Parser.Data/obj/Debug/net5.0/Franchise.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lynda/Desktop/repo/Franchise/Parser.Data/obj/Debug/net5.0/Franchise.Data.AssemblyInfoInputs.cache
+/Users/lynda/Desktop/repo/Franchise/Parser.Data/obj/Debug/net5.0/Franchise.Data.AssemblyInfo.cs
+/Users/lynda/Desktop/repo/Franchise/Parser.Data/obj/Debug/net5.0/Franchise.Data.csproj.CoreCompileInputs.cache
+/Users/lynda/Desktop/repo/Franchise/Parser.Data/obj/Debug/net5.0/Franchise.Data.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Data/obj/Debug/net5.0/ref/Franchise.Data.dll
+/Users/lynda/Desktop/repo/Franchise/Parser.Data/obj/Debug/net5.0/Franchise.Data.pdb

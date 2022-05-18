@@ -1,7 +1,7 @@
 ﻿using System;
-using Parser.Data.Interfaces;
+using Franchise.Data.Interfaces;
 
-namespace Parser.Data
+namespace Franchise.Data
 {
     public class LocationLogger : ILog
     {

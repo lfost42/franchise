@@ -34,9 +34,9 @@
       "Franchise/1.0.0": {
         "dependencies": {
           "CsvHelper": "27.2.1",
+          "Franchise.Data": "1.0.0",
           "Microsoft.AspNetCore.Session": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
-          "Parser.Data": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -1711,16 +1711,16 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "Parser.Data/1.0.0": {
+      "Franchise.Data/1.0.0": {
         "dependencies": {
           "GeoCoordinate.NetCore": "1.0.0.1",
           "Microsoft.AspNetCore.Http": "2.2.2"
         },
         "runtime": {
-          "Parser.Data.dll": {}
+          "Franchise.Data.dll": {}
         },
         "compile": {
-          "Parser.Data.dll": {}
+          "Franchise.Data.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -4381,7 +4381,7 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "Parser.Data/1.0.0": {
+    "Franchise.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
